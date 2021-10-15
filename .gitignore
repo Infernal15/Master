@@ -32,12 +32,14 @@ sites/simpletest
 # Ignore drupal core (if not versioning drupal sources)
 core
 modules/README.txt
+modules/contrib
 profiles/README.txt
 sites/README.txt
 sites/example.sites.php
 sites/example.settings.local.php
 sites/development.services.yml
 themes/README.txt
+themes/contrib
 vendor/
 .csslintrc
 .editorconfig
