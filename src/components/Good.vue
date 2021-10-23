@@ -1,0 +1,88 @@
+<template>
+  <div class="good">
+    <div class="goodImg" @click="$router.push(`/good/${good.id}/general`)">
+      <img width="174" height="350" :src="require('@/assets/img/goods/' + good.image)" alt="{{good.title}}">
+    </div>
+    <div class="goodinfo">
+      <div class="goodTitle" @click="$router.push(`/good/${good.id}/general`)">
+          <span>{{good.title}}</span>
+      </div>
+      <div class="buy">
+        <div class="goodPrice">
+          <span>{{good.price}}</span><span class="currency"> ₴</span>
+        </div>
+        <button class="cart">
+          <img height="20" width="20" :src="require('@/assets/img/cart.png')" alt="AddToCart">
+        </button>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  props:{
+    good: {
+      type: Object,
+      require: true
+    }
+  }
+}
+</script>
+
+<style scoped>
+.good{
+  width: 23%;
+  border: 2px solid #0077c8;
+  padding: 10px;
+  border-radius: 30px;
+  background: #ffffff;
+  margin: 1%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+.goodImg img{
+  display: block;
+  margin: 0 auto;
+}
+.goodinfo{
+  margin-top: 3%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+.goodTitle{
+  font-size: 21px;
+  font-weight: 500;
+  margin-right: 2%;
+  margin-left: 2%;
+}
+.buy{
+  display: flex;
+  justify-content: space-between;
+  margin-right: 2%;
+  margin-left: 2%;
+}
+.goodPrice{
+  font-size: 23px;
+  font-weight: 600;
+  align-self: flex-end;
+}
+.currency{
+  font-size: 15px;
+  font-weight: normal;
+}
+.cart{
+  display: block;
+  float: right;
+  margin-top: 3%;
+  align-self: flex-end;
+  background: none;
+  border: none;
+}
+.good:hover{
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25);
+}
+</style>
