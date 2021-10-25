@@ -31,12 +31,17 @@ export default {
 </script>
 
 <style scoped>
+img{
+  width: 100%;
+  object-fit: contain;
+}
 .good{
+  background: rgba(248, 248, 248, 0.73);
+  border: 2px solid rgba(0, 119, 200, 0.51);
+  box-shadow: inset 0 0 26px #84C2FF;
   width: 23%;
-  border: 2px solid #0077c8;
   padding: 10px;
   border-radius: 30px;
-  background: #ffffff;
   margin: 1%;
   height: 500px;
   display: flex;
@@ -75,14 +80,19 @@ export default {
   font-weight: normal;
 }
 .cart{
+  background: #3b94ec;
+  padding: 6px;
+  border-radius: 25px;
   display: block;
   float: right;
   margin-top: 3%;
   align-self: flex-end;
-  background: none;
   border: none;
 }
 .good:hover{
-  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25);
+  box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.17), inset 0 0 26px #84C2FF;
+}
+.cart:hover{
+  cursor: pointer;
 }
 </style>

@@ -53,13 +53,18 @@ export default {
         }
       }
     }
+  },
+  methods:{
+    getGood(){
+
+    }
   }
 }
 </script>
 
 <style scoped>
 .good{
-  margin: 3%;
+  margin: 38px 58px;
 }
 .name{
   font-weight: 500;
@@ -71,9 +76,10 @@ export default {
   background: #f0f0f0;
 }
 .navbarbtn{
-  margin-right: 2%;
+  margin-right: 20px;
+  padding: 2px 13px;
   border-bottom: 2px solid #f0f0f0;
-  width: 10%;
+  width: max-content;
   text-align: center;
 }
 .selected{

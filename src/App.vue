@@ -20,10 +20,20 @@ export default {
   box-sizing: border-box;
   font-family: 'Darker Grotesque', sans-serif;
 }
+html{
+  background: #F9FCFF;
+}
 body{
-  background: #f9f9f9;
+  background-attachment: fixed ;
+  background-position-y: 59%;
+  background-position-x: 3%;
+  background-image: url("assets/img/dots.png");
+  background-repeat: no-repeat;
+  background-size: 5%;
+  margin-top: 72px;
 }
 </style>
 
 <!--FOOTER-->
 <!--PAGINATION-->
+<!--COMPUTED-->

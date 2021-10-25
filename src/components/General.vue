@@ -5,9 +5,13 @@
     </div>
     <div class="buy">
       <div class="finances">
+<!--        <div class="available">-->
+<!--          <img width="28" height="28" :src="require('@/assets/img/available.png')" alt="available">-->
+<!--          <div class="availableText instock">Available</div>-->
+<!--        </div>-->
         <div class="available">
-          <img width="28" height="28" :src="require('@/assets/img/available.png')" alt="available">
-          <div class="availableText instock">Available</div>
+          <img width="28" height="28" :src="require('@/assets/img/notavailable.png')" alt="available">
+          <div class="availableText notinstock">Not Available</div>
         </div>
         <div class="price">{{good.price}} ₴</div>
         <button class="buybtn"><img height="24" width="24" :src="require(`@/assets/img/cartwhite.png`)" alt="cart"><span>Buy</span></button>
@@ -86,6 +90,9 @@ export default {
   font-weight: 600;
   border-radius: 15px;
   padding: 4% 20%;
+}
+.buybtn:hover{
+  cursor: pointer;
 }
 .buybtn span{
   display: block;

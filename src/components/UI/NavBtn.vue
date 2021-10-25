@@ -13,12 +13,14 @@ export default {
 <style scoped>
 button{
   font-size: 28px;
-  padding: 5px 10px;
-  color: #3b94ec;
-  border: 0;
+  padding: 10px 15px;
+  color: #f9f9f9;
+  border: none;
+  border-bottom: 2px solid #3b94ec;
   background: none;
 }
 button:hover{
-  border-bottom: 2px solid #2787d6;
-  background: linear-gradient(180deg, rgba(255, 254, 254, 0) 76.04%, rgba(82, 179, 244, 0.42) 97.92%);}
+  border-bottom: 2px solid #0077C8;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 51.04%, rgba(255, 255, 255, 0.26) 95.83%);
+}
 </style>
