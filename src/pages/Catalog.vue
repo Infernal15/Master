@@ -2,6 +2,10 @@
   <div class="vect">
     <good-list v-if="!isGoodsLoading" v-bind:category="category" :goods="goods"></good-list>
     <div v-else class="loading">Loading...</div>
+    <div class="paginator">
+      <div @click="changePage(pageN)" v-for="pageN in totalPages" :key="pageN" class="page" :class="{'currentpage' :
+       page === pageN}">{{ pageN }}</div>
+    </div>
   </div>
 </template>
 
@@ -50,10 +54,11 @@ export default {
       ]
     }
   },
-  async loadMoreGoods(){
-      try{
+  methods: {
+    async loadMoreGoods() {
+      try {
         this.isGoodsLoading = true;
-        const response = await axios.get('https://main.stepcommerce.pp,ua/jsonapi/block_content_type/block_content_type',{
+        const response = await axios.get('', {
           params: {
             _page: this.page,
             _limit: this.limit
@@ -61,13 +66,22 @@ export default {
         });
         this.totalPages = Math.ceil(response.headers['x-total-count'] / this.limit);
         this.posts = response.data;
-      } catch (e){
+      } catch (e) {
         alert("Error");
-      }
-      finally {
+      } finally {
         this.isGoodsLoading = false;
       }
+    },
+    changePage(pageN) {
+      this.page = pageN
+      this.loadMoreGoods();
     }
+  },
+  watch:{
+    page(){
+      this.loadMoreGoods()
+    }
+  }
 }
 </script>
 
@@ -78,7 +92,25 @@ export default {
   background-image: url("../assets/img/vector.png");
   background-repeat: no-repeat;
   background-size: 85% 300px;
-
   background-position-x: center;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.paginator{
+  margin-top: 15px;
+}
+.page{
+  color: #3b94ec;
+  background: #ffffff;
+}
+.page:hover{
+  background: #3b94ec;
+  color: #ffffff;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), inset 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.currentpage{
+  background: #3b94ec;
+  color: #ffffff;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 </style>

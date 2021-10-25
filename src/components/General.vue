@@ -128,6 +128,7 @@ export default {
   width: 100%;
   padding: 4%;
   border-radius: 7px;
+  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.25);
 }
 .deliveryVariant{
   margin-top: 2%;

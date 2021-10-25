@@ -1,7 +1,7 @@
 <template>
   <div class="main">
-    <div class="name"></div>
-    <div class="value"></div>
+    <div class="name">{{characteristic.name}}</div>
+    <div class="value">{{characteristic.value}}</div>
   </div>
 </template>
 
@@ -9,7 +9,7 @@
 export default {
   name: "Сharacteristic",
   props:{
-    characteristics:{
+    characteristic:{
       type: Object,
       required: true
     }
@@ -18,7 +18,5 @@ export default {
 </script>
 
 <style scoped>
-  .main{
 
-  }
 </style>

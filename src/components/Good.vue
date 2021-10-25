@@ -88,6 +88,8 @@ img{
   margin-top: 3%;
   align-self: flex-end;
   border: none;
+
+  /*box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);*/
 }
 .good:hover{
   box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.17), inset 0 0 26px #84C2FF;
