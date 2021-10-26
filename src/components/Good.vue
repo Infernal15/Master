@@ -11,9 +11,10 @@
         <div class="goodPrice">
           <span>{{good.price}}</span><span class="currency"> ₴</span>
         </div>
-        <button class="cart">
+        <div class="cart">
+          <div class="cartText">Add to Cart</div>
           <img height="20" width="20" :src="require('@/assets/img/cart.png')" alt="AddToCart">
-        </button>
+        </div>
       </div>
     </div>
   </div>
@@ -37,11 +38,11 @@ img{
 }
 .good{
   background: rgba(248, 248, 248, 0.73);
-  border: 2px solid rgba(0, 119, 200, 0.51);
+  border: 1px solid rgba(0, 119, 200, 0.51);
   box-shadow: inset 0 0 26px #84C2FF;
   width: 23%;
   padding: 10px;
-  border-radius: 30px;
+  border-radius: 15px;
   margin: 1%;
   height: 500px;
   display: flex;
@@ -79,22 +80,38 @@ img{
   font-size: 15px;
   font-weight: normal;
 }
-.cart{
-  background: #3b94ec;
-  padding: 6px;
-  border-radius: 25px;
-  display: block;
-  float: right;
-  margin-top: 3%;
-  align-self: flex-end;
-  border: none;
-
-  /*box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);*/
-}
 .good:hover{
   box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.17), inset 0 0 26px #84C2FF;
 }
+.cart{
+  background: #3b94ec;
+  padding: 10px;
+  border-radius: 25px;
+  align-items: center;
+  display: flex;
+  float: right;
+  border: none;
+  gap: 10px;
+  height: 47px;
+  width: 47px;
+  transition: 400ms;
+}
 .cart:hover{
+  box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
+  transition: 400ms;
   cursor: pointer;
+  width: 150px;
+}
+.cartText{
+  margin-bottom: 3px;
+  margin-top: -3px;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 20px;
+  white-space: nowrap;
+  display: none;
+}
+.cart:hover .cartText{
+  display: block;
 }
 </style>

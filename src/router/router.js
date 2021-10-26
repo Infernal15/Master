@@ -7,13 +7,18 @@ import Main from "@/pages/Main";
 import Payment from "@/pages/Payment";
 import Rules from "@/pages/Rules";
 import UserProfile from "@/pages/UserProfile";
+import Categories from "../pages/Categories";
 const routes = [
     {
         path: '/about',
         component: About
     },
     {
-        path: '/catalog',
+        path: '/categories',
+        component: Categories
+    },
+    {
+        path: '/catalog/:type',
         component: Catalog
     },
     {

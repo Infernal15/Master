@@ -9,18 +9,17 @@
   </div>
   <div class="navigation">
     <nav-btn @click="this.$router.push('/about')">About Us</nav-btn>
-    <nav-btn @click="this.$router.push('/catalog')">Catalog</nav-btn>
+    <nav-btn @click="this.$router.push('/categories')">Categories</nav-btn>
     <nav-btn @click="this.$router.push('/faq')">FAQ</nav-btn>
     <nav-btn @click="this.$router.push('/rules')">Rules</nav-btn>
 
   </div>
   <div class="links">
-    <div class="profile">
-      <img width="28" height="28" :src="require('@/assets/img/profile.png')" alt="Profile" @click="this.$router.push('/profile')">
-    </div>
-    <div class="cart">
-      <img width="28" height="28"  @click="" :src="require('@/assets/img/cart.png')" alt="Cart">
-    </div>
+      <img class="profile" width="28" height="28" :src="require('@/assets/img/profile.png')" alt="Profile" @click="this.$router.push('/profile')">
+
+
+      <img class="cart" width="28" height="28"  @click="" :src="require('@/assets/img/cart.png')" alt="Cart">
+
   </div>
 </nav>
 </template>
@@ -82,7 +81,11 @@ nav{
   width: 6%;
   justify-content: space-between;
 }
-.cart, .profile :hover{
+.cart, .profile{
+  display: block;
+}
+.cart:hover, .profile:hover{
   cursor: pointer;
+  background: rgba(132, 194, 255, 0.49);
 }
 </style>

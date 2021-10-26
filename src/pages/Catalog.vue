@@ -20,6 +20,7 @@ export default {
       category: 'Gaming Mice',
       totalPages: 0,
       page: 1,
+      limit:  32,
       goods: [
         {
           id: 1,
@@ -35,7 +36,7 @@ export default {
         },
         {
           id: 4,
-          title: "Mouse HyperX Pulsefire Haste USB Black (HMSH1-A-BK/G)",
+          title: "Mouse HyperX Pulsefire Haste USB Black",
           image: "mouse5.png",
           price: "1 399"
         },
@@ -58,14 +59,15 @@ export default {
     async loadMoreGoods() {
       try {
         this.isGoodsLoading = true;
-        const response = await axios.get('', {
-          params: {
-            _page: this.page,
-            _limit: this.limit
-          }
-        });
+        const response = await axios.get('https://main.stepcommerce.pp.ua/commerce/products/all'// {
+          // params: {
+          //   _page: this.page,
+          //   _limit: this.limit
+          // }}
+        );
         this.totalPages = Math.ceil(response.headers['x-total-count'] / this.limit);
         this.posts = response.data;
+        console.log(this.posts)
       } catch (e) {
         alert("Error");
       } finally {

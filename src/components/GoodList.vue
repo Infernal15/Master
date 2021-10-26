@@ -13,12 +13,6 @@
 <script>
 import Good from "@/components/Good";
 export default {
-  data(){
-    return{
-      page: 1,
-      limit:  32
-    }
-  },
   components: {Good},
   props: {
     category: {
