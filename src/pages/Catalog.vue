@@ -59,11 +59,11 @@ export default {
     async loadMoreGoods() {
       try {
         this.isGoodsLoading = true;
-        const response = await axios.get('http://main.stepcommerce.pp.ua/commerce/products/all'// {
-          // params: {
-          //   _page: this.page,
-          //   _limit: this.limit
-          // }}
+        const response = await axios.get('https://main.stepcommerce.pp.ua/commerce/products/all',{
+          params: {
+            _page: this.page,
+            _limit: this.limit
+          }}
         );
         this.totalPages = Math.ceil(response.headers['x-total-count'] / this.limit);
         this.posts = response.data;
