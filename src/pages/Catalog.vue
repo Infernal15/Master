@@ -1,5 +1,5 @@
 <template>
-  <div class="vect">
+  <div @click="loadMoreGoods" class="vect">
     <good-list v-if="!isGoodsLoading" v-bind:category="category" :goods="goods"></good-list>
     <div v-else class="loading">Loading...</div>
     <div class="paginator">
@@ -59,7 +59,7 @@ export default {
     async loadMoreGoods() {
       try {
         this.isGoodsLoading = true;
-        const response = await axios.get('https://main.stepcommerce.pp.ua/commerce/products/all'// {
+        const response = await axios.get('http://main.stepcommerce.pp.ua/commerce/products/all'// {
           // params: {
           //   _page: this.page,
           //   _limit: this.limit

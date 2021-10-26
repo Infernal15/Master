@@ -12,12 +12,9 @@
     <nav-btn @click="this.$router.push('/categories')">Categories</nav-btn>
     <nav-btn @click="this.$router.push('/faq')">FAQ</nav-btn>
     <nav-btn @click="this.$router.push('/rules')">Rules</nav-btn>
-
   </div>
   <div class="links">
       <img class="profile" width="28" height="28" :src="require('@/assets/img/profile.png')" alt="Profile" @click="this.$router.push('/profile')">
-
-
       <img class="cart" width="28" height="28"  @click="" :src="require('@/assets/img/cart.png')" alt="Cart">
 
   </div>
