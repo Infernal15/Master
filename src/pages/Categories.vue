@@ -1,7 +1,7 @@
 <template>
   <div class="cat">
     <transition-group name="categories">
-      <category v-for="category in categories" :category="category" :key="category.id"/>
+        <category v-for="category in categories" :category="category" :key="category.id"/>
     </transition-group>
   </div>
 </template>
@@ -16,129 +16,158 @@ export default {
       categories:[
         {
           id: 1,
-          name: 'Laptops',
+          name: 'laptops',
+          displayName: 'Laptops',
           subcategories:[
             {
               id: 1,
-              name: 'Acer'
+              name: 'acer',
+              displayName: 'Acer'
             },
             {
               id: 2,
-              name: "Lenovo"
+              name: "lenovo",
+              displayName: 'Lenovo'
             },
             {
               id: 3,
-              name: "Asus"
+              name: "asus",
+              displayName: 'Asus'
             },
             {
               id: 4,
-              name: 'Apple'
+              name: 'apple',
+              displayName: 'Apple'
             }
           ]
         },
         {
           id: 2,
-          name: 'Hardware',
+          name: 'hardware',
+          displayName: 'Hardware',
           subcategories: [
             {
               id: 1,
-              name: 'CPU'
+              name: 'cpu',
+              displayName: 'CPU'
             },
             {
               id: 2,
-              name: 'Motherboard'
+              name: 'motherboard',
+              displayName: 'Motherboard'
             },
             {
               id: 3,
-              name: 'GPU'
+              name: 'gpu',
+              displayName: 'GPU'
             },
             {
               id: 4,
-              name: 'RAM'
+              name: 'ram',
+              displayName: 'RAM'
             },
             {
               id: 5,
-              name: 'Storage'
+              name: 'storage',
+              displayName: 'Storage'
             }
           ]
         },
         {
           id: 3,
-          name: 'Phones',
+          name: 'phones',
+          displayName: 'Phones',
           subcategories: [
               {
                 id: 1,
-                name: 'Apple'
+                name: 'apple',
+                displayName: 'Apple'
               },
               {
                 id: 2,
-                name: 'Samsung'
+                name: 'samsung',
+                displayName: 'Samsung'
               },
               {
                 id: 3,
-                name: 'Xiaomi'
+                name: 'xiaomi',
+                displayName: 'Xiaomi'
               },
               {
                 id: 4,
-                name: 'Huawei'
+                name: 'huawei',
+                displayName: 'Huawei'
               }
             ]
         },
         {
           id: 4,
-          name: 'Manipulators',
+          name: 'manipulators',
+          displayName: 'Manipulators',
           subcategories: [
             {
               id: 1,
-              name: 'Gaming Mice'
+              name: 'gaming_mice',
+              displayName: 'Gaming Mice'
             },
             {
               id: 2,
-              name: 'Keyboards'
+              name: 'keyboards',
+              displayName: 'Keyboards'
             },
             {
               id: 3,
-              name: 'Mice'
+              name: 'mice',
+              displayName: 'Mice'
             },
             {
               id: 4,
-              name: 'Gaming Keyboards'
+              name: 'gaming_keyboards',
+              displayName: 'Gaming Keyboards'
             }
           ]
         },
         {
           id: 5,
-          name: 'Audio',
+          name: 'audio',
+          displayName: 'Audio',
           subcategories: [
             {
               id: 1,
-              name: 'Headphones'
+              name: 'headphones',
+              displayName: 'Headphones'
             },
             {
               id: 2,
-              name: 'Speakers'
+              name: 'speakers',
+              displayName: 'Speakers'
             },
             {
               id: 3,
-              name: 'Microphones'
+              name: 'microphones',
+              displayName: 'Microphones'
             }
           ]
         },
         {
           id: 6,
-          name: 'Photo & Video',
+          name: 'photo_video',
+          displayName: 'Photo & Video',
           subcategories: [
             {
               id: 1,
-              name: 'Cameras'
+              name: 'cameras',
+              displayName: 'Cameras'
             },
             {
               id: 2,
-              name: 'Video Cameras'
+              name: 'video_cameras',
+              displayName: 'Video Cameras'
             },
             {
               id: 3,
-              name: 'Projector'
+              name: 'projector',
+              displayName: 'Projector'
             }
           ]
         }

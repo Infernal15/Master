@@ -1,7 +1,7 @@
 <template>
   <div class="good">
     <div class="goodImg" @click="$router.push(`/good/${good.id}/general`)">
-      <img width="174" height="350" :src="require('@/assets/img/goods/' + good.image)" alt="{{good.title}}">
+      <img width="174" height="350" :src="path + good.field_image_export[0]" :alt="good.title">
     </div>
     <div class="goodinfo">
       <div class="goodTitle" @click="$router.push(`/good/${good.id}/general`)">
@@ -9,7 +9,7 @@
       </div>
       <div class="buy">
         <div class="goodPrice">
-          <span>{{good.price}}</span><span class="currency"> ₴</span>
+          <span>{{good.price__number_export}}</span><span class="currency"> ₴</span>
         </div>
         <div class="cart">
           <div class="cartText">Add to Cart</div>
@@ -22,6 +22,11 @@
 
 <script>
 export default {
+  data(){
+    return{
+      path: 'https://main.stepcommerce.pp.ua/'
+    }
+  },
   props:{
     good: {
       type: Object,

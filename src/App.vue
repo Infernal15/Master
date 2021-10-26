@@ -33,7 +33,3 @@ body{
   margin-top: 72px;
 }
 </style>
-
-<!--FOOTER-->
-<!--PAGINATION-->
-<!--COMPUTED-->

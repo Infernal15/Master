@@ -1,83 +1,54 @@
 <template>
-  <div @click="loadMoreGoods" class="vect">
-    <good-list v-if="!isGoodsLoading" v-bind:category="category" :goods="goods"></good-list>
-    <div v-else class="loading">Loading...</div>
-    <div class="paginator">
-      <div @click="changePage(pageN)" v-for="pageN in totalPages" :key="pageN" class="page" :class="{'currentpage' :
-       page === pageN}">{{ pageN }}</div>
-    </div>
+  <div class="vect">
+    <good-list :category="categoryDisplay" :goods="goods"></good-list>
+<!--    <div class="paginator">-->
+<!--      <div @click="changePage(pageN)" v-for="pageN in totalPages" :key="pageN" class="page" :class="{'currentpage' :-->
+<!--       page === pageN}">{{ pageN }}</div>-->
+<!--    </div>-->
   </div>
 </template>
 
 <script>
 import GoodList from "@/components/GoodList";
 import axios from "axios";
+import router from "../router/router";
 export default {
   components: {GoodList},
   data(){
     return{
-      isGoodsLoading : false,
-      category: 'Gaming Mice',
       totalPages: 0,
       page: 1,
       limit:  32,
-      goods: [
-        {
-          id: 1,
-          title: "Mouse RZTK Z 400 USB Black",
-          image: "mouse1.png",
-          price: "199"
-        },
-        {
-          id: 2,
-          title: "Logitech G102 Lightsync USB Black",
-          image: "mouse2.png",
-          price: "850"
-        },
-        {
-          id: 4,
-          title: "Mouse HyperX Pulsefire Haste USB Black",
-          image: "mouse5.png",
-          price: "1 399"
-        },
-        {
-          id: 4,
-          title: "Mouse RZTK Z 500 USB Black",
-          image: "mouse3.png",
-          price: "699"
-        },
-        {
-          id: 5,
-          title: "Trust Ziva USB",
-          image: "mouse4.png",
-          price: "300"
-        }
-      ]
+      goods: [],
+      category: this.$route.params.type,
+      categoryDisplay: ''
     }
   },
   methods: {
     async loadMoreGoods() {
       try {
         this.isGoodsLoading = true;
-        const response = await axios.get('https://main.stepcommerce.pp.ua/commerce/products/all',{
-          params: {
-            _page: this.page,
-            _limit: this.limit
-          }}
-        );
+        const response = await axios.get(`https://main.stepcommerce.pp.ua/commerce/products/${this.category}`);
         this.totalPages = Math.ceil(response.headers['x-total-count'] / this.limit);
-        this.posts = response.data;
-        console.log(this.posts)
+        this.goods = response.data;
       } catch (e) {
         alert("Error");
       } finally {
         this.isGoodsLoading = false;
       }
     },
+    normalizeTitle() {
+      const cat = this.$route.params.type
+      this.categoryDisplay = cat.replace('_',' ');
+    },
     changePage(pageN) {
       this.page = pageN
       this.loadMoreGoods();
     }
+  },
+  beforeMount(){
+    this.normalizeTitle();
+    this.loadMoreGoods();
   },
   watch:{
     page(){

@@ -5,7 +5,7 @@
       <img :src="require('../assets/img/cross.png')" alt="X X X X" class="cross">
     </div>
     <transition-group name="good-list">
-      <good v-for="good in goods" :good="good" :key="good.id"/>
+      <good v-for="good in goods" :good="good" :key="good.product_id_export"/>
     </transition-group>
   </div>
 </template>
@@ -38,6 +38,7 @@ export default {
     flex-wrap: wrap;
   }
   .category{
+    text-transform: capitalize;
     font-weight: 500;
     color: #00205B;
     font-size: 52px;

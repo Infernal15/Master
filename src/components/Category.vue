@@ -1,6 +1,6 @@
 <template>
     <div class="category">
-      <div class="name">{{category.name}}</div>
+      <div class="name">{{category.displayName}}</div>
       <div class="container">
         <transition-group name="category">
           <sub-category v-for="subcategory in category.subcategories" :subcategory="subcategory" :key="subcategory.id"/>
@@ -49,5 +49,9 @@ export default {
 }
 .category:hover .container{
   display: flex;
+}
+.category{
+  display: flex;
+  flex-direction: column;
 }
 </style>
