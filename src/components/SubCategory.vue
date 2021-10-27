@@ -23,6 +23,7 @@ export default {
   margin-top: 10px;
   background: #68b2fc;
   padding: 3px 5px 5px;
+  text-transform: capitalize;
 }
 .sub:hover{
   box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);

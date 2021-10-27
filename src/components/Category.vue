@@ -24,6 +24,9 @@ export default {
   },
   methods:{
 
+  },
+  beforeMount() {
+    console.log(this.category.subcategories);
   }
 }
 </script>
@@ -39,6 +42,7 @@ export default {
   color: #ffffff;
   padding-top: 3px;
   padding-bottom: 5px;
+  text-transform: capitalize;
 }
 .name:hover{
   box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);

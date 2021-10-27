@@ -1,68 +1,34 @@
 <template>
-<!--  <transition-group name="characteristics">-->
-<!--    <characteristic v-for="(name,value) in good.characteristics"></characteristic>-->
-<!--  </transition-group>-->
-<!--  <characteristic v-bind:characteristic="good.characteristics[0]"></characteristic>-->
   <div class="characteristics">
-    <div class="main">
-      <div class="name">Switch Reliability</div>
-      <div class="value">60M Clicks</div>
-    </div>
-    <div class="main">
-      <div class="name">Product Dimensions (WxLxH)</div>
-      <div class="value">67 x 124 x 38mm</div>
-    </div>
-    <div class="main">
-      <div class="name">Buttons</div>
-      <div class="value">6</div>
-    </div>
-    <div class="main">
-      <div class="name">Buttons</div>
-      <div class="value">6</div>
-    </div>
-    <div class="main">
-      <div class="name">Buttons</div>
-      <div class="value">6</div>
-    </div>
-    <div class="main">
-      <div class="name">Buttons</div>
-      <div class="value">6</div>
-    </div>
-    <div class="main">
-      <div class="name">Buttons</div>
-      <div class="value">6</div>
-    </div>
-    <div class="main">
-      <div class="name">Buttons</div>
-      <div class="value">6</div>
-    </div>
-    <div class="main">
-      <div class="name">Buttons</div>
-      <div class="value">6</div>
-    </div>
-    <div class="main">
-      <div class="name">Buttons</div>
-      <div class="value">6</div>
-    </div>
+    <transition-group name="characteristics">
+      <characteristic v-for="characteristic in characteristics" :key="characteristic.id"></characteristic>
+    </transition-group>
   </div>
-
 </template>
 
 <script>
-
+import Characteristic from "@/components/Characteristic";
+import axios from "axios";
 export default {
   name: "Characteristics",
-  components:{ },
-  props:{
-    good:{
-      type: Object,
-      require: true
-    }
-  },
+  components:{Characteristic },
   data(){
     return{
-
+      characteristics: []
     }
+  },
+  methods:{
+    async getCharacteristics(){
+      try {
+        const response = await axios.get(`https://main.stepcommerce.pp.ua/commerce/characteristic/${this.$route.params.id}`);
+        this.characteristic = response.data;
+      } catch (e) {
+        alert("Error");
+      }
+    }
+  },
+  beforeMount() {
+
   }
 }
 </script>
@@ -77,18 +43,5 @@ export default {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-}
-.main{
-  display: flex;
-  justify-content: space-between;
-  font-size: 20px;
-  margin-bottom: 15px;
-}
-.name{
-  border-left: 5px solid #3b94ec;
-  padding-left: 10px;
-}
-.value{
-  margin-left: 20px;
 }
 </style>
