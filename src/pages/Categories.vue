@@ -183,7 +183,7 @@ export default {
             {
               id: 2,
               name: 'video_cameras',
-              displayName: 'Video Cameras'
+              displayName: 'Video cameras'
             },
             {
               id: 3,
@@ -197,8 +197,6 @@ export default {
   },
   methods:{
     splitCategories(){
-
-
       const num = Math.ceil(this.categories.length / 4);
       let j = 0;
       for(let i = 0;i < num;i++){

@@ -31,6 +31,7 @@ export default {
         const response = await axios.get(`https://main.stepcommerce.pp.ua/commerce/products/${this.category}`);
         this.totalPages = Math.ceil(response.headers['x-total-count'] / this.limit);
         this.goods = response.data;
+        console.log(this.goods);
       } catch (e) {
         alert("Error");
       } finally {
@@ -45,6 +46,9 @@ export default {
       this.page = pageN
       this.loadMoreGoods();
     }
+  },
+  computed:{
+
   },
   beforeMount(){
     this.normalizeTitle();
@@ -62,6 +66,7 @@ export default {
 .vect{
   margin-top: -12px;
   width: 100%;
+  height: 1000px;
   background-image: url("../assets/img/vector.png");
   background-repeat: no-repeat;
   background-size: 85% 300px;

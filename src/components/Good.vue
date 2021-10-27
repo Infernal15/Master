@@ -1,10 +1,10 @@
 <template>
   <div class="good">
-    <div class="goodImg" @click="$router.push(`/good/${good.id}/general`)">
+    <div class="goodImg" @click="$router.push(`/good/${good.product_id_export}/general`)">
       <img width="174" height="350" :src="path + good.field_image_export[0]" :alt="good.title">
     </div>
     <div class="goodinfo">
-      <div class="goodTitle" @click="$router.push(`/good/${good.id}/general`)">
+      <div class="goodTitle" @click="$router.push(`/good/${good.product_id_export}/general`)">
           <span>{{good.title}}</span>
       </div>
       <div class="buy">
@@ -24,7 +24,7 @@
 export default {
   data(){
     return{
-      path: 'https://main.stepcommerce.pp.ua/'
+      path: 'https://main.stepcommerce.pp.ua'
     }
   },
   props:{
@@ -100,6 +100,7 @@ img{
   height: 47px;
   width: 47px;
   transition: 400ms;
+  overflow: hidden;
 }
 .cart:hover{
   box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);

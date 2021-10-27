@@ -1,19 +1,19 @@
 <template>
   <div class="box">
     <div class="image">
-      <img width="298" height="600" :src="require(`@/assets/img/goods/${good.image}`)" alt="{{good.title}}">
+      <img width="298" height="600" :src="path + good.field_image_export[0]" :alt="good.title">
     </div>
     <div class="buy">
       <div class="finances">
-<!--        <div class="available">-->
-<!--          <img width="28" height="28" :src="require('@/assets/img/available.png')" alt="available">-->
-<!--          <div class="availableText instock">Available</div>-->
-<!--        </div>-->
         <div class="available">
-          <img width="28" height="28" :src="require('@/assets/img/notavailable.png')" alt="available">
-          <div class="availableText notinstock">Not Available</div>
+          <img width="28" height="28" :src="require('@/assets/img/available.png')" alt="available">
+          <div class="availableText instock">Available</div>
         </div>
-        <div class="price">{{good.price}} ₴</div>
+<!--        <div class="available">-->
+<!--          <img width="28" height="28" :src="require('@/assets/img/notavailable.png')" alt="available">-->
+<!--          <div class="availableText notinstock">Not Available</div>-->
+<!--        </div>-->
+        <div class="price">{{good.price__number_export}} ₴</div>
         <button class="buybtn"><img height="24" width="24" :src="require(`@/assets/img/cartwhite.png`)" alt="cart"><span>Buy</span></button>
       </div>
       <div class="delivery">
@@ -52,8 +52,13 @@
 <script>
 export default {
   name: "General",
+  data(){
+    return{
+      path: 'https://main.stepcommerce.pp.ua'
+    }
+  },
   props:{
-    good:{
+    good: {
       type: Object,
       require: true
     }

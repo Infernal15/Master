@@ -24,40 +24,29 @@ import Characteristics from "@/components/Characteristics";
 import Reviews from "@/components/Reviews";
 import Photos from "@/components/Photos";
 import Videos from "@/components/Videos";
+import axios from "axios";
+import router from "../router/router";
 export default {
   components: {
     General,Characteristics,Reviews,Photos,Videos
   },
   data(){
     return{
-      good: {
-        id: 4,
-        title: "Mouse HyperX Pulsefire Haste USB Black (HMSH1-A-BK/G)",
-        image: "mouse5.png",
-        price: "1 399",
-        characteristics:{
-          'Shape' : 'Symmetrical',
-          'Connection Type' : 'Wired',
-          'Lighting' : 'RGB',
-          'Buttons' : '6',
-          'Switch Reliability' : '60M Clicks',
-          'Optical Sensor' : 'Pixart 3335',
-          'Max Resolution' : '16000 DPI',
-          'Max Speed' : '450 IPS',
-          'Max Acceleration' : '40G',
-          'Polling Rate' : '1000 Hz (1 ms)',
-          'Cable Type' : 'HyperFlex USB Cable',
-          'Weight (without cable)' : '59g',
-          'Product Dimensions (WxLxH)' : '67 x 124 x 38mm',
-          'NGENUITY Software Enabled' : 'Yes',
-        }
-      }
+      good: { }
     }
   },
   methods:{
-    getGood(){
-
+    async getGood(){
+      try {
+        const response = await axios.get(`https://main.stepcommerce.pp.ua/commerce/current_product/${this.$route.params.id}`);
+        this.good = response.data;
+      } catch (e) {
+        alert("Error");
+      }
     }
+  },
+  beforeMount() {
+    this.getGood();
   }
 }
 </script>
