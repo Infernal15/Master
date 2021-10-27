@@ -39,7 +39,7 @@ export default {
     async getGood(){
       try {
         const response = await axios.get(`https://main.stepcommerce.pp.ua/commerce/current_product/${this.$route.params.id}`);
-        this.good = response.data;
+        this.good = response.data[0];
       } catch (e) {
         alert("Error");
       }
