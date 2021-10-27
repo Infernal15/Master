@@ -14,9 +14,12 @@
     <nav-btn @click="this.$router.push('/rules')">Rules</nav-btn>
   </div>
   <div class="links">
+    <div class="link">
       <img class="profile" width="28" height="28" :src="require('@/assets/img/profile.png')" alt="Profile" @click="this.$router.push('/profile')">
+    </div>
+    <div class="link">
       <img class="cart" width="28" height="28"  @click="" :src="require('@/assets/img/cart.png')" alt="Cart">
-
+    </div>
   </div>
 </nav>
 </template>
@@ -72,16 +75,19 @@ nav{
 }
 .links{
   display: flex;
-  margin-top: 0.9%;
+  margin-top: 0.5%;
   margin-left: auto;
   margin-right: 2%;
   width: 6%;
   justify-content: space-between;
 }
-.cart, .profile{
-  display: block;
+.link{
+  width: 42px;
+  padding: 7px;
+  height: 42px;
+  border-radius: 30px;
 }
-.cart:hover, .profile:hover{
+.link:hover{
   cursor: pointer;
   background: rgba(132, 194, 255, 0.49);
 }
