@@ -1,0 +1,11 @@
+uuid: 53a678b9-3ac9-48b4-9dc3-07d04c94b1a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.power_suppliespower_supplies
+id: commerce_product.power_suppliespower_supplies
+target_entity_type_id: commerce_product
+target_bundle: power_suppliespower_supplies
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,12 @@
+uuid: a7677a2e-48c1-472a-9618-0566a5ab9151
+langcode: en
+status: true
+dependencies: {  }
+id: asus
+label: Asus
+description: 'Asus laptop'
+variationType: laptops
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

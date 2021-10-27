@@ -1,0 +1,23 @@
+uuid: cce85a51-9210-4c19-a4c9-7715476e7d3d
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.laptop_bags_and_backpacks
+    - field.storage.commerce_product.body
+  module:
+    - text
+id: commerce_product.laptop_bags_and_backpacks.body
+field_name: body
+entity_type: commerce_product
+bundle: laptop_bags_and_backpacks
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: null
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

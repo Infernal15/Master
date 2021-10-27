@@ -1,0 +1,12 @@
+uuid: 6796b91c-c7e4-437b-9fb3-f3c37240ec88
+langcode: en
+status: true
+dependencies: {  }
+id: laptop_bags_and_backpacks
+label: 'Laptop bags and backpacks'
+description: 'Laptop bags and backpacks'
+variationType: accessories_for_laptops_and_pc
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

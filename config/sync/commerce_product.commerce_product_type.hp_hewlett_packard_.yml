@@ -1,0 +1,12 @@
+uuid: eb3bb42e-1f6f-4e87-bd55-05538ac61b47
+langcode: en
+status: true
+dependencies: {  }
+id: hp_hewlett_packard_
+label: 'HP (Hewlett Packard)'
+description: 'HP (Hewlett Packard) laptop'
+variationType: laptops
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

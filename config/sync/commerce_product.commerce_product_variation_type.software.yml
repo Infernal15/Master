@@ -1,0 +1,10 @@
+uuid: b7c601ad-ab54-4344-ae1f-cfc1f8832db5
+langcode: en
+status: true
+dependencies: {  }
+id: software
+label: Software
+orderItemType: default
+generateTitle: true
+traits: {  }
+locked: false

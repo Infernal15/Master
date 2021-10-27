@@ -1,0 +1,10 @@
+uuid: a359e46d-b532-4739-95bc-f4fd70ab24ac
+langcode: en
+status: true
+dependencies: {  }
+id: network_hardware
+label: Network
+orderItemType: default
+generateTitle: true
+traits: {  }
+locked: false

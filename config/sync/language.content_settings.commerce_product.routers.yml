@@ -1,0 +1,11 @@
+uuid: 84b93876-52a7-4165-bf12-bddd8a6c154c
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.routers
+id: commerce_product.routers
+target_entity_type_id: commerce_product
+target_bundle: routers
+default_langcode: site_default
+language_alterable: false

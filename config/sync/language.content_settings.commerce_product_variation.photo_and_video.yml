@@ -1,0 +1,11 @@
+uuid: ffba2763-dcf7-4b5c-a037-2abd8688cc4e
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.photo_and_video
+id: commerce_product_variation.photo_and_video
+target_entity_type_id: commerce_product_variation
+target_bundle: photo_and_video
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,12 @@
+uuid: 16813f1c-d52e-4791-b409-63975180325c
+langcode: en
+status: true
+dependencies: {  }
+id: cables_and_adapters
+label: 'Cables and adapters'
+description: 'Cables and adapters'
+variationType: accessories_for_laptops_and_pc
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

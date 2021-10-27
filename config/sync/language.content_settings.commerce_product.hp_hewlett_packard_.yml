@@ -1,0 +1,11 @@
+uuid: 0587d73d-830b-46b0-8436-865f555c6e84
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.hp_hewlett_packard_
+id: commerce_product.hp_hewlett_packard_
+target_entity_type_id: commerce_product
+target_bundle: hp_hewlett_packard_
+default_langcode: site_default
+language_alterable: false

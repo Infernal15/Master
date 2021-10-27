@@ -1,0 +1,12 @@
+uuid: 3f79bf27-6f55-4f87-9d68-d220befbe156
+langcode: en
+status: true
+dependencies: {  }
+id: cpu
+label: CPU
+description: CPU
+variationType: hardware_components
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

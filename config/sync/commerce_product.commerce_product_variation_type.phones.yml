@@ -1,0 +1,10 @@
+uuid: 33630af5-37fd-4fef-87a9-3b1a0405ba6d
+langcode: en
+status: true
+dependencies: {  }
+id: phones
+label: Phones
+orderItemType: default
+generateTitle: true
+traits: {  }
+locked: false

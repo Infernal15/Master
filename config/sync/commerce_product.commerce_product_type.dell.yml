@@ -1,0 +1,12 @@
+uuid: 65414b58-94a1-4733-8eb3-135796f855e0
+langcode: en
+status: true
+dependencies: {  }
+id: dell
+label: Dell
+description: 'Dell laptop'
+variationType: laptops
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

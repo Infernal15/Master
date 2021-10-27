@@ -1,0 +1,12 @@
+uuid: fc9ab188-a8ca-477d-8e32-acb3fb2539ef
+langcode: en
+status: true
+dependencies: {  }
+id: motherboards
+label: Motherboards
+description: Motherboards
+variationType: hardware_components
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

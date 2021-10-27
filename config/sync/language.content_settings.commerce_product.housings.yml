@@ -1,0 +1,11 @@
+uuid: f934c38d-1402-4e95-9a31-a495ba04d6b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.housings
+id: commerce_product.housings
+target_entity_type_id: commerce_product
+target_bundle: housings
+default_langcode: site_default
+language_alterable: false

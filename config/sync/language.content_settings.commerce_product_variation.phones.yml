@@ -1,0 +1,11 @@
+uuid: 21db104a-5431-4041-a6d8-5ad148dba8ae
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.phones
+id: commerce_product_variation.phones
+target_entity_type_id: commerce_product_variation
+target_bundle: phones
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,11 @@
+uuid: 2083a208-7db7-4861-ab56-d31ee2d5b795
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.memory
+id: commerce_product.memory
+target_entity_type_id: commerce_product
+target_bundle: memory
+default_langcode: site_default
+language_alterable: false

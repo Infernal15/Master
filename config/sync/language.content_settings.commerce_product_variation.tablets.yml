@@ -1,0 +1,11 @@
+uuid: 464c8d49-606a-4983-8ef0-f5346f612ada
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.tablets
+id: commerce_product_variation.tablets
+target_entity_type_id: commerce_product_variation
+target_bundle: tablets
+default_langcode: site_default
+language_alterable: false

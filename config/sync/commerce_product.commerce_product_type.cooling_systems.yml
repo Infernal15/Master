@@ -1,0 +1,12 @@
+uuid: c90935f3-841a-408d-b110-186ec0b367dc
+langcode: en
+status: true
+dependencies: {  }
+id: cooling_systems
+label: 'Cooling systems'
+description: 'Cooling systems'
+variationType: hardware_components
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

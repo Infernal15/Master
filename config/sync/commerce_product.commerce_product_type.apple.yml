@@ -1,0 +1,12 @@
+uuid: 3765a8e4-1b26-41aa-bc1d-3d892c27f3f3
+langcode: en
+status: true
+dependencies: {  }
+id: apple
+label: Apple
+description: 'Apple laptop'
+variationType: laptops
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

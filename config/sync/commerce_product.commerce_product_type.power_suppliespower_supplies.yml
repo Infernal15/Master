@@ -1,0 +1,12 @@
+uuid: 742edf69-c0ac-49b1-ae0f-479837217dcd
+langcode: en
+status: true
+dependencies: {  }
+id: power_suppliespower_supplies
+label: 'Power supplies'
+description: 'Power supplies'
+variationType: hardware_components
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

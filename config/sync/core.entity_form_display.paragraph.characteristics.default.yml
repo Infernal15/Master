@@ -1,0 +1,32 @@
+uuid: fe2064f2-7235-466e-ab95-d01853aba725
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.characteristics.field_name
+    - field.field.paragraph.characteristics.field_value
+    - paragraphs.paragraphs_type.characteristics
+id: paragraph.characteristics.default
+targetEntityType: paragraph
+bundle: characteristics
+mode: default
+content:
+  field_name:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_value:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+hidden:
+  created: true
+  status: true

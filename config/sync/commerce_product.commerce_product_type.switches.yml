@@ -1,0 +1,12 @@
+uuid: 30e3494c-8673-462a-8158-d3a87c13f3cb
+langcode: en
+status: true
+dependencies: {  }
+id: switches
+label: Switches
+description: Switches
+variationType: network_hardware
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

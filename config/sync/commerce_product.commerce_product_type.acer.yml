@@ -1,0 +1,12 @@
+uuid: c7d61a1b-6037-4024-a2df-1c8562fc78d3
+langcode: en
+status: true
+dependencies: {  }
+id: acer
+label: Acer
+description: 'Acer laptop'
+variationType: laptops
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

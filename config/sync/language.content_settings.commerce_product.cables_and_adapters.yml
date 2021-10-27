@@ -1,0 +1,11 @@
+uuid: feb8a0db-0b57-4647-ac7c-9e4d60e2b536
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.cables_and_adapters
+id: commerce_product.cables_and_adapters
+target_entity_type_id: commerce_product
+target_bundle: cables_and_adapters
+default_langcode: site_default
+language_alterable: false

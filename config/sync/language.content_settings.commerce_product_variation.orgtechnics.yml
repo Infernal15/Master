@@ -1,0 +1,11 @@
+uuid: 09787e7f-7f0c-4ac4-8a3b-9fc2796fd51f
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.orgtechnics
+id: commerce_product_variation.orgtechnics
+target_entity_type_id: commerce_product_variation
+target_bundle: orgtechnics
+default_langcode: site_default
+language_alterable: false

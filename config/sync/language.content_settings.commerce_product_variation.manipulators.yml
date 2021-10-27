@@ -1,0 +1,11 @@
+uuid: 0ad4da87-151c-4665-a6a4-dcfc722823f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.manipulators
+id: commerce_product_variation.manipulators
+target_entity_type_id: commerce_product_variation
+target_bundle: manipulators
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,23 @@
+uuid: b32d2b71-f3d8-4fa9-a9a6-7b8f4882b0e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.memory
+    - field.storage.commerce_product.body
+  module:
+    - text
+id: commerce_product.memory.body
+field_name: body
+entity_type: commerce_product
+bundle: memory
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: null
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

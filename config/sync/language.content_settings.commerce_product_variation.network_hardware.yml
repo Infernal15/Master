@@ -1,0 +1,11 @@
+uuid: c5094148-09c2-4ce8-bfd4-19d57a665bf2
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.network_hardware
+id: commerce_product_variation.network_hardware
+target_entity_type_id: commerce_product_variation
+target_bundle: network_hardware
+default_langcode: site_default
+language_alterable: false

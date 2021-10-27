@@ -1,0 +1,12 @@
+uuid: 622e8bdc-992d-4226-b05f-c17e83f4984f
+langcode: en
+status: true
+dependencies: {  }
+id: antivirus
+label: Antivirus
+description: Antivirus
+variationType: software
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

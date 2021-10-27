@@ -1,0 +1,12 @@
+uuid: ca8b2368-bc42-4219-9b91-68fc7fefbbdc
+langcode: en
+status: true
+dependencies: {  }
+id: sound_cards
+label: 'Sound cards'
+description: 'Sound cards'
+variationType: hardware_components
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

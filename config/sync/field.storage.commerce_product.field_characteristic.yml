@@ -1,0 +1,21 @@
+uuid: c58577cc-cfb7-4c9b-aa76-9ae8bb9f5640
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - entity_reference_revisions
+    - paragraphs
+id: commerce_product.field_characteristic
+field_name: field_characteristic
+entity_type: commerce_product
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

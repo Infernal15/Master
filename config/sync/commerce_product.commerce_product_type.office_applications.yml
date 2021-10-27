@@ -1,0 +1,12 @@
+uuid: 2f0b5a38-f310-49a2-8031-87330fe84787
+langcode: en
+status: true
+dependencies: {  }
+id: office_applications
+label: 'Office Applications'
+description: 'Office Applications'
+variationType: software
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

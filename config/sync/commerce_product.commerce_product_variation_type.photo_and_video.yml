@@ -1,0 +1,10 @@
+uuid: cee9bc9e-7202-4443-a8f9-9b10745c75e7
+langcode: en
+status: true
+dependencies: {  }
+id: photo_and_video
+label: 'Photo and Video'
+orderItemType: default
+generateTitle: true
+traits: {  }
+locked: false

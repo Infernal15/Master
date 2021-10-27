@@ -1,0 +1,12 @@
+uuid: f6ab3645-81d8-4921-9066-76cfa02ead96
+langcode: en
+status: true
+dependencies: {  }
+id: usb_flash_memory
+label: 'USB flash memory'
+description: 'USB flash memory'
+variationType: accessories_for_laptops_and_pc
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

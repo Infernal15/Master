@@ -1,0 +1,12 @@
+uuid: f32cb6e9-3ae2-4d5e-b3be-5c2ee007db4b
+langcode: en
+status: true
+dependencies: {  }
+id: housings
+label: Towers
+description: towers
+variationType: hardware_components
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

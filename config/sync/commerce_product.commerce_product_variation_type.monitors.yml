@@ -1,0 +1,10 @@
+uuid: 26c76833-925d-4048-9fd3-bd0ca872ea36
+langcode: en
+status: true
+dependencies: {  }
+id: monitors
+label: Monitors
+orderItemType: default
+generateTitle: true
+traits: {  }
+locked: false

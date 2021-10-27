@@ -1,0 +1,10 @@
+uuid: f763605f-1b74-4185-8b94-b1b9d6ab9c0f
+langcode: en
+status: true
+dependencies: {  }
+id: accessories_for_laptops_and_pc
+label: 'Accessories for laptops and pc'
+orderItemType: default
+generateTitle: true
+traits: {  }
+locked: false

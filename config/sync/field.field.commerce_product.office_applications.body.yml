@@ -1,0 +1,23 @@
+uuid: 361ae764-b84b-44c3-b2c5-8f0ab992c763
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.office_applications
+    - field.storage.commerce_product.body
+  module:
+    - text
+id: commerce_product.office_applications.body
+field_name: body
+entity_type: commerce_product
+bundle: office_applications
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: null
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

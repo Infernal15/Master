@@ -1,0 +1,10 @@
+uuid: 2eec9535-bfc3-4bd0-9126-b510c3871bd9
+langcode: en
+status: true
+dependencies: {  }
+id: watches_and_bands
+label: 'Watches and bands'
+orderItemType: default
+generateTitle: true
+traits: {  }
+locked: false

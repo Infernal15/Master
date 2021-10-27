@@ -1,0 +1,11 @@
+uuid: 75b65d79-8ebb-4c6f-8f20-a90690a411b8
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.office_applications
+id: commerce_product.office_applications
+target_entity_type_id: commerce_product
+target_bundle: office_applications
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,11 @@
+uuid: 65ff9370-a73c-43b9-bb5b-413f99ae3a3f
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.lenovo
+id: commerce_product.lenovo
+target_entity_type_id: commerce_product
+target_bundle: lenovo
+default_langcode: site_default
+language_alterable: false

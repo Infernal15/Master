@@ -12,6 +12,8 @@ module:
   color: 0
   comment: 0
   commerce: 0
+  commerce_cart: 0
+  commerce_checkout: 0
   commerce_number_pattern: 0
   commerce_order: 0
   commerce_payment: 0
@@ -37,6 +39,8 @@ module:
   image: 0
   inline_entity_form: 0
   jsonapi: 0
+  jsonapi_defaults: 0
+  jsonapi_extras: 0
   language: 0
   link: 0
   locale: 0
@@ -51,6 +55,7 @@ module:
   quickedit: 0
   rdf: 0
   rest: 0
+  rest_views: 0
   restui: 0
   search: 0
   serialization: 0

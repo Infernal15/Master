@@ -1,0 +1,10 @@
+uuid: 862256e5-d26f-486f-aa98-561668e14304
+langcode: en
+status: true
+dependencies: {  }
+id: manipulators
+label: Manipulators
+orderItemType: default
+generateTitle: true
+traits: {  }
+locked: false

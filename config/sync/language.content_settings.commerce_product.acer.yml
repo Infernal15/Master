@@ -1,0 +1,11 @@
+uuid: 1b274629-b207-4c4d-b05f-a23df120000a
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.acer
+id: commerce_product.acer
+target_entity_type_id: commerce_product
+target_bundle: acer
+default_langcode: site_default
+language_alterable: false

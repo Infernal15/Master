@@ -1,0 +1,10 @@
+uuid: cd105fa0-1ebf-4a0c-9975-0e170f1013b9
+langcode: en
+status: true
+dependencies: {  }
+id: hardware_components
+label: 'Hardware components'
+orderItemType: default
+generateTitle: true
+traits: {  }
+locked: false

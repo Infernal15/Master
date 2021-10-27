@@ -1,0 +1,10 @@
+uuid: 647b9efb-b1bc-42f5-8d85-e00e76736d56
+langcode: en
+status: true
+dependencies: {  }
+id: characteristics
+label: Characteristics
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,11 @@
+uuid: f7338e52-bcb6-4467-bd64-c6aa1918b4c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.wireless_access_points
+id: commerce_product.wireless_access_points
+target_entity_type_id: commerce_product
+target_bundle: wireless_access_points
+default_langcode: site_default
+language_alterable: false

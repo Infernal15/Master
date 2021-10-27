@@ -1,0 +1,10 @@
+uuid: 3f9015ab-952e-4630-86bb-95c1bd6ae8a5
+langcode: en
+status: true
+dependencies: {  }
+id: electronic_books
+label: 'Electronic books'
+orderItemType: default
+generateTitle: true
+traits: {  }
+locked: false

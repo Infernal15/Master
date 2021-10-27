@@ -1,0 +1,11 @@
+uuid: 9753b266-7d48-4db1-a1aa-2c8c1a997641
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.asus
+id: commerce_product.asus
+target_entity_type_id: commerce_product
+target_bundle: asus
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,23 @@
+uuid: 5dd8e1d6-b49d-4620-a355-9394bad61618
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.usb_flash_memory
+    - field.storage.commerce_product.body
+  module:
+    - text
+id: commerce_product.usb_flash_memory.body
+field_name: body
+entity_type: commerce_product
+bundle: usb_flash_memory
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: null
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

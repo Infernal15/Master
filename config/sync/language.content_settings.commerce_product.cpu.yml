@@ -1,0 +1,11 @@
+uuid: b49d72cc-4d68-48bd-b5fd-2fc1d279e15b
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.cpu
+id: commerce_product.cpu
+target_entity_type_id: commerce_product
+target_bundle: cpu
+default_langcode: site_default
+language_alterable: false

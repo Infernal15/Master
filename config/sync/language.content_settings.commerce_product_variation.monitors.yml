@@ -1,0 +1,11 @@
+uuid: 9070f7f2-7182-4d40-8af5-6326157b0110
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.monitors
+id: commerce_product_variation.monitors
+target_entity_type_id: commerce_product_variation
+target_bundle: monitors
+default_langcode: site_default
+language_alterable: false

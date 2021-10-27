@@ -1,0 +1,11 @@
+uuid: 9eb90e1d-acb3-459e-a3de-7bd947168c61
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.video_cards
+id: commerce_product.video_cards
+target_entity_type_id: commerce_product
+target_bundle: video_cards
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,12 @@
+uuid: d9234633-4a8d-48f0-8f1a-6008af7e06bf
+langcode: en
+status: true
+dependencies: {  }
+id: gaming_mice
+label: 'Gaming Mice'
+description: 'Gaming Mice'
+variationType: manipulators
+multipleVariations: false
+injectVariationFields: true
+traits: {  }
+locked: false

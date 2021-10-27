@@ -1,0 +1,12 @@
+uuid: a2a7b606-944a-4514-b607-63341ed66b13
+langcode: en
+status: true
+dependencies: {  }
+id: routers
+label: Routers
+description: Routers
+variationType: network_hardware
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

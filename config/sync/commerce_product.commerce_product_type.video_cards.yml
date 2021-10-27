@@ -1,0 +1,12 @@
+uuid: 032aeb77-e67c-49f9-9217-2ab769411e56
+langcode: en
+status: true
+dependencies: {  }
+id: video_cards
+label: GPU
+description: 'Video cards'
+variationType: hardware_components
+multipleVariations: false
+injectVariationFields: true
+traits: {  }
+locked: false

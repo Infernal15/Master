@@ -1,0 +1,11 @@
+uuid: 017d1282-ea08-4b08-9f67-55d908e401e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.usb_flash_memory
+id: commerce_product.usb_flash_memory
+target_entity_type_id: commerce_product
+target_bundle: usb_flash_memory
+default_langcode: site_default
+language_alterable: false

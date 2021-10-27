@@ -1,0 +1,12 @@
+uuid: ee8af854-4236-4430-af7e-ddc9b589a2d6
+langcode: en
+status: true
+dependencies: {  }
+id: lenovo
+label: Lenovo
+description: 'Lenovo laptop'
+variationType: laptops
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

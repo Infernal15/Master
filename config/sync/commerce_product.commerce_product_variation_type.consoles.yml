@@ -1,0 +1,10 @@
+uuid: c9463493-c1cb-4ce6-bd9a-7553930f32bb
+langcode: en
+status: true
+dependencies: {  }
+id: consoles
+label: Consoles
+orderItemType: default
+generateTitle: true
+traits: {  }
+locked: false

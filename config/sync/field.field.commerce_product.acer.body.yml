@@ -1,0 +1,23 @@
+uuid: 0d655ddc-5d4b-4d61-9ee6-0172aad2bfc1
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.acer
+    - field.storage.commerce_product.body
+  module:
+    - text
+id: commerce_product.acer.body
+field_name: body
+entity_type: commerce_product
+bundle: acer
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: null
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

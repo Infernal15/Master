@@ -1,0 +1,11 @@
+uuid: 7bf47129-2542-47ca-804a-1613e13390a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.cooling_systems
+id: commerce_product.cooling_systems
+target_entity_type_id: commerce_product
+target_bundle: cooling_systems
+default_langcode: site_default
+language_alterable: false

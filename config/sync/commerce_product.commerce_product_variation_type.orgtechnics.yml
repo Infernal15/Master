@@ -1,0 +1,10 @@
+uuid: 61ea92dd-6371-4046-ac2f-343306faca4d
+langcode: en
+status: true
+dependencies: {  }
+id: orgtechnics
+label: Orgtechnics
+orderItemType: default
+generateTitle: true
+traits: {  }
+locked: false

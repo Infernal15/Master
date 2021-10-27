@@ -1,0 +1,12 @@
+uuid: a5255499-4ebd-4062-8c6c-a2e7374a2d79
+langcode: en
+status: true
+dependencies: {  }
+id: memory
+label: Ram
+description: Ram
+variationType: hardware_components
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

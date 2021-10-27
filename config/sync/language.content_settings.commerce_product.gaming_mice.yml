@@ -1,0 +1,11 @@
+uuid: ee45397b-215a-498c-8525-daeeb489746e
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.gaming_mice
+id: commerce_product.gaming_mice
+target_entity_type_id: commerce_product
+target_bundle: gaming_mice
+default_langcode: site_default
+language_alterable: false

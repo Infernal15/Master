@@ -1,0 +1,12 @@
+uuid: cf524a0f-6062-492d-9b8e-f6e7637bc33c
+langcode: en
+status: true
+dependencies: {  }
+id: hard_drives_and_disk_arrays
+label: 'Data Storage'
+description: 'Data Storage'
+variationType: hardware_components
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

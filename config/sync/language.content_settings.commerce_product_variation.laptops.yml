@@ -1,0 +1,11 @@
+uuid: 8b994ae8-6c5f-4378-8438-581846184901
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.laptops
+id: commerce_product_variation.laptops
+target_entity_type_id: commerce_product_variation
+target_bundle: laptops
+default_langcode: site_default
+language_alterable: false

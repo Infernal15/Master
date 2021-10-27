@@ -1,0 +1,12 @@
+uuid: a41b89c0-65d3-437b-8f6f-3da497d73267
+langcode: en
+status: true
+dependencies: {  }
+id: operation_systems_os_
+label: 'Operation Systems (OS)'
+description: 'Operation Systems (OS)'
+variationType: software
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

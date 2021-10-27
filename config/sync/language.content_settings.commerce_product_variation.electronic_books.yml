@@ -1,0 +1,11 @@
+uuid: c216dc17-2688-4dea-89d0-d7552ddaf410
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.electronic_books
+id: commerce_product_variation.electronic_books
+target_entity_type_id: commerce_product_variation
+target_bundle: electronic_books
+default_langcode: site_default
+language_alterable: false

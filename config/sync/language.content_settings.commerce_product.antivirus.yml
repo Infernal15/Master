@@ -1,0 +1,11 @@
+uuid: 9bc4f3d4-d200-4616-9428-c75547f65855
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.antivirus
+id: commerce_product.antivirus
+target_entity_type_id: commerce_product
+target_bundle: antivirus
+default_langcode: site_default
+language_alterable: false

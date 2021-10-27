@@ -1,0 +1,11 @@
+uuid: 9229f680-2a62-4306-bfcb-ec5bdb45f31f
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.software
+id: commerce_product_variation.software
+target_entity_type_id: commerce_product_variation
+target_bundle: software
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,33 @@
+uuid: d9295d9b-e9fd-410f-b202-28c635e2c368
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - options
+id: commerce_product.field_company
+field_name: field_company
+entity_type: commerce_product
+type: list_integer
+settings:
+  allowed_values:
+    -
+      value: 0
+      label: Logitech
+    -
+      value: 1
+      label: HyperX
+    -
+      value: 2
+      label: Trust
+    -
+      value: 3
+      label: RZTK
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

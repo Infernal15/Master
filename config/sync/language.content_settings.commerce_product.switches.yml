@@ -1,0 +1,11 @@
+uuid: 2d2ddfeb-7a4a-4496-906f-53640fa90a1d
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.switches
+id: commerce_product.switches
+target_entity_type_id: commerce_product
+target_bundle: switches
+default_langcode: site_default
+language_alterable: false

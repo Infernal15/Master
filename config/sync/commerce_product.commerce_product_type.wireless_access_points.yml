@@ -1,0 +1,12 @@
+uuid: 2fa2184e-5304-4d91-84c3-bc0f6b273af6
+langcode: en
+status: true
+dependencies: {  }
+id: wireless_access_points
+label: 'Wireless Access Points'
+description: 'Wireless Access Points'
+variationType: network_hardware
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

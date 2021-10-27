@@ -1,0 +1,10 @@
+uuid: bb2305a5-1ebf-43eb-9771-ad0513d75b9e
+langcode: en
+status: true
+dependencies: {  }
+id: laptops
+label: Laptops
+orderItemType: default
+generateTitle: true
+traits: {  }
+locked: false

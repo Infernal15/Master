@@ -1,0 +1,23 @@
+uuid: 80c39142-4145-43dc-9645-f590603a1b21
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.wireless_access_points
+    - field.storage.commerce_product.body
+  module:
+    - text
+id: commerce_product.wireless_access_points.body
+field_name: body
+entity_type: commerce_product
+bundle: wireless_access_points
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: null
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary
