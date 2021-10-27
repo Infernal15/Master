@@ -26,6 +26,7 @@
         "drupal/inline_entity_form": "^1.0@RC",
         "drupal/jsonapi_extras": "^3.19",
         "drupal/paragraphs": "^1.12",
+        "drupal/rest_views": "^2.0",
         "drupal/restui": "^1.20",
         "drush/drush": "^10.6"
     },
