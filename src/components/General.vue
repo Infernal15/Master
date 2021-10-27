@@ -9,7 +9,7 @@
           <img width="28" height="28" :src="require('@/assets/img/available.png')" alt="available">
           <div class="availableText instock">Available</div>
         </div>
-<!--        <div class="available">-->
+<!--         <div class="available">-->
 <!--          <img width="28" height="28" :src="require('@/assets/img/notavailable.png')" alt="available">-->
 <!--          <div class="availableText notinstock">Not Available</div>-->
 <!--        </div>-->
