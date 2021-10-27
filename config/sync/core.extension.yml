@@ -61,6 +61,7 @@ module:
   serialization: 0
   shortcut: 0
   state_machine: 0
+  stepcommerce: 0
   system: 0
   taxonomy: 0
   text: 0

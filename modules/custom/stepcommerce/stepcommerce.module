@@ -1,0 +1,16 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function stepcommerce_theme() {
+  return [
+    'stepcommerce_rest_paragraphs_formatter' => [
+      'variables' => [
+        'name' => [],
+        'value' => []
+      ],
+      'template' => 'stepcommerce-rest-paragraphs-formatter',
+    ],
+  ];
+}
