@@ -40,6 +40,7 @@ export default {
       try {
         const response = await axios.get(`https://main.stepcommerce.pp.ua/commerce/current_product/${this.$route.params.id}`);
         this.good = response.data[0];
+        this.good.title = this.good.title.replace('&quot;', "\"");
       } catch (e) {
         alert("Error");
       }
