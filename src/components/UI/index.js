@@ -1,6 +1,5 @@
 import NavBtn from "@/components/UI/NavBtn";
-import Navbar from "../Navbar";
-// import Characteristic from "./Characteristic";
+import AddToCartButton from "./AddToCartButton";
 export default [
-    NavBtn, Navbar
+    NavBtn, AddToCartButton
 ]

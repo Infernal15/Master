@@ -1,8 +1,8 @@
 <template>
   <div class="characteristics">
-<!--    <transition-group name="characteristics">-->
-<!--      <characteristic v-for="characteristic in characteristics" :key="characteristic.id"></characteristic>-->
-<!--    </transition-group>-->
+    <transition-group name="characteristics">
+      <characteristic v-for="characteristic in characteristics" :key="characteristic.id"></characteristic>
+    </transition-group>
   </div>
 </template>
 

@@ -1,12 +1,12 @@
 <template>
   <div class="good">
-      <div class="name">{{good.title}}</div>
+      <h1 class="name">{{good.title}}</h1>
       <div class="navbar">
-        <div :class="$route.params.section === 'general'?'selected':''" class="navbarbtn" @click="$router.push(`/good/${good.id}/general`)">General Info</div>
-        <div :class="$route.params.section === 'characteristics'?'selected':''" class="navbarbtn" @click="$router.push(`/good/${good.id}/characteristics`)">Characteristics</div>
-        <div :class="$route.params.section === 'reviews'?'selected':''" class="navbarbtn" @click="$router.push(`/good/${good.id}/reviews`)">Reviews</div>
-        <div :class="$route.params.section === 'photos'?'selected':''" class="navbarbtn" @click="$router.push(`/good/${good.id}/photos`)">Photos</div>
-        <div :class="$route.params.section === 'videos'?'selected':''" class="navbarbtn" @click="$router.push(`/good/${good.id}/videos`)">Videos</div>
+        <div :class="$route.params.section === 'general'?'selected':''" class="navbarbtn" @click="$router.push(`/good/${good.product_id_export}/general`)">General Info</div>
+        <div :class="$route.params.section === 'characteristics'?'selected':''" class="navbarbtn" @click="$router.push(`/good/${good.product_id_export}/characteristics`)">Characteristics</div>
+        <div :class="$route.params.section === 'reviews'?'selected':''" class="navbarbtn" @click="$router.push(`/good/${good.product_id_export}/reviews`)">Reviews</div>
+        <div :class="$route.params.section === 'photos'?'selected':''" class="navbarbtn" @click="$router.push(`/good/${good.product_id_export}/photos`)">Photos</div>
+        <div :class="$route.params.section === 'videos'?'selected':''" class="navbarbtn" @click="$router.push(`/good/${good.product_id_export}/videos`)">Videos</div>
       </div>
       <div class="container">
         <general v-if="$route.params.section === 'general'" :good="good"></general>
@@ -56,6 +56,7 @@ export default {
   margin: 38px 58px;
 }
 .name{
+  display: block;
   font-weight: 500;
   font-size: 45px;
 }

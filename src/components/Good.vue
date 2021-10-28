@@ -11,17 +11,16 @@
         <div class="goodPrice">
           <span>{{this.price}}</span><span class="currency"> ₴</span>
         </div>
-        <div class="cart">
-          <div class="cartText">Add to Cart</div>
-          <img height="20" width="20" :src="require('@/assets/img/cart.png')" alt="AddToCart">
-        </div>
+        <add-to-cart-button>Add to Cart</add-to-cart-button>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import AddToCartButton from "./UI/AddToCartButton";
 export default {
+  components:{AddToCartButton},
   data(){
     return{
       path: 'https://main.stepcommerce.pp.ua',
@@ -96,37 +95,5 @@ img{
 }
 .good:hover{
   box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.17), inset 0 0 26px #84C2FF;
-}
-.cart{
-  background: #3b94ec;
-  padding: 10px;
-  border-radius: 25px;
-  align-items: center;
-  display: flex;
-  float: right;
-  border: none;
-  gap: 10px;
-  height: 47px;
-  width: 47px;
-  transition: 400ms;
-  overflow: hidden;
-}
-.cart:hover{
-  box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
-  transition: 400ms;
-  cursor: pointer;
-  width: 150px;
-}
-.cartText{
-  margin-bottom: 3px;
-  margin-top: -3px;
-  color: #ffffff;
-  font-weight: 500;
-  font-size: 20px;
-  white-space: nowrap;
-  display: none;
-}
-.cart:hover .cartText{
-  display: block;
 }
 </style>

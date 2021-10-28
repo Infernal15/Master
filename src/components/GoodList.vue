@@ -1,7 +1,7 @@
 <template>
   <div class="list">
     <div class="category">
-      {{category}}
+      <h1 style="display: inline;">{{category}}</h1>
       <img :src="require('../assets/img/cross.png')" alt="X X X X" class="cross">
     </div>
     <transition-group name="good-list">
@@ -38,14 +38,16 @@ export default {
     flex-wrap: wrap;
   }
   .category{
-    text-transform: capitalize;
-    font-weight: 500;
-    color: #00205B;
-    font-size: 52px;
     width: 100%;
     text-align: center;
     padding-top: 2%;
     padding-bottom: 2%;
+  }
+  .category h1{
+    text-transform: capitalize;
+    font-weight: 500;
+    color: #00205B;
+    font-size: 52px;
   }
   .cross{
     display: block;

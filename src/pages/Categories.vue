@@ -1,5 +1,6 @@
 <template>
   <div class="cat">
+    <h1 style="display: none">Categories</h1>
     <transition-group name="categories1">
       <div class="catcol">
         <category v-for="category in categories1" :category="category" :key="category.id"/>
