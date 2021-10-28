@@ -1,8 +1,8 @@
 <template>
   <div class="characteristics">
-    <transition-group name="characteristics">
-      <characteristic v-for="characteristic in characteristics" :key="characteristic.id"></characteristic>
-    </transition-group>
+<!--    <transition-group name="characteristics">-->
+<!--      <characteristic v-for="characteristic in char" :key="characteristic.id"></characteristic>-->
+<!--    </transition-group>-->
   </div>
 </template>
 
@@ -14,16 +14,24 @@ export default {
   components:{Characteristic },
   data(){
     return{
-      characteristics: []
+      characteristics: [],
+      char: []
     }
   },
   methods:{
     async getCharacteristics(){
       try {
         const response = await axios.get(`https://main.stepcommerce.pp.ua/commerce/characteristic/${this.$route.params.id}`);
-        this.characteristic = response.data[0];
+        this.characteristic = response.data[0].field_characteristic;
+        console.log(this.characteristic);
+        JSON.stringify(this.characteristic);
+        console.log(this.characteristic);
+
+        // this.characteristic.forEach(characteristic =>{
+        //   this.char.push(characteristic);
+        // });
       } catch (e) {
-        alert("Error");
+        alert(e.message);
       }
     }
   },

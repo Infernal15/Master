@@ -1,7 +1,7 @@
 <template>
   <div class="main">
-    <div class="name">{{characteristic.name}}</div>
-    <div class="value">{{characteristic.value}}</div>
+    <div class="name">{{characteristic.field_characteristic[0].name}}</div>
+    <div class="value">{{characteristic.field_characteristic[0].value}}</div>
   </div>
 </template>
 
