@@ -66,7 +66,6 @@ export default {
 .vect{
   margin-top: -12px;
   width: 100%;
-  height: 1000px;
   background-image: url("../assets/img/vector.png");
   background-repeat: no-repeat;
   background-size: 85% 300px;

@@ -13,7 +13,10 @@
 <!--          <img width="28" height="28" :src="require('@/assets/img/notavailable.png')" alt="available">-->
 <!--          <div class="availableText notinstock">Not Available</div>-->
 <!--        </div>-->
-        <div class="price">{{good.price__number_export}} ₴</div>
+        <div class="priceblock">
+          <div class="price">{{this.price}} </div>
+          <div class="currency">₴</div>
+        </div>
         <button class="buybtn"><img height="24" width="24" :src="require(`@/assets/img/cartwhite.png`)" alt="cart"><span>Buy</span></button>
       </div>
       <div class="delivery">
@@ -24,12 +27,12 @@
         <div class="deliveryVariant">
           <input id="np" type="radio" name="delivery">
           <label for="np"><img width="84" height="30" :src="require('@/assets/img/np.png')" alt="NovaPoshta"></label>
-          <div class="deliveryPrice">30 ₴ - 70 ₴</div>
+          <div class="deliveryPrice">30 <div class="currencyd">₴</div> - 70 <div class="currencyd">₴</div></div>
         </div>
         <div class="deliveryVariant">
           <input id="up" type="radio" name="delivery">
           <label for="up"><img width="112" height="30" :src="require('@/assets/img/up.png')" alt="UkrPoshta"></label>
-          <div class="deliveryPrice">23 ₴ - 55 ₴</div>
+          <div class="deliveryPrice">23 <div class="currencyd">₴</div> - 55 <div class="currencyd">₴</div></div>
         </div>
         <div class="deliveryVariant">
           <input id="sd" type="radio" name="delivery">
@@ -54,7 +57,8 @@ export default {
   name: "General",
   data(){
     return{
-      path: 'https://main.stepcommerce.pp.ua'
+      path: 'https://main.stepcommerce.pp.ua',
+      price: ''
     }
   },
   props:{
@@ -62,6 +66,14 @@ export default {
       type: Object,
       require: true
     }
+  },
+  methods:{
+    formatPrice(){
+      this.price = String(this.good.price__number_export).replace(',', ' ');
+    }
+  },
+  beforeMount() {
+    this.formatPrice();
   }
 }
 </script>
@@ -76,12 +88,26 @@ export default {
   margin-top: 2%;
 }
 .price{
-  text-align: center;
+  font-weight: 600;
   font-size: 30px;
-  font-weight: 500;
+}
+.currency{
+  margin-top: 5px;
+  align-self: center;
+  font-size: 20px;
+}
+.priceblock{
+  gap: 5px;
+  text-align: center;
   margin: 0 auto;
   margin-bottom: 2%;
   margin-top: -2%;
+  display: flex;
+  justify-content: center;
+}
+.currencyd{
+  display: inline;
+  font-size: 16px;
 }
 .buybtn{
   margin: 0 auto;

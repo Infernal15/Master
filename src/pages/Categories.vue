@@ -59,6 +59,11 @@ export default {
               id: 4,
               name: 'apple',
               displayName: 'Apple'
+            },
+            {
+              id: 5,
+              name: 'dell',
+              displayName: 'Dell'
             }
           ]
         },

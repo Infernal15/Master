@@ -26,7 +26,7 @@ export default {
 
   },
   beforeMount() {
-    console.log(this.category.subcategories);
+
   }
 }
 </script>

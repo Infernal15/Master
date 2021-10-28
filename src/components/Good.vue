@@ -9,7 +9,7 @@
       </div>
       <div class="buy">
         <div class="goodPrice">
-          <span>{{good.price__number_export}}</span><span class="currency"> ₴</span>
+          <span>{{this.price}}</span><span class="currency"> ₴</span>
         </div>
         <div class="cart">
           <div class="cartText">Add to Cart</div>
@@ -24,7 +24,8 @@
 export default {
   data(){
     return{
-      path: 'https://main.stepcommerce.pp.ua'
+      path: 'https://main.stepcommerce.pp.ua',
+      price: ''
     }
   },
   props:{
@@ -32,6 +33,14 @@ export default {
       type: Object,
       require: true
     }
+  },
+  methods:{
+    formatPrice(){
+      this.price = String(this.good.price__number_export).replace(',', ' ');
+    }
+  },
+  beforeMount() {
+    this.formatPrice();
   }
 }
 </script>
@@ -49,7 +58,7 @@ img{
   padding: 10px;
   border-radius: 15px;
   margin: 1%;
-  height: 500px;
+  height: 550px;
   display: flex;
   flex-direction: column;
 }
