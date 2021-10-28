@@ -1,4 +1,1 @@
-{% set data %}
-  {'name': {{ name }}},{'value': {{ value }}}
-{% endset %}
-{{ data|json_encode(constant('JSON_PRETTY_PRINT')) }}
+{{ data|raw }}

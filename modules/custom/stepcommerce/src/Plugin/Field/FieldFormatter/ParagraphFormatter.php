@@ -2,6 +2,7 @@
 
 namespace Drupal\stepcommerce\Plugin\Field\FieldFormatter;
 
+use Drupal\Component\Serialization\Json;
 use Drupal\Core\Field\FieldItemListInterface;
 use Drupal\Core\Field\Plugin\Field\FieldFormatter\EntityReferenceFormatterBase;
 
@@ -24,8 +25,11 @@ class ParagraphFormatter extends EntityReferenceFormatterBase {
     foreach ($this->getEntitiesToView($items, $langcode) as $delta => $entity) {
       $data[$delta] = [
         '#theme' => 'stepcommerce_rest_paragraphs_formatter',
-        '#name' => $entity->field_name->value,
-        '#value' => $entity->field_value->value
+        '#data' => Json::encode(
+          [
+            'name' => $entity->field_name->value,
+            'value' => $entity->field_value->value
+          ])
       ];
     }
 

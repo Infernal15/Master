@@ -7,8 +7,7 @@ function stepcommerce_theme() {
   return [
     'stepcommerce_rest_paragraphs_formatter' => [
       'variables' => [
-        'name' => [],
-        'value' => []
+        'data' => []
       ],
       'template' => 'stepcommerce-rest-paragraphs-formatter',
     ],
