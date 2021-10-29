@@ -80,7 +80,7 @@ export default {
             },
             {
               id: 2,
-              name: 'motherboard',
+              name: 'motherboards',
               displayName: 'Motherboard'
             },
             {
@@ -95,7 +95,7 @@ export default {
             },
             {
               id: 5,
-              name: 'storage',
+              name: 'hard_drives_and_disk_arrays',
               displayName: 'Storage'
             }
           ]
