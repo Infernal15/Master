@@ -41,10 +41,16 @@ export default {
         const response = await axios.get(`https://main.stepcommerce.pp.ua/commerce/current_product/${this.$route.params.id}`);
         this.good = response.data[0];
         this.good.title = this.good.title.replace('&quot;', "\"");
+        this.good.price__number_export = this.formatPrice;
       } catch (e) {
         alert("Error");
       }
-    }
+    },
+  },
+  computed:{
+    formatPrice: function(){
+      return String(this.good.price__number_export).replace(',', ' ');
+    },
   },
   beforeMount() {
     this.getGood();

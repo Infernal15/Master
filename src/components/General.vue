@@ -14,7 +14,7 @@
 <!--          <div class="availableText notinstock">Not Available</div>-->
 <!--        </div>-->
         <div class="priceblock">
-          <div class="price">{{this.price}} </div>
+          <div class="price">{{good.price__number_export}} </div>
           <div class="currency">₴</div>
         </div>
         <button class="buybtn"><img height="24" width="24" :src="require(`@/assets/img/cartwhite.png`)" alt="cart"><span>Buy</span></button>
@@ -57,8 +57,7 @@ export default {
   name: "General",
   data(){
     return{
-      path: 'https://main.stepcommerce.pp.ua',
-      price: ''
+      path: 'https://main.stepcommerce.pp.ua'
     }
   },
   props:{
@@ -68,12 +67,10 @@ export default {
     }
   },
   methods:{
-    formatPrice(){
-      this.price = String(this.good.price__number_export).replace(',', ' ');
-    }
+
   },
   beforeMount() {
-    this.formatPrice();
+
   }
 }
 </script>

@@ -107,22 +107,22 @@ export default {
           subcategories: [
               {
                 id: 1,
-                name: 'apple',
+                name: 'phone_apple',
                 displayName: 'Apple'
               },
               {
                 id: 2,
-                name: 'samsung',
+                name: 'phone_samsung',
                 displayName: 'Samsung'
               },
               {
                 id: 3,
-                name: 'xiaomi',
+                name: 'phone_xiaomi',
                 displayName: 'Xiaomi'
               },
               {
                 id: 4,
-                name: 'huawei',
+                name: 'phone_huawei',
                 displayName: 'Huawei'
               }
             ]
