@@ -1,6 +1,6 @@
 <template>
   <div class="vect">
-    <good-list :category="categoryDisplay" :goods="goods"></good-list>
+    <good-list :category="this.goods[0].type" :goods="goods"></good-list>
 <!--    <div class="paginator">-->
 <!--      <div @click="changePage(pageN)" v-for="pageN in totalPages" :key="pageN" class="page" :class="{'currentpage' :-->
 <!--       page === pageN}">{{ pageN }}</div>-->
@@ -31,6 +31,7 @@ export default {
         const response = await axios.get(`https://main.stepcommerce.pp.ua/commerce/products/${this.category}`);
         this.totalPages = Math.ceil(response.headers['x-total-count'] / this.limit);
         this.goods = response.data;
+        console.log(this.goods);
         this.goods.forEach(good =>{
           good.title = good.title.replace('&quot;', "\"");
         });
@@ -66,7 +67,7 @@ export default {
 
 <style scoped>
 .vect{
-  margin-top: -12px;
+  margin-top: -15px;
   width: 100%;
   background-image: url("../assets/img/vector.png");
   background-repeat: no-repeat;

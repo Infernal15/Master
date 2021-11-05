@@ -4,7 +4,7 @@
       <div class="navbar">
         <div :class="$route.params.section === 'general'?'selected':''" class="navbarbtn" @click="$router.push(`/good/${good.product_id_export}/general`)">General Info</div>
         <div :class="$route.params.section === 'characteristics'?'selected':''" class="navbarbtn" @click="$router.push(`/good/${good.product_id_export}/characteristics`)">Characteristics</div>
-        <div :class="$route.params.section === 'reviews'?'selected':''" class="navbarbtn" @click="$router.push(`/good/${good.product_id_export}/reviews`)">Reviews</div>
+<!--        <div :class="$route.params.section === 'reviews'?'selected':''" class="navbarbtn" @click="$router.push(`/good/${good.product_id_export}/reviews`)">Reviews</div>-->
         <div :class="$route.params.section === 'photos'?'selected':''" class="navbarbtn" @click="$router.push(`/good/${good.product_id_export}/photos`)">Photos</div>
         <div :class="$route.params.section === 'videos'?'selected':''" class="navbarbtn" @click="$router.push(`/good/${good.product_id_export}/videos`)">Videos</div>
       </div>
