@@ -79,6 +79,8 @@ export default {
 .box{
   display: flex;
   flex-direction: row;
+  width: 80%;
+  margin: 0 auto;
 }
 .image{
   margin-left: 7%;

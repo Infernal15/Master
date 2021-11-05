@@ -8,6 +8,7 @@ import Payment from "@/pages/Payment";
 import Rules from "@/pages/Rules";
 import UserProfile from "@/pages/UserProfile";
 import Categories from "../pages/Categories";
+import AuthForm from "../pages/AuthForm";
 const routes = [
     {
         path: '/about',
@@ -44,6 +45,10 @@ const routes = [
     {
         path: '/profile',
         component: UserProfile
+    },
+    {
+        path: '/authentication',
+        component: AuthForm
     }
 ]
 

@@ -50,9 +50,8 @@ export default {
 <style scoped>
 .box{
   background: linear-gradient(268.47deg, rgba(0, 118, 254, 0.81) -0.39%, rgba(114, 204, 255, 0.87) 101.63%);
-  width: 80%;
   display: flex;
   justify-content: center;
-  margin: 60px auto;
+  margin: 60px 0;
 }
 </style>

@@ -60,14 +60,21 @@ export default {
 
 <style scoped>
 .good{
-  margin: 38px 58px;
+  margin: 58px 0;
 }
 .name{
   display: block;
   font-weight: 500;
   font-size: 45px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .navbar{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
   display: flex;
   font-size: 25px;
   background: #f0f0f0;
@@ -88,7 +95,7 @@ export default {
   border-bottom: 2px solid #3b94ec;
 }
 .container{
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
 }
 </style>
