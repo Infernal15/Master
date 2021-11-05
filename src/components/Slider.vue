@@ -64,7 +64,7 @@ export default {
   .slider{
     display: flex;
     align-items: center;
-    transition: all ease 400ms;
+    transition: all ease 900ms;
   }
   .prev, .next{
     border: 0;
@@ -78,7 +78,7 @@ export default {
     cursor: pointer;
     border-radius: 10px;
   }
-  .prev:active, .next:active{
-    box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
-  }
+  /*.prev:active, .next:active{*/
+  /*  box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);*/
+  /*}*/
 </style>

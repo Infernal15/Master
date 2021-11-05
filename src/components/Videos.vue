@@ -41,9 +41,8 @@ export default {
 
 <style scoped>
 .box{
-  margin-top: 30px;
+  margin: 60px 0;
   background: linear-gradient(268.47deg, rgba(0, 118, 254, 0.81) -0.39%, rgba(114, 204, 255, 0.87) 101.63%);
-  width: 90%;
   padding-top: 70px;
   padding-bottom: 70px;
 }

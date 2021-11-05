@@ -24,12 +24,6 @@ html{
   background: #F9FCFF;
 }
 body{
-  background-attachment: fixed ;
-  background-position-y: 59%;
-  background-position-x: 3%;
-  background-image: url("assets/img/dots.png");
-  background-repeat: no-repeat;
-  background-size: 5%;
   margin-top: 72px;
 }
 </style>

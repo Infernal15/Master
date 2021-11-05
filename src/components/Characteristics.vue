@@ -1,8 +1,8 @@
 <template>
   <div class="characteristics">
-<!--    <transition-group name="characteristics">-->
-<!--      <characteristic v-for="characteristic in char" :key="characteristic.id"></characteristic>-->
-<!--    </transition-group>-->
+    <transition-group name="characteristics">
+      <characteristic v-for="characteristic in char" :key="characteristic.id"></characteristic>
+    </transition-group>
   </div>
 </template>
 
@@ -48,7 +48,7 @@ export default {
   border-radius: 21px;
   padding: 20px;
   margin-top: 6%;
-  width: 80%;
+  width: 70%;
   margin-left: auto;
   margin-right: auto;
 }
