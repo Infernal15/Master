@@ -23,11 +23,14 @@
         "drupal/core-recommended": "^9.2",
         "drupal/core-vendor-hardening": "^9.2",
         "drupal/gin": "^3.0@alpha",
+        "drupal/gin_login": "^1.0",
+        "drupal/gin_toolbar": "^1.0@beta",
         "drupal/inline_entity_form": "^1.0@RC",
         "drupal/jsonapi_extras": "^3.19",
         "drupal/paragraphs": "^1.12",
         "drupal/rest_views": "^2.0",
         "drupal/restui": "^1.20",
+        "drupal/simple_oauth": "^5.0",
         "drush/drush": "^10.6"
     },
     "conflict": {

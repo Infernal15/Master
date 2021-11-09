@@ -22,6 +22,7 @@ module:
   commerce_store: 0
   config: 0
   config_translation: 0
+  consumers: 0
   contact: 0
   contextual: 0
   datetime: 0
@@ -34,6 +35,8 @@ module:
   field_ui: 0
   file: 0
   filter: 0
+  gin_login: 0
+  gin_toolbar: 0
   help: 0
   history: 0
   image: 0
@@ -60,6 +63,7 @@ module:
   search: 0
   serialization: 0
   shortcut: 0
+  simple_oauth: 0
   state_machine: 0
   stepcommerce: 0
   system: 0

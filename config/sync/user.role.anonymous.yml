@@ -14,5 +14,6 @@ permissions:
   - 'access content'
   - 'access site-wide contact form'
   - 'search content'
+  - 'use oauth2 server'
   - 'use text format restricted_html'
   - 'view commerce_product'
