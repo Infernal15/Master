@@ -5,8 +5,9 @@
       <div class="field"><div class="imgback"><img :src="require('@/assets/img/emailicon.png')" alt="emailicon"></div><input placeholder="Email..." type="text"></div>
       <div class="field"><div class="imgback"><img :src="require('@/assets/img/nameicon.png')" alt="nameicon"></div><input placeholder="Name..." type="text"></div>
       <div class="field"><div class="imgback"><img :src="require('@/assets/img/phoneicon.png')" alt="phoneicon"></div><input placeholder="Phone..." type="text"></div>
-      <div class="field"><div class="imgback"><img :src="require('@/assets/img/passwordicon.png')" alt="passwordicon"></div><input placeholder="Password..." type="password"></div>
-      <div class="field"><div class="imgback"><img :src="require('@/assets/img/passwordicon.png')" alt="passwordicon"></div><input placeholder="Confirm password..." type="password"></div>
+      <div class="field"><div class="imgback"><img :src="require('@/assets/img/passwordicon.png')" alt="passwordicon"></div><input @input="passwordCheck" v-model="pass1" placeholder="Password..." type="password"></div>
+      <div v-if="match" class="passdontmatch">Password don`t match</div>
+      <div class="field"><div class="imgback"><img :src="require('@/assets/img/passwordicon.png')" alt="passwordicon"></div><input @input="passwordCheck" v-model="pass2" placeholder="Confirm password..." type="password"></div>
     </div>
     <div class="changetext">Alredy have an account?<div class="changebutton" @click="$emit('changeSwitcher')">Sign In</div></div>
     <input type="submit" class="submit" value="Sign Up">
@@ -16,6 +17,20 @@
 <script>
 export default {
   name: "RegisterForm",
+  data(){
+    return{
+      pass1: "",
+      pass2: "",
+      match: false
+    }
+  },
+  methods: {
+    passwordCheck(){
+      if(this.pass1 !== "" && this.pass2 !== ""){
+        this.match = this.pass1 !== this.pass2;
+      }
+    }
+  },
   props: {
     switcher: {
       type: Boolean,
@@ -102,6 +117,13 @@ export default {
 }
 .changebutton:hover{
   color: #3a9cfc;
+}
+.passdontmatch{
+  text-align: center;
+  border-radius: 7px;
+  background: rgba(237, 151, 145, 0.7);
+  padding: 2px;
+  font-size: 22px;
 }
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
