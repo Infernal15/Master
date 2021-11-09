@@ -1,0 +1,20 @@
+uuid: 7eb2b2d8-a72c-4cb0-8315-73c6ea0ac974
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.speakers
+id: commerce_product.speakers.uid
+field_name: uid
+entity_type: commerce_product
+bundle: speakers
+label: Author
+description: 'The product author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\commerce_product\Entity\Product::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

@@ -1,0 +1,20 @@
+uuid: 71e20014-fafa-459f-a738-f08ac246f2da
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.gaming_keyboards
+  module:
+    - path
+id: commerce_product.gaming_keyboards.path
+field_name: path
+entity_type: commerce_product
+bundle: gaming_keyboards
+label: 'URL alias'
+description: 'The product URL alias.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

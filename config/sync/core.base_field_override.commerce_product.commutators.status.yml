@@ -1,0 +1,22 @@
+uuid: 61b1b1af-5c4b-4666-98c8-9720ae3fb19c
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.commutators
+id: commerce_product.commutators.status
+field_name: status
+entity_type: commerce_product
+bundle: commutators
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

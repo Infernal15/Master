@@ -1,0 +1,18 @@
+uuid: b9864ab4-5a1f-42cc-b1b3-6832634f61b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.gaming_monitors
+id: commerce_product.gaming_monitors.created
+field_name: created
+entity_type: commerce_product
+bundle: gaming_monitors
+label: Created
+description: 'The time when the product was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

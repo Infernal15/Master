@@ -1,0 +1,12 @@
+uuid: 2dbdc9ee-b3f3-44b0-a299-0a08efdf5d96
+langcode: en
+status: true
+dependencies: {  }
+id: watch_amazfit
+label: Amazfit
+description: Amazfit
+variationType: watches_and_bands
+multipleVariations: false
+injectVariationFields: true
+traits: {  }
+locked: false

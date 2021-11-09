@@ -1,0 +1,23 @@
+uuid: 8923baf4-d9fc-4a67-bcab-a1484c3b6802
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.photo_and_video
+    - field.storage.commerce_product_variation.field_video_link
+  module:
+    - link
+id: commerce_product_variation.photo_and_video.field_video_link
+field_name: field_video_link
+entity_type: commerce_product_variation
+bundle: photo_and_video
+label: Video
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

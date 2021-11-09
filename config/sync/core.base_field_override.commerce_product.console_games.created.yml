@@ -1,0 +1,18 @@
+uuid: 447ce231-14ce-4931-91db-c1342f15ca8a
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.console_games
+id: commerce_product.console_games.created
+field_name: created
+entity_type: commerce_product
+bundle: console_games
+label: Created
+description: 'The time when the product was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

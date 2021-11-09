@@ -1,0 +1,20 @@
+uuid: 6f78a9b5-d8c4-46e7-b97a-a30826a94011
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.projectors
+  module:
+    - path
+id: commerce_product.projectors.path
+field_name: path
+entity_type: commerce_product
+bundle: projectors
+label: 'URL alias'
+description: 'The product URL alias.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

@@ -1,0 +1,12 @@
+uuid: 0b635426-1b6b-44fe-915c-95de61c3a7f1
+langcode: en
+status: true
+dependencies: {  }
+id: speakers
+label: Speakers
+description: Speakers
+variationType: audio
+multipleVariations: false
+injectVariationFields: true
+traits: {  }
+locked: false

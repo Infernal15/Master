@@ -14,7 +14,7 @@ bundle: operation_systems_os_
 label: Body
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: null
 settings:

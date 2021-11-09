@@ -1,0 +1,18 @@
+uuid: f66daeee-56c2-442d-a4ea-7e562b9cfb62
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.keyboard
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: commerce_product.keyboard
+target_entity_type_id: commerce_product
+target_bundle: keyboard
+default_langcode: site_default
+language_alterable: false

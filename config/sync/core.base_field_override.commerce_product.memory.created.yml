@@ -1,0 +1,18 @@
+uuid: 5d8c0ce7-8b22-4750-8e24-cf117f306ac0
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.memory
+id: commerce_product.memory.created
+field_name: created
+entity_type: commerce_product
+bundle: memory
+label: Created
+description: 'The time when the product was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

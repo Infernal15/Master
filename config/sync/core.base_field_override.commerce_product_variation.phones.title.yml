@@ -1,0 +1,18 @@
+uuid: 7838c7a1-c74f-4643-8067-6633220744be
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.phones
+id: commerce_product_variation.phones.title
+field_name: title
+entity_type: commerce_product_variation
+bundle: phones
+label: Title
+description: 'The variation title.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

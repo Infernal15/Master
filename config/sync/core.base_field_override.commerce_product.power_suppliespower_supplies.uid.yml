@@ -1,0 +1,20 @@
+uuid: 0345cda1-04d1-475e-980a-46ff6e1070b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.power_suppliespower_supplies
+id: commerce_product.power_suppliespower_supplies.uid
+field_name: uid
+entity_type: commerce_product
+bundle: power_suppliespower_supplies
+label: Author
+description: 'The product author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\commerce_product\Entity\Product::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

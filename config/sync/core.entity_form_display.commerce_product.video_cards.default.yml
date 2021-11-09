@@ -5,9 +5,11 @@ dependencies:
   config:
     - commerce_product.commerce_product_type.video_cards
     - field.field.commerce_product.video_cards.body
+    - field.field.commerce_product.video_cards.field_characteristic
   module:
     - commerce
     - commerce_product
+    - entity_reference_revisions
     - path
     - text
 id: commerce_product.video_cards.default
@@ -31,6 +33,16 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_characteristic:
+    weight: 91
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_autocomplete
+    region: content
   langcode:
     type: language_select
     weight: 2

@@ -1,0 +1,18 @@
+uuid: 07bf1bc9-6030-437d-a571-d917e5172bb8
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.tablet_asus
+id: commerce_product.tablet_asus.title
+field_name: title
+entity_type: commerce_product
+bundle: tablet_asus
+label: Title
+description: 'The product title.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,22 @@
+uuid: 5218a0de-9ef0-4f18-8158-37db9fd7e3ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.television
+id: commerce_product_variation.television.status
+field_name: status
+entity_type: commerce_product_variation
+bundle: television
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

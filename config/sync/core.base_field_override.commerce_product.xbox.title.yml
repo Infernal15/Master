@@ -1,0 +1,18 @@
+uuid: 7ec86d8c-1756-46a8-bc39-91c9b96db996
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.xbox
+id: commerce_product.xbox.title
+field_name: title
+entity_type: commerce_product
+bundle: xbox
+label: Title
+description: 'The product title.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

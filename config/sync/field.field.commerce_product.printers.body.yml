@@ -1,0 +1,23 @@
+uuid: ac9d7b27-959d-44e6-8d78-007e501f7c06
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.printers
+    - field.storage.commerce_product.body
+  module:
+    - text
+id: commerce_product.printers.body
+field_name: body
+entity_type: commerce_product
+bundle: printers
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: null
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

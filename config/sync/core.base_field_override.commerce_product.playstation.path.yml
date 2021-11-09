@@ -1,0 +1,20 @@
+uuid: f4b99db7-5dba-438b-b71b-45e570573c33
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.playstation
+  module:
+    - path
+id: commerce_product.playstation.path
+field_name: path
+entity_type: commerce_product
+bundle: playstation
+label: 'URL alias'
+description: 'The product URL alias.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

@@ -1,0 +1,12 @@
+uuid: 77edac40-5d10-4ca9-a863-7a3e133ed41e
+langcode: en
+status: true
+dependencies: {  }
+id: printers
+label: Printers
+description: Printers
+variationType: orgtechnics
+multipleVariations: false
+injectVariationFields: true
+traits: {  }
+locked: false

@@ -1,0 +1,20 @@
+uuid: 20262362-1ab6-4e68-9e9b-dc571b0d4aca
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.antivirus
+id: commerce_product.antivirus.uid
+field_name: uid
+entity_type: commerce_product
+bundle: antivirus
+label: Author
+description: 'The product author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\commerce_product\Entity\Product::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

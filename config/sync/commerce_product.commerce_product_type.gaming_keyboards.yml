@@ -1,0 +1,12 @@
+uuid: 408df6fb-2b1c-484b-b325-7cdcbfb514b9
+langcode: en
+status: true
+dependencies: {  }
+id: gaming_keyboards
+label: 'Gaming Keyboards'
+description: 'Gaming Keyboards'
+variationType: manipulators
+multipleVariations: false
+injectVariationFields: true
+traits: {  }
+locked: false

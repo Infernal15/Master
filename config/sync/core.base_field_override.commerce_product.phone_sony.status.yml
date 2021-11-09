@@ -1,0 +1,22 @@
+uuid: d0f6f283-ce26-4280-984d-a95dc891b89e
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.phone_sony
+id: commerce_product.phone_sony.status
+field_name: status
+entity_type: commerce_product
+bundle: phone_sony
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

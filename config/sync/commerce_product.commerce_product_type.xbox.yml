@@ -1,0 +1,12 @@
+uuid: 106289c0-89a3-4652-a41a-7ec85e8b5343
+langcode: en
+status: true
+dependencies: {  }
+id: xbox
+label: Xbox
+description: Xbox
+variationType: consoles
+multipleVariations: false
+injectVariationFields: true
+traits: {  }
+locked: false

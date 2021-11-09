@@ -1,0 +1,22 @@
+uuid: 506ca078-8ec2-4142-8a13-7708bca7d490
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.gaming_mice
+id: commerce_product.gaming_mice.status
+field_name: status
+entity_type: commerce_product
+bundle: gaming_mice
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

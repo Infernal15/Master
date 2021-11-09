@@ -6,7 +6,7 @@ id: acer
 label: Acer
 description: 'Acer laptop'
 variationType: laptops
-multipleVariations: true
+multipleVariations: false
 injectVariationFields: true
 traits: {  }
 locked: false

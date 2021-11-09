@@ -1,0 +1,18 @@
+uuid: d1b449fe-deef-4cb9-b4c2-3ae51b7173f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.phone_nokia
+id: commerce_product.phone_nokia.title
+field_name: title
+entity_type: commerce_product
+bundle: phone_nokia
+label: Title
+description: 'The product title.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

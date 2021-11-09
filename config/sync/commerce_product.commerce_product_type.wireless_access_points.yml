@@ -6,7 +6,7 @@ id: wireless_access_points
 label: 'Wireless Access Points'
 description: 'Wireless Access Points'
 variationType: network_hardware
-multipleVariations: true
+multipleVariations: false
 injectVariationFields: true
 traits: {  }
 locked: false

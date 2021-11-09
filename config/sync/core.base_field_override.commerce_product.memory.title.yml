@@ -1,0 +1,18 @@
+uuid: f9b895a1-b7d5-4258-a4c0-20d49a074933
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.memory
+id: commerce_product.memory.title
+field_name: title
+entity_type: commerce_product
+bundle: memory
+label: Title
+description: 'The product title.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

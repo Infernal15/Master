@@ -1,0 +1,20 @@
+uuid: c2d04481-62c6-4bf7-9ac7-5af580e0622d
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.antivirus
+  module:
+    - path
+id: commerce_product.antivirus.path
+field_name: path
+entity_type: commerce_product
+bundle: antivirus
+label: 'URL alias'
+description: 'The product URL alias.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

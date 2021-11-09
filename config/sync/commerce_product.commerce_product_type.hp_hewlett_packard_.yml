@@ -6,7 +6,7 @@ id: hp_hewlett_packard_
 label: 'HP (Hewlett Packard)'
 description: 'HP (Hewlett Packard) laptop'
 variationType: laptops
-multipleVariations: true
+multipleVariations: false
 injectVariationFields: true
 traits: {  }
 locked: false

@@ -1,0 +1,18 @@
+uuid: 2ac5c55e-5ab3-4c80-9b76-dab7b9940b53
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.tablet_acer
+id: commerce_product.tablet_acer.created
+field_name: created
+entity_type: commerce_product
+bundle: tablet_acer
+label: Created
+description: 'The time when the product was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

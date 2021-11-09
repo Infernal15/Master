@@ -1,0 +1,12 @@
+uuid: 46f103b0-7187-40b3-b0aa-25c32ea15ed8
+langcode: en
+status: true
+dependencies: {  }
+id: phone_meizu
+label: Meizu
+description: phone_meizu
+variationType: phones
+multipleVariations: false
+injectVariationFields: true
+traits: {  }
+locked: false

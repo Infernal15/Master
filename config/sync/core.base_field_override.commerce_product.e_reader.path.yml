@@ -1,0 +1,20 @@
+uuid: f827a7c5-581d-46a0-99b3-ff47df58ad06
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.e_reader
+  module:
+    - path
+id: commerce_product.e_reader.path
+field_name: path
+entity_type: commerce_product
+bundle: e_reader
+label: 'URL alias'
+description: 'The product URL alias.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

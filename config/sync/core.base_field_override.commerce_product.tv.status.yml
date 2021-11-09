@@ -1,0 +1,22 @@
+uuid: 623279bd-3931-4bc8-b2bb-8041cce681e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.tv
+id: commerce_product.tv.status
+field_name: status
+entity_type: commerce_product
+bundle: tv
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

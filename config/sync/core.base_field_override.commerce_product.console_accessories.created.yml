@@ -1,0 +1,18 @@
+uuid: 3e1c43e4-4fa1-4a04-9f56-a4451fd6274d
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.console_accessories
+id: commerce_product.console_accessories.created
+field_name: created
+entity_type: commerce_product
+bundle: console_accessories
+label: Created
+description: 'The time when the product was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

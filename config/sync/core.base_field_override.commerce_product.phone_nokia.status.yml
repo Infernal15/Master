@@ -1,0 +1,22 @@
+uuid: 260b4b05-d44e-484b-ab95-dad4a90c0392
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.phone_nokia
+id: commerce_product.phone_nokia.status
+field_name: status
+entity_type: commerce_product
+bundle: phone_nokia
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,18 @@
+uuid: 1bea7194-56a8-4ae9-a014-cbb961d7a999
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.phone_sony
+id: commerce_product.phone_sony.title
+field_name: title
+entity_type: commerce_product
+bundle: phone_sony
+label: Title
+description: 'The product title.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,12 @@
+uuid: db8083d7-3835-43ac-b891-2590f9665c03
+langcode: en
+status: true
+dependencies: {  }
+id: console_accessories
+label: 'Console Accessories'
+description: 'Console Accessories'
+variationType: consoles
+multipleVariations: false
+injectVariationFields: true
+traits: {  }
+locked: false

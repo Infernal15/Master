@@ -1,0 +1,18 @@
+uuid: 713103ad-cd6e-4956-a7d4-673a267d9363
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.projector_screens
+id: commerce_product.projector_screens.created
+field_name: created
+entity_type: commerce_product
+bundle: projector_screens
+label: Created
+description: 'The time when the product was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

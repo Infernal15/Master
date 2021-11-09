@@ -1,0 +1,20 @@
+uuid: c3eb5fc8-76ca-4022-b8c6-d7aa04eddef4
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.watch_amazfit
+  module:
+    - path
+id: commerce_product.watch_amazfit.path
+field_name: path
+entity_type: commerce_product
+bundle: watch_amazfit
+label: 'URL alias'
+description: 'The product URL alias.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

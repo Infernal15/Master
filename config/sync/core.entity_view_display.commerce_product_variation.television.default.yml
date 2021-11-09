@@ -1,0 +1,61 @@
+uuid: aa21ace7-d478-446b-9dec-6d644fc020c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.television
+    - field.field.commerce_product_variation.television.field_image
+    - field.field.commerce_product_variation.television.field_video_link
+  module:
+    - commerce_price
+    - image
+    - link
+id: commerce_product_variation.television.default
+targetEntityType: commerce_product_variation
+bundle: television
+mode: default
+content:
+  field_image:
+    weight: 1
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_video_link:
+    weight: 2
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  list_price:
+    label: above
+    type: commerce_price_default
+    weight: -1
+    region: content
+    settings:
+      strip_trailing_zeroes: false
+      currency_display: symbol
+    third_party_settings: {  }
+  price:
+    label: above
+    type: commerce_price_default
+    weight: 0
+    region: content
+    settings:
+      strip_trailing_zeroes: false
+      currency_display: symbol
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  product_id: true
+  sku: true
+  title: true

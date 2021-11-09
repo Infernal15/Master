@@ -1,0 +1,12 @@
+uuid: 3bda5c98-7cbe-48e8-a362-cec915e843ab
+langcode: en
+status: true
+dependencies: {  }
+id: tablet_acer
+label: Acer
+description: tablet_acer
+variationType: tablets
+multipleVariations: false
+injectVariationFields: true
+traits: {  }
+locked: false

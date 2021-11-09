@@ -1,0 +1,20 @@
+uuid: 77af1507-9d44-4945-a68e-449470fdf96f
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.nintendo
+  module:
+    - path
+id: commerce_product.nintendo.path
+field_name: path
+entity_type: commerce_product
+bundle: nintendo
+label: 'URL alias'
+description: 'The product URL alias.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

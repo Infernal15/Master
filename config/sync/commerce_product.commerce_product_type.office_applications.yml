@@ -3,10 +3,10 @@ langcode: en
 status: true
 dependencies: {  }
 id: office_applications
-label: 'Office Applications'
+label: Applications
 description: 'Office Applications'
 variationType: software
-multipleVariations: true
+multipleVariations: false
 injectVariationFields: true
 traits: {  }
 locked: false

@@ -1,0 +1,18 @@
+uuid: ef8bb746-1baa-44c3-a039-cef9fdd2de4b
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.tv_accessories
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: commerce_product.tv_accessories
+target_entity_type_id: commerce_product
+target_bundle: tv_accessories
+default_langcode: site_default
+language_alterable: false

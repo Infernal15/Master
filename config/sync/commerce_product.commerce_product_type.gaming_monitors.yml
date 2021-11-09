@@ -1,0 +1,12 @@
+uuid: be5fc27a-ff56-4f2a-9641-989f8cdc64aa
+langcode: en
+status: true
+dependencies: {  }
+id: gaming_monitors
+label: 'Gaming Monitors'
+description: 'Gaming Monitors'
+variationType: monitors
+multipleVariations: false
+injectVariationFields: true
+traits: {  }
+locked: false

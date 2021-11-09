@@ -1,0 +1,22 @@
+uuid: 9360b8a1-238d-4452-a546-d801820a5bca
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.switches
+id: commerce_product.switches.status
+field_name: status
+entity_type: commerce_product
+bundle: switches
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

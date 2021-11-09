@@ -1,0 +1,22 @@
+uuid: 8752ed54-dc7f-4d8b-a150-ee65c755f360
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.mouse_pads
+id: commerce_product.mouse_pads.status
+field_name: status
+entity_type: commerce_product
+bundle: mouse_pads
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

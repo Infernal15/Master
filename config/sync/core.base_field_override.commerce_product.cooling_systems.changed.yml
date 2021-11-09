@@ -1,0 +1,18 @@
+uuid: b0f39d86-cb4c-4708-b03a-2f250f57e82a
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.cooling_systems
+id: commerce_product.cooling_systems.changed
+field_name: changed
+entity_type: commerce_product
+bundle: cooling_systems
+label: Changed
+description: 'The time when the product was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

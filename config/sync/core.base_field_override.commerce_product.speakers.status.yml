@@ -1,0 +1,22 @@
+uuid: 83804b75-5e71-4d3e-be8d-b4abb0dde891
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.speakers
+id: commerce_product.speakers.status
+field_name: status
+entity_type: commerce_product
+bundle: speakers
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

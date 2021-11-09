@@ -1,0 +1,12 @@
+uuid: 6c4cf015-3373-4aef-911a-5a8d5cf98a78
+langcode: en
+status: true
+dependencies: {  }
+id: phone_xiaomi
+label: Xiaomi
+description: phone_xiaomi
+variationType: phones
+multipleVariations: false
+injectVariationFields: true
+traits: {  }
+locked: false

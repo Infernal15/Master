@@ -1,0 +1,18 @@
+uuid: 35fca7f1-58ad-4d21-bb79-64094b3dc178
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.gamepad
+id: commerce_product.gamepad.title
+field_name: title
+entity_type: commerce_product
+bundle: gamepad
+label: Title
+description: 'The product title.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

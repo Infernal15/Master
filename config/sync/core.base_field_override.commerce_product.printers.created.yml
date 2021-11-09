@@ -1,0 +1,18 @@
+uuid: a5b59e1a-ddd1-4aba-90f0-c2e19b4cf2e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.printers
+id: commerce_product.printers.created
+field_name: created
+entity_type: commerce_product
+bundle: printers
+label: Created
+description: 'The time when the product was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

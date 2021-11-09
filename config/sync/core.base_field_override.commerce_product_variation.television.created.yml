@@ -1,0 +1,18 @@
+uuid: f3f96e68-357e-46c2-ad9a-f4e4e1ae0727
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.television
+id: commerce_product_variation.television.created
+field_name: created
+entity_type: commerce_product_variation
+bundle: television
+label: Created
+description: 'The time when the variation was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

@@ -1,0 +1,20 @@
+uuid: a43c6cf3-070c-4661-a72d-1e7547bb294a
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_store.commerce_store_type.online
+  module:
+    - path
+id: commerce_store.online.path
+field_name: path
+entity_type: commerce_store
+bundle: online
+label: 'URL alias'
+description: 'The store URL alias.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

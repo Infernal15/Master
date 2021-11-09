@@ -6,7 +6,7 @@ id: routers
 label: Routers
 description: Routers
 variationType: network_hardware
-multipleVariations: true
+multipleVariations: false
 injectVariationFields: true
 traits: {  }
 locked: false

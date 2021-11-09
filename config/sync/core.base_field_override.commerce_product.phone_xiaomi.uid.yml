@@ -1,0 +1,20 @@
+uuid: 3276b653-fe0b-4a15-95b3-3cea2c3f21e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.phone_xiaomi
+id: commerce_product.phone_xiaomi.uid
+field_name: uid
+entity_type: commerce_product
+bundle: phone_xiaomi
+label: Author
+description: 'The product author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\commerce_product\Entity\Product::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

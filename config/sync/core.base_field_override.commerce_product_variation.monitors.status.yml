@@ -1,0 +1,22 @@
+uuid: 42e32a21-4da6-4426-9b6f-8c5240ccbd46
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.monitors
+id: commerce_product_variation.monitors.status
+field_name: status
+entity_type: commerce_product_variation
+bundle: monitors
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

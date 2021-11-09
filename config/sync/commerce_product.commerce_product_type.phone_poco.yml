@@ -1,0 +1,12 @@
+uuid: 2cfd5c4e-2651-4f65-862c-2f1202e3e0cd
+langcode: en
+status: true
+dependencies: {  }
+id: phone_poco
+label: Poco
+description: phone_poco
+variationType: phones
+multipleVariations: false
+injectVariationFields: true
+traits: {  }
+locked: false

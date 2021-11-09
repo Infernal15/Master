@@ -1,0 +1,20 @@
+uuid: 9bb1b50a-f920-4488-86b0-e5c6bf060023
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.sound_cards
+  module:
+    - path
+id: commerce_product.sound_cards.path
+field_name: path
+entity_type: commerce_product
+bundle: sound_cards
+label: 'URL alias'
+description: 'The product URL alias.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

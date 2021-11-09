@@ -1,0 +1,18 @@
+uuid: 8b172612-3e8b-41ba-b0d4-d593a02ea7a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.office_applications
+id: commerce_product.office_applications.created
+field_name: created
+entity_type: commerce_product
+bundle: office_applications
+label: Created
+description: 'The time when the product was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

@@ -1,0 +1,12 @@
+uuid: 3849282a-1767-40cd-b3db-f9d27c657307
+langcode: en
+status: true
+dependencies: {  }
+id: tablet_huawei
+label: Huawei
+description: tablet_huawei
+variationType: tablets
+multipleVariations: false
+injectVariationFields: true
+traits: {  }
+locked: false

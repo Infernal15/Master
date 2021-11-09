@@ -1,0 +1,12 @@
+uuid: c252d4f4-2ac0-4cf2-9b30-f1f4b1e52958
+langcode: en
+status: true
+dependencies: {  }
+id: tablet_asus
+label: Asus
+description: tablet_asus
+variationType: tablets
+multipleVariations: false
+injectVariationFields: true
+traits: {  }
+locked: false

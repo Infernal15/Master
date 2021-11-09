@@ -1,0 +1,18 @@
+uuid: d62a9ee6-4e5c-467e-a8ac-4df9b8a0b6de
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.cpu
+id: commerce_product.cpu.title
+field_name: title
+entity_type: commerce_product
+bundle: cpu
+label: Title
+description: 'The product title.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

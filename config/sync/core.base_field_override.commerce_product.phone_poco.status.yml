@@ -1,0 +1,22 @@
+uuid: 55b61217-9676-411b-93c6-f798dbbc622d
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.phone_poco
+id: commerce_product.phone_poco.status
+field_name: status
+entity_type: commerce_product
+bundle: phone_poco
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

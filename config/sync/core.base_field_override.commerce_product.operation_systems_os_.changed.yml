@@ -1,0 +1,18 @@
+uuid: c1ac5b32-363f-4c15-8083-588f34353412
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.operation_systems_os_
+id: commerce_product.operation_systems_os_.changed
+field_name: changed
+entity_type: commerce_product
+bundle: operation_systems_os_
+label: Changed
+description: 'The time when the product was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

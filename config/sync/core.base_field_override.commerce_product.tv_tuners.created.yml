@@ -1,0 +1,18 @@
+uuid: 63ae5d72-1b98-47a1-a1a5-62d0fefef90b
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.tv_tuners
+id: commerce_product.tv_tuners.created
+field_name: created
+entity_type: commerce_product
+bundle: tv_tuners
+label: Created
+description: 'The time when the product was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

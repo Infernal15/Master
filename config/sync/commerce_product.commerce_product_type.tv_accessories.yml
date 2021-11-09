@@ -1,0 +1,12 @@
+uuid: eb4e340d-e6c7-405e-a853-4a9f51114479
+langcode: en
+status: true
+dependencies: {  }
+id: tv_accessories
+label: 'TV Accessories'
+description: 'TV Accessories'
+variationType: television
+multipleVariations: false
+injectVariationFields: true
+traits: {  }
+locked: false

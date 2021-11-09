@@ -1,0 +1,12 @@
+uuid: 95c69797-403a-49b0-a8fd-7e888fe0453c
+langcode: en
+status: true
+dependencies: {  }
+id: watch_apple
+label: Apple
+description: watch_apple
+variationType: watches_and_bands
+multipleVariations: false
+injectVariationFields: true
+traits: {  }
+locked: false

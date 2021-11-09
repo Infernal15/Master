@@ -1,0 +1,22 @@
+uuid: 4eb820ba-2102-4550-9c13-7642e1f7bbda
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.dell
+id: commerce_product.dell.status
+field_name: status
+entity_type: commerce_product
+bundle: dell
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

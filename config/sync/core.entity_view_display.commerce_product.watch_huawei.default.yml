@@ -1,0 +1,54 @@
+uuid: 8b4697d8-c076-4e57-a8f5-133e0c14b6e2
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.watch_huawei
+    - field.field.commerce_product.watch_huawei.body
+    - field.field.commerce_product.watch_huawei.field_characteristic
+  module:
+    - commerce_product
+    - entity_reference_revisions
+    - text
+id: commerce_product.watch_huawei.default
+targetEntityType: commerce_product
+bundle: watch_huawei
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 11
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_characteristic:
+    weight: 12
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  variations:
+    type: commerce_add_to_cart
+    weight: 10
+    region: content
+    label: above
+    settings:
+      combine: true
+    third_party_settings: {  }
+hidden:
+  created: true
+  langcode: true
+  stores: true
+  uid: true

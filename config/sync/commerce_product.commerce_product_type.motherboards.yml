@@ -6,7 +6,7 @@ id: motherboards
 label: Motherboards
 description: Motherboards
 variationType: hardware_components
-multipleVariations: true
+multipleVariations: false
 injectVariationFields: true
 traits: {  }
 locked: false

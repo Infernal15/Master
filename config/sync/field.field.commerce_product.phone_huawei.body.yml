@@ -1,0 +1,23 @@
+uuid: bcfd36a7-e0e1-455c-96c7-967e889aab07
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.phone_huawei
+    - field.storage.commerce_product.body
+  module:
+    - text
+id: commerce_product.phone_huawei.body
+field_name: body
+entity_type: commerce_product
+bundle: phone_huawei
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: null
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

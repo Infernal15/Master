@@ -1,0 +1,12 @@
+uuid: 8980e2b6-b44c-4e9c-ab87-57dd698a2c7a
+langcode: en
+status: true
+dependencies: {  }
+id: videocameras
+label: Videocameras
+description: Videocameras
+variationType: photo_and_video
+multipleVariations: false
+injectVariationFields: true
+traits: {  }
+locked: false

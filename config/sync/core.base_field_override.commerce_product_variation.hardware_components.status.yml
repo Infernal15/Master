@@ -1,0 +1,22 @@
+uuid: f660b641-9d78-4edc-8369-6521249c2e19
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.hardware_components
+id: commerce_product_variation.hardware_components.status
+field_name: status
+entity_type: commerce_product_variation
+bundle: hardware_components
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

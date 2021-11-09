@@ -1,0 +1,18 @@
+uuid: 03e87dfd-1ec9-4373-9bc3-c1b6a1318c48
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.video_cards
+id: commerce_product.video_cards.created
+field_name: created
+entity_type: commerce_product
+bundle: video_cards
+label: Created
+description: 'The time when the product was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

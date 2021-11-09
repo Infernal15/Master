@@ -1,0 +1,22 @@
+uuid: e7673ed9-b390-47e1-87b8-8fcb7d51ee54
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.laminator
+id: commerce_product.laminator.status
+field_name: status
+entity_type: commerce_product
+bundle: laminator
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

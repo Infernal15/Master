@@ -1,0 +1,18 @@
+uuid: 53e8323c-871d-4bfd-82ed-5b05af312ea4
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.cleaning_stuff
+id: commerce_product.cleaning_stuff.changed
+field_name: changed
+entity_type: commerce_product
+bundle: cleaning_stuff
+label: Changed
+description: 'The time when the product was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

@@ -1,0 +1,22 @@
+uuid: 178fccd0-d2eb-45fa-b132-cf6ad8df51e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.network_hardware
+id: commerce_product_variation.network_hardware.status
+field_name: status
+entity_type: commerce_product_variation
+bundle: network_hardware
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

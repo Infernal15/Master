@@ -1,0 +1,22 @@
+uuid: 1b245feb-8d5b-43f4-b270-abc4b0f2b96e
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.phone_huawei
+id: commerce_product.phone_huawei.status
+field_name: status
+entity_type: commerce_product
+bundle: phone_huawei
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

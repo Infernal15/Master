@@ -1,0 +1,12 @@
+uuid: c075efae-5abb-4213-a936-f7f8ad6f277a
+langcode: en
+status: true
+dependencies: {  }
+id: tablet_xiaomi
+label: Xiaomi
+description: tablet_xiaomi
+variationType: tablets
+multipleVariations: false
+injectVariationFields: true
+traits: {  }
+locked: false

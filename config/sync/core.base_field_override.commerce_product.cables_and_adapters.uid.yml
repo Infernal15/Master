@@ -1,0 +1,20 @@
+uuid: b078a2a5-c734-4b8b-83ad-dcf32cdd01df
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.cables_and_adapters
+id: commerce_product.cables_and_adapters.uid
+field_name: uid
+entity_type: commerce_product
+bundle: cables_and_adapters
+label: Author
+description: 'The product author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\commerce_product\Entity\Product::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

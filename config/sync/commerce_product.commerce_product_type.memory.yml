@@ -6,7 +6,7 @@ id: memory
 label: Ram
 description: Ram
 variationType: hardware_components
-multipleVariations: true
+multipleVariations: false
 injectVariationFields: true
 traits: {  }
 locked: false

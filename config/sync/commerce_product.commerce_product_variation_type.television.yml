@@ -1,0 +1,10 @@
+uuid: 01e6c1f3-5897-41a0-99de-fcc78fc5e390
+langcode: en
+status: true
+dependencies: {  }
+id: television
+label: Television
+orderItemType: default
+generateTitle: true
+traits: {  }
+locked: false

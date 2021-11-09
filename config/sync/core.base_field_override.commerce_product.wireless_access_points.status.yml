@@ -1,0 +1,22 @@
+uuid: 6e85d314-80fa-48c5-9662-b6a865728160
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.wireless_access_points
+id: commerce_product.wireless_access_points.status
+field_name: status
+entity_type: commerce_product
+bundle: wireless_access_points
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

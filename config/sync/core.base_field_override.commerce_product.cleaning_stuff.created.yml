@@ -1,0 +1,18 @@
+uuid: bea1d868-1665-4ea2-893e-07ee3f5ed052
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.cleaning_stuff
+id: commerce_product.cleaning_stuff.created
+field_name: created
+entity_type: commerce_product
+bundle: cleaning_stuff
+label: Created
+description: 'The time when the product was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

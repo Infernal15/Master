@@ -1,0 +1,12 @@
+uuid: 1665d079-3cae-4d4c-97c0-cbaf7387b1a8
+langcode: en
+status: true
+dependencies: {  }
+id: gamepad
+label: Gamepad
+description: Gamepad
+variationType: manipulators
+multipleVariations: false
+injectVariationFields: true
+traits: {  }
+locked: false

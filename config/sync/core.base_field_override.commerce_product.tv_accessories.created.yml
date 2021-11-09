@@ -1,0 +1,18 @@
+uuid: a02c4042-f85f-4c0b-9379-436215834581
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.tv_accessories
+id: commerce_product.tv_accessories.created
+field_name: created
+entity_type: commerce_product
+bundle: tv_accessories
+label: Created
+description: 'The time when the product was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

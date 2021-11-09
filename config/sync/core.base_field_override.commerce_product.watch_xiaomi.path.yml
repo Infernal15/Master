@@ -1,0 +1,20 @@
+uuid: c82c5bee-65ff-4a12-87bd-7976a47559b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.watch_xiaomi
+  module:
+    - path
+id: commerce_product.watch_xiaomi.path
+field_name: path
+entity_type: commerce_product
+bundle: watch_xiaomi
+label: 'URL alias'
+description: 'The product URL alias.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

@@ -1,0 +1,18 @@
+uuid: cf9b3ccf-9245-42c5-847a-2058813f3fed
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.tablet_asus
+id: commerce_product.tablet_asus.created
+field_name: created
+entity_type: commerce_product
+bundle: tablet_asus
+label: Created
+description: 'The time when the product was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

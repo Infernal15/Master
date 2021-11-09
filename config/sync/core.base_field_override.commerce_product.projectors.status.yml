@@ -1,0 +1,22 @@
+uuid: 92fe8331-5c5b-4997-b96f-c9dfe4ceb1b8
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.projectors
+id: commerce_product.projectors.status
+field_name: status
+entity_type: commerce_product
+bundle: projectors
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

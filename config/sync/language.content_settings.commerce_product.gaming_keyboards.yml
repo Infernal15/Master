@@ -1,0 +1,18 @@
+uuid: b9106746-fffa-4ff3-b1c3-033d66bab605
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.gaming_keyboards
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: commerce_product.gaming_keyboards
+target_entity_type_id: commerce_product
+target_bundle: gaming_keyboards
+default_langcode: site_default
+language_alterable: false

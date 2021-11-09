@@ -1,0 +1,12 @@
+uuid: 76e379d5-55a0-4890-be43-3b5e3c98615d
+langcode: en
+status: true
+dependencies: {  }
+id: mice
+label: Mice
+description: Mice
+variationType: manipulators
+multipleVariations: false
+injectVariationFields: true
+traits: {  }
+locked: false

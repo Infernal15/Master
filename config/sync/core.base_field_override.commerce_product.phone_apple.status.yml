@@ -1,0 +1,22 @@
+uuid: 21a7ebcd-ebaa-47ec-bd28-38bc3ee1d7aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.phone_apple
+id: commerce_product.phone_apple.status
+field_name: status
+entity_type: commerce_product
+bundle: phone_apple
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,18 @@
+uuid: 3684d17b-2506-4975-8e34-22ca5fdae2ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.msi
+id: commerce_product.msi.title
+field_name: title
+entity_type: commerce_product
+bundle: msi
+label: Title
+description: 'The product title.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

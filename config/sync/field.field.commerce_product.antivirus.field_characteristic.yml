@@ -1,0 +1,34 @@
+uuid: c4c63efd-e99b-4479-809f-139a65ae6e3c
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.antivirus
+    - field.storage.commerce_product.field_characteristic
+    - paragraphs.paragraphs_type.characteristics
+  module:
+    - entity_reference_revisions
+id: commerce_product.antivirus.field_characteristic
+field_name: field_characteristic
+entity_type: commerce_product
+bundle: antivirus
+label: Characteristic
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 1
+    target_bundles:
+      characteristics: characteristics
+    target_bundles_drag_drop:
+      characteristics:
+        enabled: true
+        weight: 2
+      temp:
+        enabled: true
+        weight: 4
+field_type: entity_reference_revisions

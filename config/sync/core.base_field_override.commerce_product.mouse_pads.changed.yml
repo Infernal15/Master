@@ -1,0 +1,18 @@
+uuid: 24ebc041-b27f-43fc-89b8-8edc7e537ce2
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.mouse_pads
+id: commerce_product.mouse_pads.changed
+field_name: changed
+entity_type: commerce_product
+bundle: mouse_pads
+label: Changed
+description: 'The time when the product was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

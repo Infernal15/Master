@@ -1,0 +1,12 @@
+uuid: 11b0bb74-36b1-46f4-937d-5de33cbaa81c
+langcode: en
+status: true
+dependencies: {  }
+id: keyboard
+label: Keyboards
+description: Keyboards
+variationType: manipulators
+multipleVariations: false
+injectVariationFields: true
+traits: {  }
+locked: false

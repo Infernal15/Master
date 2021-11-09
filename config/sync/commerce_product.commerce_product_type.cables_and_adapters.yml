@@ -6,7 +6,7 @@ id: cables_and_adapters
 label: 'Cables and adapters'
 description: 'Cables and adapters'
 variationType: accessories_for_laptops_and_pc
-multipleVariations: true
+multipleVariations: false
 injectVariationFields: true
 traits: {  }
 locked: false

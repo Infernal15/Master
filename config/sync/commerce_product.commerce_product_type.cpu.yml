@@ -6,7 +6,7 @@ id: cpu
 label: CPU
 description: CPU
 variationType: hardware_components
-multipleVariations: true
+multipleVariations: false
 injectVariationFields: true
 traits: {  }
 locked: false

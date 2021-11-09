@@ -1,0 +1,20 @@
+uuid: ce3be981-76d3-4d4f-aa9d-3eaec3fa5ebb
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.mouse_pads
+  module:
+    - path
+id: commerce_product.mouse_pads.path
+field_name: path
+entity_type: commerce_product
+bundle: mouse_pads
+label: 'URL alias'
+description: 'The product URL alias.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

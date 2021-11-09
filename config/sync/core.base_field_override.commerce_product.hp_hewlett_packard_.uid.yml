@@ -1,0 +1,20 @@
+uuid: 15b23b5a-bcc9-49dd-a9a3-df6819d2ed3c
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.hp_hewlett_packard_
+id: commerce_product.hp_hewlett_packard_.uid
+field_name: uid
+entity_type: commerce_product
+bundle: hp_hewlett_packard_
+label: Author
+description: 'The product author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\commerce_product\Entity\Product::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

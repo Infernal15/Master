@@ -1,0 +1,20 @@
+uuid: 3abbfd03-8fec-47fe-bc0b-50696a3c5edf
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.patch_cords
+id: commerce_product.patch_cords.uid
+field_name: uid
+entity_type: commerce_product
+bundle: patch_cords
+label: Author
+description: 'The product author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\commerce_product\Entity\Product::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

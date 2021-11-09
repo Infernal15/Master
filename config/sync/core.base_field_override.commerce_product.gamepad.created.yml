@@ -1,0 +1,18 @@
+uuid: bf3af1c1-c7f1-4356-a23f-8107808ad8dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.gamepad
+id: commerce_product.gamepad.created
+field_name: created
+entity_type: commerce_product
+bundle: gamepad
+label: Created
+description: 'The time when the product was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

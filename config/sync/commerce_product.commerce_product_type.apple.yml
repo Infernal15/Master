@@ -6,7 +6,7 @@ id: apple
 label: Apple
 description: 'Apple laptop'
 variationType: laptops
-multipleVariations: true
+multipleVariations: false
 injectVariationFields: true
 traits: {  }
 locked: false

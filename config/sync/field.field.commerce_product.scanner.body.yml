@@ -1,0 +1,23 @@
+uuid: 05541bce-af7a-46a9-b4a5-6673d4ff41da
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.scanner
+    - field.storage.commerce_product.body
+  module:
+    - text
+id: commerce_product.scanner.body
+field_name: body
+entity_type: commerce_product
+bundle: scanner
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: null
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

@@ -1,0 +1,22 @@
+uuid: aa8368d5-18be-44fd-9377-992bcd3c6ee1
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.printers
+id: commerce_product.printers.status
+field_name: status
+entity_type: commerce_product
+bundle: printers
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

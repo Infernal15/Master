@@ -1,0 +1,12 @@
+uuid: b4526766-62f9-4656-a27d-9734f36733b4
+langcode: en
+status: true
+dependencies: {  }
+id: commutators
+label: Commutators
+description: Commutators
+variationType: network_hardware
+multipleVariations: false
+injectVariationFields: true
+traits: {  }
+locked: false

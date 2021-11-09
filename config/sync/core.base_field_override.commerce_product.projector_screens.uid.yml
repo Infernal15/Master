@@ -1,0 +1,20 @@
+uuid: 1260d106-5f45-4a4a-95de-9aeb97fa44f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.projector_screens
+id: commerce_product.projector_screens.uid
+field_name: uid
+entity_type: commerce_product
+bundle: projector_screens
+label: Author
+description: 'The product author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\commerce_product\Entity\Product::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

@@ -1,0 +1,22 @@
+uuid: f8191c16-97a0-4621-ac73-51ee53f5ee77
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.videocameras
+id: commerce_product.videocameras.status
+field_name: status
+entity_type: commerce_product
+bundle: videocameras
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

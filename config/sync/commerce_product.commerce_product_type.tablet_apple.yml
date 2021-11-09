@@ -1,0 +1,12 @@
+uuid: 85318dbc-a302-493c-832e-df46be34ea33
+langcode: en
+status: true
+dependencies: {  }
+id: tablet_apple
+label: Apple
+description: tablet_apple
+variationType: tablets
+multipleVariations: false
+injectVariationFields: true
+traits: {  }
+locked: false

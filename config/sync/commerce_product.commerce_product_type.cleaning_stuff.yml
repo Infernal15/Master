@@ -1,0 +1,12 @@
+uuid: 8bf50151-c625-4ae6-9220-bba011e50fbd
+langcode: en
+status: true
+dependencies: {  }
+id: cleaning_stuff
+label: 'Cleaning stuff'
+description: 'Cleaning stuff'
+variationType: accessories_for_laptops_and_pc
+multipleVariations: false
+injectVariationFields: true
+traits: {  }
+locked: false

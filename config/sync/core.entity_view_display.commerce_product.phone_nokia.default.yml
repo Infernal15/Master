@@ -1,0 +1,54 @@
+uuid: 999084ff-3628-4951-9247-880287972c81
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.phone_nokia
+    - field.field.commerce_product.phone_nokia.body
+    - field.field.commerce_product.phone_nokia.field_characteristic
+  module:
+    - commerce_product
+    - entity_reference_revisions
+    - text
+id: commerce_product.phone_nokia.default
+targetEntityType: commerce_product
+bundle: phone_nokia
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 11
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_characteristic:
+    weight: 12
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  variations:
+    type: commerce_add_to_cart
+    weight: 10
+    region: content
+    label: above
+    settings:
+      combine: true
+    third_party_settings: {  }
+hidden:
+  created: true
+  langcode: true
+  stores: true
+  uid: true

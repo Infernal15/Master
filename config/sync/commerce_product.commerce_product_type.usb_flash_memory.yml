@@ -6,7 +6,7 @@ id: usb_flash_memory
 label: 'USB flash memory'
 description: 'USB flash memory'
 variationType: accessories_for_laptops_and_pc
-multipleVariations: true
+multipleVariations: false
 injectVariationFields: true
 traits: {  }
 locked: false

@@ -1,0 +1,20 @@
+uuid: eeee811c-2c3e-4f04-9c1c-20e79b516b0b
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.extension_cords
+id: commerce_product.extension_cords.uid
+field_name: uid
+entity_type: commerce_product
+bundle: extension_cords
+label: Author
+description: 'The product author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\commerce_product\Entity\Product::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

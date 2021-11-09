@@ -1,0 +1,12 @@
+uuid: 975ff792-37d7-4b0b-9a40-45d4f37ddf9c
+langcode: en
+status: true
+dependencies: {  }
+id: office_monitors
+label: 'Office Monitors'
+description: 'Office Monitors'
+variationType: monitors
+multipleVariations: false
+injectVariationFields: true
+traits: {  }
+locked: false

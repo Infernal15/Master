@@ -1,0 +1,18 @@
+uuid: fb41302d-128e-4d42-9200-f923fcf95108
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.photo_and_video
+id: commerce_product_variation.photo_and_video.changed
+field_name: changed
+entity_type: commerce_product_variation
+bundle: photo_and_video
+label: Changed
+description: 'The time when the variation was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

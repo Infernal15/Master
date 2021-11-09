@@ -1,0 +1,12 @@
+uuid: f73f1bbc-2b18-443a-972c-b14b06fbb4a2
+langcode: en
+status: true
+dependencies: {  }
+id: projector_screens
+label: 'Projector screens'
+description: 'Projector screens'
+variationType: photo_and_video
+multipleVariations: false
+injectVariationFields: true
+traits: {  }
+locked: false

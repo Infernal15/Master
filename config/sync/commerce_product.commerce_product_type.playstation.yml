@@ -1,0 +1,12 @@
+uuid: a8885dfd-dec7-440e-9171-543b7cb98e87
+langcode: en
+status: true
+dependencies: {  }
+id: playstation
+label: PlayStation
+description: PlayStation
+variationType: consoles
+multipleVariations: false
+injectVariationFields: true
+traits: {  }
+locked: false

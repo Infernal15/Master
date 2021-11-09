@@ -1,0 +1,18 @@
+uuid: f801a89a-4ad4-4daf-9d30-f0e5106c3251
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.tablets
+id: commerce_product_variation.tablets.changed
+field_name: changed
+entity_type: commerce_product_variation
+bundle: tablets
+label: Changed
+description: 'The time when the variation was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

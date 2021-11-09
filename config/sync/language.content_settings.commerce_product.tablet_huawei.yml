@@ -1,0 +1,18 @@
+uuid: b68bf0f2-d1df-47a8-b025-acee3cdee3df
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.tablet_huawei
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: commerce_product.tablet_huawei
+target_entity_type_id: commerce_product
+target_bundle: tablet_huawei
+default_langcode: site_default
+language_alterable: false

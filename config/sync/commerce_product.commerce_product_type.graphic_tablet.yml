@@ -1,0 +1,12 @@
+uuid: 74ad55fc-8f73-49ac-8600-067abd32f9fc
+langcode: en
+status: true
+dependencies: {  }
+id: graphic_tablet
+label: 'Graphic tablet'
+description: 'Graphic tablet'
+variationType: manipulators
+multipleVariations: false
+injectVariationFields: true
+traits: {  }
+locked: false

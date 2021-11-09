@@ -6,7 +6,7 @@ id: asus
 label: Asus
 description: 'Asus laptop'
 variationType: laptops
-multipleVariations: true
+multipleVariations: false
 injectVariationFields: true
 traits: {  }
 locked: false

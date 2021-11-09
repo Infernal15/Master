@@ -1,0 +1,22 @@
+uuid: ff89b0f7-f538-41f1-8192-53a79fac9046
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.laptops
+id: commerce_product_variation.laptops.status
+field_name: status
+entity_type: commerce_product_variation
+bundle: laptops
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,12 @@
+uuid: 8aa6e890-1341-4e01-8fa9-29d9a166e0c6
+langcode: en
+status: true
+dependencies: {  }
+id: nintendo
+label: Nintendo
+description: Nintendo
+variationType: consoles
+multipleVariations: false
+injectVariationFields: true
+traits: {  }
+locked: false

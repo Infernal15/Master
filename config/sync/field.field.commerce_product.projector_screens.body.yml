@@ -1,0 +1,23 @@
+uuid: 98fc1db6-b999-4fdb-b340-fa4a6d6b512a
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.projector_screens
+    - field.storage.commerce_product.body
+  module:
+    - text
+id: commerce_product.projector_screens.body
+field_name: body
+entity_type: commerce_product
+bundle: projector_screens
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: null
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

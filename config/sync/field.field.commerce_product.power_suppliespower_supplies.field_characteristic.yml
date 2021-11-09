@@ -1,0 +1,31 @@
+uuid: d661fa51-9d65-4474-bb4f-3362e8c08e7b
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.power_suppliespower_supplies
+    - field.storage.commerce_product.field_characteristic
+    - paragraphs.paragraphs_type.characteristics
+  module:
+    - entity_reference_revisions
+id: commerce_product.power_suppliespower_supplies.field_characteristic
+field_name: field_characteristic
+entity_type: commerce_product
+bundle: power_suppliespower_supplies
+label: Characteristic
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      characteristics: characteristics
+    target_bundles_drag_drop:
+      characteristics:
+        enabled: true
+        weight: 2
+field_type: entity_reference_revisions

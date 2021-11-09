@@ -1,0 +1,18 @@
+uuid: dfbc1743-1a03-4da7-a62c-ac5db750a3be
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.watch_amazfit
+id: commerce_product.watch_amazfit.created
+field_name: created
+entity_type: commerce_product
+bundle: watch_amazfit
+label: Created
+description: 'The time when the product was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

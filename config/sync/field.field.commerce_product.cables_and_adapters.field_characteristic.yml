@@ -1,0 +1,31 @@
+uuid: aa36c176-6af0-4118-ae77-c5f6bee586ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.cables_and_adapters
+    - field.storage.commerce_product.field_characteristic
+    - paragraphs.paragraphs_type.characteristics
+  module:
+    - entity_reference_revisions
+id: commerce_product.cables_and_adapters.field_characteristic
+field_name: field_characteristic
+entity_type: commerce_product
+bundle: cables_and_adapters
+label: Characteristic
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      characteristics: characteristics
+    target_bundles_drag_drop:
+      characteristics:
+        enabled: true
+        weight: 2
+field_type: entity_reference_revisions

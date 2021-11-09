@@ -6,7 +6,7 @@ id: cooling_systems
 label: 'Cooling systems'
 description: 'Cooling systems'
 variationType: hardware_components
-multipleVariations: true
+multipleVariations: false
 injectVariationFields: true
 traits: {  }
 locked: false

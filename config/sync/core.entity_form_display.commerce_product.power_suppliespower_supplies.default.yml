@@ -5,8 +5,11 @@ dependencies:
   config:
     - commerce_product.commerce_product_type.power_suppliespower_supplies
     - field.field.commerce_product.power_suppliespower_supplies.body
+    - field.field.commerce_product.power_suppliespower_supplies.field_characteristic
   module:
     - commerce
+    - commerce_product
+    - entity_reference_revisions
     - path
     - text
 id: commerce_product.power_suppliespower_supplies.default
@@ -30,6 +33,16 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_characteristic:
+    weight: 91
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_autocomplete
+    region: content
   langcode:
     type: language_select
     weight: 2
@@ -78,5 +91,10 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-hidden:
-  variations: true
+  variations:
+    type: commerce_product_single_variation
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

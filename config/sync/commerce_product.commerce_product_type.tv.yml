@@ -1,0 +1,12 @@
+uuid: b21c3392-938f-4606-aed1-a288b16a89d9
+langcode: en
+status: true
+dependencies: {  }
+id: tv
+label: TV
+description: TV
+variationType: television
+multipleVariations: false
+injectVariationFields: true
+traits: {  }
+locked: false

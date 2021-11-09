@@ -1,0 +1,12 @@
+uuid: 3e8c76c6-5c52-44ec-b8f7-a128bc28a786
+langcode: en
+status: true
+dependencies: {  }
+id: designer_monitors
+label: 'Designer Monitors'
+description: 'Designer Monitors'
+variationType: monitors
+multipleVariations: false
+injectVariationFields: true
+traits: {  }
+locked: false

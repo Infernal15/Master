@@ -1,0 +1,18 @@
+uuid: b23a05c0-a2e2-4e7e-b559-87e53aab645c
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.laminator
+id: commerce_product.laminator.changed
+field_name: changed
+entity_type: commerce_product
+bundle: laminator
+label: Changed
+description: 'The time when the product was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

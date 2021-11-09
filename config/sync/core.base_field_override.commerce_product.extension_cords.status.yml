@@ -1,0 +1,22 @@
+uuid: 13fd47af-653a-4763-bffa-5bd9330d17d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.extension_cords
+id: commerce_product.extension_cords.status
+field_name: status
+entity_type: commerce_product
+bundle: extension_cords
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

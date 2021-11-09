@@ -1,0 +1,12 @@
+uuid: 86427410-ffeb-4d1f-bcf7-4ddc5ee70fc7
+langcode: en
+status: true
+dependencies: {  }
+id: phone_samsung
+label: Samsung
+description: phone_samsung
+variationType: phones
+multipleVariations: false
+injectVariationFields: true
+traits: {  }
+locked: false

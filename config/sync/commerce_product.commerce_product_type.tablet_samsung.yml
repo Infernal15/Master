@@ -1,0 +1,12 @@
+uuid: fe36d419-9488-4349-bd90-bcdd3352bdff
+langcode: en
+status: true
+dependencies: {  }
+id: tablet_samsung
+label: Samsung
+description: tablet_samsung
+variationType: tablets
+multipleVariations: false
+injectVariationFields: true
+traits: {  }
+locked: false

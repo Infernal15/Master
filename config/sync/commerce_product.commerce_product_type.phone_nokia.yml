@@ -1,0 +1,12 @@
+uuid: 6f49c9d4-f4ca-4006-89c7-017ce966ad49
+langcode: en
+status: true
+dependencies: {  }
+id: phone_nokia
+label: Nokia
+description: phone_nokia
+variationType: phones
+multipleVariations: false
+injectVariationFields: true
+traits: {  }
+locked: false

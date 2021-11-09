@@ -1,0 +1,20 @@
+uuid: 0f0087ab-cdd3-49bf-adc0-305e330e1019
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.msi
+  module:
+    - path
+id: commerce_product.msi.path
+field_name: path
+entity_type: commerce_product
+bundle: msi
+label: 'URL alias'
+description: 'The product URL alias.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

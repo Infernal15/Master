@@ -1,0 +1,18 @@
+uuid: 3232da98-1c3d-49b1-a971-4169fd208b29
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.games
+id: commerce_product.games.changed
+field_name: changed
+entity_type: commerce_product
+bundle: games
+label: Changed
+description: 'The time when the product was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

@@ -1,0 +1,12 @@
+uuid: 8fbae53c-d956-46e9-808e-16434a743505
+langcode: en
+status: true
+dependencies: {  }
+id: watch_samsung
+label: Samsung
+description: Samsung
+variationType: watches_and_bands
+multipleVariations: false
+injectVariationFields: true
+traits: {  }
+locked: false

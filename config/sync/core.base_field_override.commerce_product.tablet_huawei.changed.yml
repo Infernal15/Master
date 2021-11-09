@@ -1,0 +1,18 @@
+uuid: a6e6c321-eb1c-470b-8f11-1e5733992d93
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.tablet_huawei
+id: commerce_product.tablet_huawei.changed
+field_name: changed
+entity_type: commerce_product
+bundle: tablet_huawei
+label: Changed
+description: 'The time when the product was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

@@ -1,0 +1,18 @@
+uuid: 473842a7-5dc0-4d8a-b640-b12124194751
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.apple
+id: commerce_product.apple.changed
+field_name: changed
+entity_type: commerce_product
+bundle: apple
+label: Changed
+description: 'The time when the product was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

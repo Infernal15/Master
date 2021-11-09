@@ -1,0 +1,54 @@
+uuid: 621b3d49-9f0d-40ea-a5d4-02e848454e72
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.cameras
+    - field.field.commerce_product.cameras.body
+    - field.field.commerce_product.cameras.field_characteristic
+  module:
+    - commerce_product
+    - entity_reference_revisions
+    - text
+id: commerce_product.cameras.default
+targetEntityType: commerce_product
+bundle: cameras
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 11
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_characteristic:
+    weight: 12
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  variations:
+    type: commerce_add_to_cart
+    weight: 10
+    region: content
+    label: above
+    settings:
+      combine: true
+    third_party_settings: {  }
+hidden:
+  created: true
+  langcode: true
+  stores: true
+  uid: true

@@ -6,7 +6,7 @@ id: laptop_bags_and_backpacks
 label: 'Laptop bags and backpacks'
 description: 'Laptop bags and backpacks'
 variationType: accessories_for_laptops_and_pc
-multipleVariations: true
+multipleVariations: false
 injectVariationFields: true
 traits: {  }
 locked: false

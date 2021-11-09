@@ -1,0 +1,18 @@
+uuid: 71598403-ef8f-4378-b344-2598afd7b6f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.extension_cords
+id: commerce_product.extension_cords.created
+field_name: created
+entity_type: commerce_product
+bundle: extension_cords
+label: Created
+description: 'The time when the product was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

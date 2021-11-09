@@ -5,9 +5,11 @@ dependencies:
   config:
     - commerce_product.commerce_product_variation_type.manipulators
     - field.field.commerce_product_variation.manipulators.field_image
+    - field.field.commerce_product_variation.manipulators.field_video_link
   module:
     - commerce_price
     - image
+    - link
 id: commerce_product_variation.manipulators.default
 targetEntityType: commerce_product_variation
 bundle: manipulators
@@ -21,6 +23,18 @@ content:
       image_link: ''
     third_party_settings: {  }
     type: image
+    region: content
+  field_video_link:
+    weight: 2
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
     region: content
   list_price:
     label: above

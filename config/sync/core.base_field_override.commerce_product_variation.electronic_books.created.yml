@@ -1,0 +1,18 @@
+uuid: b79bc74f-bc17-4994-8886-213303c2e910
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.electronic_books
+id: commerce_product_variation.electronic_books.created
+field_name: created
+entity_type: commerce_product_variation
+bundle: electronic_books
+label: Created
+description: 'The time when the variation was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

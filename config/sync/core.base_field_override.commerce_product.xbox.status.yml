@@ -1,0 +1,22 @@
+uuid: 5f2a0497-4a9c-4c4b-9816-11db55a218d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.xbox
+id: commerce_product.xbox.status
+field_name: status
+entity_type: commerce_product
+bundle: xbox
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

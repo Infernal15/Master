@@ -1,0 +1,22 @@
+uuid: 48f8f9e8-754d-4025-88c6-ae05fc377d67
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.keyboard
+id: commerce_product.keyboard.status
+field_name: status
+entity_type: commerce_product
+bundle: keyboard
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

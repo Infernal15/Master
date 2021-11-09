@@ -1,0 +1,12 @@
+uuid: 217ffc05-a255-4a7b-aa5d-b0b94b47fc87
+langcode: en
+status: true
+dependencies: {  }
+id: extension_cords
+label: 'Extension Cords'
+description: 'Extension Cords'
+variationType: accessories_for_laptops_and_pc
+multipleVariations: false
+injectVariationFields: true
+traits: {  }
+locked: false

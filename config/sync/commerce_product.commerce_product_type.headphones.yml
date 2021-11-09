@@ -1,0 +1,12 @@
+uuid: 7086aeed-3b9d-4970-a9d7-257200cdcc0d
+langcode: en
+status: true
+dependencies: {  }
+id: headphones
+label: Headphones
+description: Headphones
+variationType: audio
+multipleVariations: false
+injectVariationFields: true
+traits: {  }
+locked: false

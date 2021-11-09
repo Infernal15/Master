@@ -1,0 +1,12 @@
+uuid: 027a4bb8-9ca2-40ba-b2f3-76f4aab95542
+langcode: en
+status: true
+dependencies: {  }
+id: xiaomi
+label: Xiaomi
+description: Xiaomi
+variationType: laptops
+multipleVariations: false
+injectVariationFields: true
+traits: {  }
+locked: false

@@ -1,0 +1,22 @@
+uuid: d05fa38b-0dbc-4410-8e6a-3a4af57a8cfe
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.tablet_asus
+id: commerce_product.tablet_asus.status
+field_name: status
+entity_type: commerce_product
+bundle: tablet_asus
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

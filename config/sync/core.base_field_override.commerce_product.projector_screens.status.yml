@@ -1,0 +1,22 @@
+uuid: 6d9847d4-f7a1-4cf4-a973-0b0b444866e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.projector_screens
+id: commerce_product.projector_screens.status
+field_name: status
+entity_type: commerce_product
+bundle: projector_screens
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

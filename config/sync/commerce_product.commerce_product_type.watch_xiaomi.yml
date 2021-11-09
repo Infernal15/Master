@@ -1,0 +1,12 @@
+uuid: 8c43d9ef-bb46-466c-96e1-74fdfad33952
+langcode: en
+status: true
+dependencies: {  }
+id: watch_xiaomi
+label: Xiaomi
+description: watch_xiaomi
+variationType: watches_and_bands
+multipleVariations: false
+injectVariationFields: true
+traits: {  }
+locked: false

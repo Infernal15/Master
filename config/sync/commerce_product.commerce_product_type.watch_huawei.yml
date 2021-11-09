@@ -1,0 +1,12 @@
+uuid: f2fcf8e4-3c26-44d0-9584-7302466d49a0
+langcode: en
+status: true
+dependencies: {  }
+id: watch_huawei
+label: Huawei
+description: Huawei
+variationType: watches_and_bands
+multipleVariations: false
+injectVariationFields: true
+traits: {  }
+locked: false

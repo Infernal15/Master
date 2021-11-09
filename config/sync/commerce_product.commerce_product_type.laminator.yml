@@ -1,0 +1,12 @@
+uuid: 9acb7934-4964-4cdd-90f7-2542387685f2
+langcode: en
+status: true
+dependencies: {  }
+id: laminator
+label: Laminator
+description: Laminator
+variationType: orgtechnics
+multipleVariations: false
+injectVariationFields: true
+traits: {  }
+locked: false

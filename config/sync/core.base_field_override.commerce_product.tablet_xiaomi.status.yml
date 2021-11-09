@@ -1,0 +1,22 @@
+uuid: 633a035a-7811-41cb-8656-7b7f26fafd36
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.tablet_xiaomi
+id: commerce_product.tablet_xiaomi.status
+field_name: status
+entity_type: commerce_product
+bundle: tablet_xiaomi
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,18 @@
+uuid: 478830d6-f291-434a-8e17-7546ed48d154
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.patch_cords
+id: commerce_product.patch_cords.created
+field_name: created
+entity_type: commerce_product
+bundle: patch_cords
+label: Created
+description: 'The time when the product was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

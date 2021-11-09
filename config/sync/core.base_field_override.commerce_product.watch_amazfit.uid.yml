@@ -1,0 +1,20 @@
+uuid: b7465c68-cd4b-49f0-82a0-2d9ba39246c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.watch_amazfit
+id: commerce_product.watch_amazfit.uid
+field_name: uid
+entity_type: commerce_product
+bundle: watch_amazfit
+label: Author
+description: 'The product author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\commerce_product\Entity\Product::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

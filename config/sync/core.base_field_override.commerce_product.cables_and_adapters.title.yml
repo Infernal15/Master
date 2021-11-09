@@ -1,0 +1,18 @@
+uuid: 727842e8-4a00-406f-b4d8-242008999219
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.cables_and_adapters
+id: commerce_product.cables_and_adapters.title
+field_name: title
+entity_type: commerce_product
+bundle: cables_and_adapters
+label: Title
+description: 'The product title.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,12 @@
+uuid: ee4a7ac2-71a6-456f-ad07-d52e713ce7d3
+langcode: en
+status: true
+dependencies: {  }
+id: tv_tuners
+label: 'TV Tuners'
+description: 'TV Tuners'
+variationType: television
+multipleVariations: false
+injectVariationFields: true
+traits: {  }
+locked: false

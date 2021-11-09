@@ -1,0 +1,12 @@
+uuid: 08e21f79-b398-431c-9826-20b9ac0a86f9
+langcode: en
+status: true
+dependencies: {  }
+id: mouse_pads
+label: 'Mouse pads'
+description: 'Mouse pads'
+variationType: manipulators
+multipleVariations: false
+injectVariationFields: true
+traits: {  }
+locked: false

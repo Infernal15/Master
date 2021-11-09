@@ -1,0 +1,22 @@
+uuid: f48f411a-cddc-4e7a-ad4a-c31e41291514
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.nintendo
+id: commerce_product.nintendo.status
+field_name: status
+entity_type: commerce_product
+bundle: nintendo
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

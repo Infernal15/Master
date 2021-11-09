@@ -1,0 +1,18 @@
+uuid: 25abcbec-d08c-4bc2-a0b5-a08e659764c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.wireless_access_points
+id: commerce_product.wireless_access_points.changed
+field_name: changed
+entity_type: commerce_product
+bundle: wireless_access_points
+label: Changed
+description: 'The time when the product was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

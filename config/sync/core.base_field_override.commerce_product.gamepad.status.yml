@@ -1,0 +1,22 @@
+uuid: add100f3-42af-416a-9605-a1ceb10c6b5e
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.gamepad
+id: commerce_product.gamepad.status
+field_name: status
+entity_type: commerce_product
+bundle: gamepad
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

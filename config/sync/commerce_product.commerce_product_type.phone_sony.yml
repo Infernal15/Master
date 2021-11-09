@@ -1,0 +1,12 @@
+uuid: 31ea3dee-1839-4aae-aac7-bc1fa27f1804
+langcode: en
+status: true
+dependencies: {  }
+id: phone_sony
+label: Sony
+description: phone_sony
+variationType: phones
+multipleVariations: false
+injectVariationFields: true
+traits: {  }
+locked: false

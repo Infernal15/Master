@@ -1,0 +1,12 @@
+uuid: c8c9104f-3169-4c19-89f7-e3f59de5cb6d
+langcode: en
+status: true
+dependencies: {  }
+id: shredder
+label: Shredder
+description: Shredder
+variationType: orgtechnics
+multipleVariations: false
+injectVariationFields: true
+traits: {  }
+locked: false

@@ -1,0 +1,31 @@
+uuid: 4bec6228-b10c-4b4d-8f96-c5671f4ae42e
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.tablet_samsung
+    - field.storage.commerce_product.field_characteristic
+    - paragraphs.paragraphs_type.characteristics
+  module:
+    - entity_reference_revisions
+id: commerce_product.tablet_samsung.field_characteristic
+field_name: field_characteristic
+entity_type: commerce_product
+bundle: tablet_samsung
+label: Characteristic
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      characteristics: characteristics
+    target_bundles_drag_drop:
+      characteristics:
+        enabled: true
+        weight: 2
+field_type: entity_reference_revisions

@@ -1,0 +1,18 @@
+uuid: a50f431d-1428-499d-a705-4602945644e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.video_cards
+id: commerce_product.video_cards.changed
+field_name: changed
+entity_type: commerce_product
+bundle: video_cards
+label: Changed
+description: 'The time when the product was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

@@ -1,0 +1,18 @@
+uuid: 3a29ae00-4f5d-4c67-91c7-3bc949cec7cb
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.memory
+id: commerce_product.memory.changed
+field_name: changed
+entity_type: commerce_product
+bundle: memory
+label: Changed
+description: 'The time when the product was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

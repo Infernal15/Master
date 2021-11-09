@@ -6,7 +6,7 @@ id: lenovo
 label: Lenovo
 description: 'Lenovo laptop'
 variationType: laptops
-multipleVariations: true
+multipleVariations: false
 injectVariationFields: true
 traits: {  }
 locked: false

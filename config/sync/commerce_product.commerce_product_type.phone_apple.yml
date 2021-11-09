@@ -1,0 +1,12 @@
+uuid: f46800c1-a0ee-4568-b17f-e911a114cdd1
+langcode: en
+status: true
+dependencies: {  }
+id: phone_apple
+label: Apple
+description: phone_apple
+variationType: phones
+multipleVariations: false
+injectVariationFields: true
+traits: {  }
+locked: false

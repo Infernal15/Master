@@ -1,0 +1,12 @@
+uuid: cf5bf095-a545-411c-afd9-a7d2fcf09294
+langcode: en
+status: true
+dependencies: {  }
+id: phone_huawei
+label: Huawei
+description: phone_huawei
+variationType: phones
+multipleVariations: false
+injectVariationFields: true
+traits: {  }
+locked: false

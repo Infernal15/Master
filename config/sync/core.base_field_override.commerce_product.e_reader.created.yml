@@ -1,0 +1,18 @@
+uuid: 72f2a292-5dbb-4aa2-8989-79f423ffc6ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.e_reader
+id: commerce_product.e_reader.created
+field_name: created
+entity_type: commerce_product
+bundle: e_reader
+label: Created
+description: 'The time when the product was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

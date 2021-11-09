@@ -1,0 +1,18 @@
+uuid: 496614b2-0c60-4229-bbab-28378bef4c28
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.cameras
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: commerce_product.cameras
+target_entity_type_id: commerce_product
+target_bundle: cameras
+default_langcode: site_default
+language_alterable: false

@@ -6,7 +6,7 @@ id: antivirus
 label: Antivirus
 description: Antivirus
 variationType: software
-multipleVariations: true
+multipleVariations: false
 injectVariationFields: true
 traits: {  }
 locked: false

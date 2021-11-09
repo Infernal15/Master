@@ -1,0 +1,31 @@
+uuid: 52335c76-2bcb-414f-b764-65ad1bfeddf1
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.gaming_keyboards
+    - field.storage.commerce_product.field_characteristic
+    - paragraphs.paragraphs_type.characteristics
+  module:
+    - entity_reference_revisions
+id: commerce_product.gaming_keyboards.field_characteristic
+field_name: field_characteristic
+entity_type: commerce_product
+bundle: gaming_keyboards
+label: Characteristic
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      characteristics: characteristics
+    target_bundles_drag_drop:
+      characteristics:
+        enabled: true
+        weight: 2
+field_type: entity_reference_revisions

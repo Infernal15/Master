@@ -6,7 +6,7 @@ id: switches
 label: Switches
 description: Switches
 variationType: network_hardware
-multipleVariations: true
+multipleVariations: false
 injectVariationFields: true
 traits: {  }
 locked: false

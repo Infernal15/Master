@@ -1,0 +1,12 @@
+uuid: f475ce43-2b51-482f-8545-d7f653967b6e
+langcode: en
+status: true
+dependencies: {  }
+id: e_reader
+label: e-Reader
+description: e-Reader
+variationType: electronic_books
+multipleVariations: false
+injectVariationFields: true
+traits: {  }
+locked: false

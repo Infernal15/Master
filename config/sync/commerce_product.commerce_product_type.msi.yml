@@ -1,0 +1,12 @@
+uuid: 8310064d-d40f-41c4-92bb-22d5deb8a38f
+langcode: en
+status: true
+dependencies: {  }
+id: msi
+label: MSI
+description: MSI
+variationType: laptops
+multipleVariations: false
+injectVariationFields: true
+traits: {  }
+locked: false

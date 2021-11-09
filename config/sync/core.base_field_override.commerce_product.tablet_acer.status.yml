@@ -1,0 +1,22 @@
+uuid: 43f0a4ab-8509-4c1e-ae81-657324287240
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.tablet_acer
+id: commerce_product.tablet_acer.status
+field_name: status
+entity_type: commerce_product
+bundle: tablet_acer
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

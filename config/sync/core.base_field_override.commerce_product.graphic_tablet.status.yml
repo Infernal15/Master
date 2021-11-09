@@ -1,0 +1,22 @@
+uuid: 52cf7b51-c9bd-46d2-b991-05e232bb74c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.graphic_tablet
+id: commerce_product.graphic_tablet.status
+field_name: status
+entity_type: commerce_product
+bundle: graphic_tablet
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

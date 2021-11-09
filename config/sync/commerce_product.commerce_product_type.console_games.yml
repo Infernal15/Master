@@ -1,0 +1,12 @@
+uuid: ab09b71b-3d4c-41b5-98ef-604888dfdf0b
+langcode: en
+status: true
+dependencies: {  }
+id: console_games
+label: 'Console Games'
+description: 'Console Games'
+variationType: software
+multipleVariations: false
+injectVariationFields: true
+traits: {  }
+locked: false

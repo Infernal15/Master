@@ -14,7 +14,7 @@ bundle: hard_drives_and_disk_arrays
 label: Body
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: null
 settings:

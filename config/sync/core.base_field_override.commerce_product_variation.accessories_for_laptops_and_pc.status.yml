@@ -1,0 +1,22 @@
+uuid: d82b5cd6-e517-44e7-8ab7-bd62a4fdc935
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.accessories_for_laptops_and_pc
+id: commerce_product_variation.accessories_for_laptops_and_pc.status
+field_name: status
+entity_type: commerce_product_variation
+bundle: accessories_for_laptops_and_pc
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

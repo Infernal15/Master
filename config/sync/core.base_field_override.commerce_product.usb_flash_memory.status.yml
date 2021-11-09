@@ -1,0 +1,22 @@
+uuid: 50384303-12dc-42dc-8353-50f108477246
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.usb_flash_memory
+id: commerce_product.usb_flash_memory.status
+field_name: status
+entity_type: commerce_product
+bundle: usb_flash_memory
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

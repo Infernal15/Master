@@ -1,0 +1,54 @@
+uuid: 85a987b9-848c-4313-9362-d00733ee0df3
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.watch_samsung
+    - field.field.commerce_product.watch_samsung.body
+    - field.field.commerce_product.watch_samsung.field_characteristic
+  module:
+    - commerce_product
+    - entity_reference_revisions
+    - text
+id: commerce_product.watch_samsung.default
+targetEntityType: commerce_product
+bundle: watch_samsung
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 11
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_characteristic:
+    weight: 12
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  variations:
+    type: commerce_add_to_cart
+    weight: 10
+    region: content
+    label: above
+    settings:
+      combine: true
+    third_party_settings: {  }
+hidden:
+  created: true
+  langcode: true
+  stores: true
+  uid: true

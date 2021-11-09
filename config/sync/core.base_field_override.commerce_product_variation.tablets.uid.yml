@@ -1,0 +1,20 @@
+uuid: 2d3d518e-a2b5-4605-943e-a3fc422b11ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.tablets
+id: commerce_product_variation.tablets.uid
+field_name: uid
+entity_type: commerce_product_variation
+bundle: tablets
+label: Author
+description: 'The variation author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\commerce_product\Entity\ProductVariation::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

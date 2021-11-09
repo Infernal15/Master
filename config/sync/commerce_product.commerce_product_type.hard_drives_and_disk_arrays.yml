@@ -6,7 +6,7 @@ id: hard_drives_and_disk_arrays
 label: 'Data Storage'
 description: 'Data Storage'
 variationType: hardware_components
-multipleVariations: true
+multipleVariations: false
 injectVariationFields: true
 traits: {  }
 locked: false

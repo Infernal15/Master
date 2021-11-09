@@ -14,7 +14,7 @@ bundle: laptop_bags_and_backpacks
 label: Body
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: null
 settings:

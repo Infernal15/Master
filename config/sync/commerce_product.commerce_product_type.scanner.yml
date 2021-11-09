@@ -1,0 +1,12 @@
+uuid: 3e3aad6a-472c-46d1-8bfd-296b348c6c4d
+langcode: en
+status: true
+dependencies: {  }
+id: scanner
+label: Scanner
+description: Scanner
+variationType: orgtechnics
+multipleVariations: false
+injectVariationFields: true
+traits: {  }
+locked: false

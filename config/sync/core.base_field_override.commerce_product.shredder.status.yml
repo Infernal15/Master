@@ -1,0 +1,22 @@
+uuid: c5cbb7ce-f3b0-4c66-8233-f9931c374665
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.shredder
+id: commerce_product.shredder.status
+field_name: status
+entity_type: commerce_product
+bundle: shredder
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

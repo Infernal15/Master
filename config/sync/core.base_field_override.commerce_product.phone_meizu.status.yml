@@ -1,0 +1,22 @@
+uuid: f2f8bc82-ab53-4ac0-bb5f-815dafb76f47
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.phone_meizu
+id: commerce_product.phone_meizu.status
+field_name: status
+entity_type: commerce_product
+bundle: phone_meizu
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,20 @@
+uuid: 6b7e85c5-20ee-4776-bce9-466e7a75145f
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.watch_huawei
+id: commerce_product.watch_huawei.uid
+field_name: uid
+entity_type: commerce_product
+bundle: watch_huawei
+label: Author
+description: 'The product author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\commerce_product\Entity\Product::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

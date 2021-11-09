@@ -6,7 +6,7 @@ id: operation_systems_os_
 label: 'Operation Systems (OS)'
 description: 'Operation Systems (OS)'
 variationType: software
-multipleVariations: true
+multipleVariations: false
 injectVariationFields: true
 traits: {  }
 locked: false

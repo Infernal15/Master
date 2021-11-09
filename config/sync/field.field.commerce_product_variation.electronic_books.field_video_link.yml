@@ -1,0 +1,23 @@
+uuid: 1ba85617-a200-4274-b37d-27468bed9eba
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.electronic_books
+    - field.storage.commerce_product_variation.field_video_link
+  module:
+    - link
+id: commerce_product_variation.electronic_books.field_video_link
+field_name: field_video_link
+entity_type: commerce_product_variation
+bundle: electronic_books
+label: Video
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

@@ -1,0 +1,23 @@
+uuid: 308d4070-164f-4e3c-89e8-e9ebe66ad584
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.watch_huawei
+    - field.storage.commerce_product.body
+  module:
+    - text
+id: commerce_product.watch_huawei.body
+field_name: body
+entity_type: commerce_product
+bundle: watch_huawei
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: null
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

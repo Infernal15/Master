@@ -1,0 +1,18 @@
+uuid: 497d0bac-3a11-4a67-83fc-3f65ab09e9bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.gaming_mice
+id: commerce_product.gaming_mice.created
+field_name: created
+entity_type: commerce_product
+bundle: gaming_mice
+label: Created
+description: 'The time when the product was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

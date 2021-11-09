@@ -6,7 +6,7 @@ id: housings
 label: Towers
 description: towers
 variationType: hardware_components
-multipleVariations: true
+multipleVariations: false
 injectVariationFields: true
 traits: {  }
 locked: false

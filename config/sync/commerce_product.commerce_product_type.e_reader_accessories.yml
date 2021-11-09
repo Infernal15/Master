@@ -1,0 +1,12 @@
+uuid: ce28a006-276f-4a63-9a2d-9d3465884011
+langcode: en
+status: true
+dependencies: {  }
+id: e_reader_accessories
+label: 'e-Reader Accessories'
+description: 'e-Reader Accessories'
+variationType: electronic_books
+multipleVariations: false
+injectVariationFields: true
+traits: {  }
+locked: false

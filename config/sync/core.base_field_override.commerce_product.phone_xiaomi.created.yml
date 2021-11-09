@@ -1,0 +1,18 @@
+uuid: da650cae-2f62-4400-a732-b2c2567318d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.phone_xiaomi
+id: commerce_product.phone_xiaomi.created
+field_name: created
+entity_type: commerce_product
+bundle: phone_xiaomi
+label: Created
+description: 'The time when the product was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

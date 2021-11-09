@@ -1,0 +1,12 @@
+uuid: 72b3b796-d4fa-4410-a97f-1ba8e2d9cbad
+langcode: en
+status: true
+dependencies: {  }
+id: patch_cords
+label: 'Patch Cords'
+description: 'Patch Cords'
+variationType: network_hardware
+multipleVariations: false
+injectVariationFields: true
+traits: {  }
+locked: false

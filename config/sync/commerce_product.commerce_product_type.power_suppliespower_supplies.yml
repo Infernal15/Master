@@ -6,7 +6,7 @@ id: power_suppliespower_supplies
 label: 'Power supplies'
 description: 'Power supplies'
 variationType: hardware_components
-multipleVariations: true
+multipleVariations: false
 injectVariationFields: true
 traits: {  }
 locked: false

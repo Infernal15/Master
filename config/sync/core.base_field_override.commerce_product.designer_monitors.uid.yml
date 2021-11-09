@@ -1,0 +1,20 @@
+uuid: e0ec1094-4fc0-4ed8-93e7-0200a826185b
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.designer_monitors
+id: commerce_product.designer_monitors.uid
+field_name: uid
+entity_type: commerce_product
+bundle: designer_monitors
+label: Author
+description: 'The product author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\commerce_product\Entity\Product::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

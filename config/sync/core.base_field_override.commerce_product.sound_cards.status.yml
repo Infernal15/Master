@@ -1,0 +1,22 @@
+uuid: 7082837a-13f1-4fff-bbee-03fcebbd1c45
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.sound_cards
+id: commerce_product.sound_cards.status
+field_name: status
+entity_type: commerce_product
+bundle: sound_cards
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

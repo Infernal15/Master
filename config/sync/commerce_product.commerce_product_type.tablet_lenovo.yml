@@ -1,0 +1,12 @@
+uuid: eac48a9d-2a3b-4af7-a93f-c895c929bc3d
+langcode: en
+status: true
+dependencies: {  }
+id: tablet_lenovo
+label: Lenovo
+description: tablet_lenovo
+variationType: tablets
+multipleVariations: false
+injectVariationFields: true
+traits: {  }
+locked: false

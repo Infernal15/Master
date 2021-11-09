@@ -1,0 +1,22 @@
+uuid: fee319b3-39e5-49c9-961f-d71d6f147d1b
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.headphones
+id: commerce_product.headphones.status
+field_name: status
+entity_type: commerce_product
+bundle: headphones
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

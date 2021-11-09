@@ -1,0 +1,20 @@
+uuid: c2302a7a-42b8-465c-a501-f3aedcb009d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.electronic_books
+id: commerce_product_variation.electronic_books.uid
+field_name: uid
+entity_type: commerce_product_variation
+bundle: electronic_books
+label: Author
+description: 'The variation author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\commerce_product\Entity\ProductVariation::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

@@ -1,0 +1,18 @@
+uuid: cf980b31-1b6d-4a8d-b4f9-eff6bb7e4fca
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.gaming_monitors
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: commerce_product.gaming_monitors
+target_entity_type_id: commerce_product
+target_bundle: gaming_monitors
+default_langcode: site_default
+language_alterable: false

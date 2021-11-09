@@ -1,0 +1,12 @@
+uuid: 1303abbc-4e1d-4a86-b2c4-b91ded61f53b
+langcode: en
+status: true
+dependencies: {  }
+id: projectors
+label: Projectors
+description: Projectors
+variationType: photo_and_video
+multipleVariations: false
+injectVariationFields: true
+traits: {  }
+locked: false

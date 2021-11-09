@@ -1,0 +1,22 @@
+uuid: 92b04397-fd15-449e-a433-d414f4a85e5a
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.tablets
+id: commerce_product_variation.tablets.status
+field_name: status
+entity_type: commerce_product_variation
+bundle: tablets
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

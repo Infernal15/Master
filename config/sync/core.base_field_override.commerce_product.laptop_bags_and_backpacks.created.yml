@@ -1,0 +1,18 @@
+uuid: 25a2410e-c021-46e8-be15-ec35306b71f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.laptop_bags_and_backpacks
+id: commerce_product.laptop_bags_and_backpacks.created
+field_name: created
+entity_type: commerce_product
+bundle: laptop_bags_and_backpacks
+label: Created
+description: 'The time when the product was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

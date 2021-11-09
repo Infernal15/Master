@@ -1,0 +1,22 @@
+uuid: 364c2020-2a99-4ddf-8144-27bfd0effa09
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.routers
+id: commerce_product.routers.status
+field_name: status
+entity_type: commerce_product
+bundle: routers
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

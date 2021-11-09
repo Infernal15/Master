@@ -1,0 +1,18 @@
+uuid: 2de73cac-96ca-4593-bf0c-d5dd5449fc50
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.cooling_systems
+id: commerce_product.cooling_systems.title
+field_name: title
+entity_type: commerce_product
+bundle: cooling_systems
+label: Title
+description: 'The product title.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

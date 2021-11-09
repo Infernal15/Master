@@ -1,0 +1,20 @@
+uuid: 25ab041a-4109-4073-8ab8-69bb39bd8911
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.cables_and_adapters
+  module:
+    - path
+id: commerce_product.cables_and_adapters.path
+field_name: path
+entity_type: commerce_product
+bundle: cables_and_adapters
+label: 'URL alias'
+description: 'The product URL alias.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

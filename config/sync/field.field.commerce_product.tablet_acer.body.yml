@@ -1,0 +1,23 @@
+uuid: 0550011e-9eb8-46ad-bddb-b00f6d7bda72
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.tablet_acer
+    - field.storage.commerce_product.body
+  module:
+    - text
+id: commerce_product.tablet_acer.body
+field_name: body
+entity_type: commerce_product
+bundle: tablet_acer
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: null
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

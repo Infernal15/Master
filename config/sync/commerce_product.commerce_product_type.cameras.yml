@@ -1,0 +1,12 @@
+uuid: aca15e4d-ae3e-49d5-8985-0e21e3e387fd
+langcode: en
+status: true
+dependencies: {  }
+id: cameras
+label: Cameras
+description: Cameras
+variationType: photo_and_video
+multipleVariations: false
+injectVariationFields: true
+traits: {  }
+locked: false

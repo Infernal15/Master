@@ -1,0 +1,18 @@
+uuid: aef624f5-6d42-4944-82d2-76236c618514
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.towers
+id: commerce_product.towers.changed
+field_name: changed
+entity_type: commerce_product
+bundle: towers
+label: Changed
+description: 'The time when the product was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

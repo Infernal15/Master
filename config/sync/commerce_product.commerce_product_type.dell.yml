@@ -6,7 +6,7 @@ id: dell
 label: Dell
 description: 'Dell laptop'
 variationType: laptops
-multipleVariations: true
+multipleVariations: false
 injectVariationFields: true
 traits: {  }
 locked: false

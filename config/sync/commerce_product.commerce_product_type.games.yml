@@ -1,0 +1,12 @@
+uuid: 7ca5890b-3e84-42e2-b908-2fb5ed990378
+langcode: en
+status: true
+dependencies: {  }
+id: games
+label: Games
+description: Games
+variationType: software
+multipleVariations: false
+injectVariationFields: true
+traits: {  }
+locked: false
