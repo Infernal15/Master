@@ -1,0 +1,8 @@
+stepcommerce.categories:
+  path: '/stepcommerce/categories'
+  defaults:
+    _controller: 'Drupal\stepcommerce\Controller\StepCommerceController::categories'
+    _title: 'Categories'
+  methods:  [GET]
+  requirements:
+    _access: 'TRUE'
