@@ -1,7 +1,7 @@
 <template>
   <div class="authcontainer">
-    <register-form v-on:change="this.changeSwitcher" v-if="switcher"></register-form>
-    <login-form v-on:change="this.changeSwitcher" v-else></login-form>
+    <register-form v-on:changeSwitcher="this.changeSwitcher" v-if="switcher"></register-form>
+    <login-form v-on:changeSwitcher="this.changeSwitcher" v-else></login-form>
   </div>
 </template>
 
@@ -13,7 +13,7 @@ export default {
   components: {LoginForm, RegisterForm},
   data(){
     return{
-      switcher: false
+      switcher: true
     }
   },
   methods: {
@@ -23,17 +23,11 @@ export default {
   }
 }
 </script>
-<style>
+<style scoped>
 .authcontainer{
-  margin-top: -15px;
   padding-top: 40px;
-}
-body, html{
-  height: auto;
-  margin: 0;
   background: #56ABFF;
-}
-body{
-  margin-top: 72px;
+  height: 100vh;
+  margin: -72px 0 0;
 }
 </style>

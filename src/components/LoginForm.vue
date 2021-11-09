@@ -5,7 +5,7 @@
       <div class="field"><div class="imgback"><img :src="require('@/assets/img/emailicon.png')" alt="emailicon"></div><input placeholder="Email..." type="text"></div>
       <div class="field"><div class="imgback"><img :src="require('@/assets/img/passwordicon.png')" alt="passwordicon"></div><input placeholder="Password..." type="password"></div>
     </div>
-    <div class="changetext">Not registered yet?<div class="changebutton" @click="$emit('change')">Sign Up</div></div>
+    <div class="changetext">Not registered yet?<div class="changebutton" @click="$emit('changeSwitcher')">Sign Up</div></div>
     <input type="submit" class="submit" value="Sign In">
   </form>
 </template>
@@ -32,7 +32,7 @@ export default {
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 10px;
-  margin-top: 100px;
+  margin-top: 200px;
 }
 .fields{
   padding-top: 20px;
