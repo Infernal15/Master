@@ -19,7 +19,11 @@ class StepCommerceController {
     foreach ($product_types as $product_type) {
       $variation_name = $product_type->getVariationTypeId();
       $key = $product_variation_type[$variation_name]->label();
-      $categories[$key][] = [$product_type->id() => $product_type->label()];
+      $array_keys = array_keys($product_variation_type);
+
+      $num = array_search($variation_name, $array_keys, TRUE);
+
+      $categories[$num][$key][] = [$product_type->id() => $product_type->label()];
     }
 
     return new JsonResponse($categories);
