@@ -1,9 +1,9 @@
 <template>
     <div class="category">
-      <div class="name">{{category.displayName}}</div>
+      <div class="name">{{category[0]}}</div>
       <div class="container">
         <transition-group name="category">
-          <sub-category v-for="subcategory in category.subcategories" :subcategory="subcategory" :key="subcategory.id"/>
+          <sub-category v-for="subcategory in category[1]" :subcategory="subcategory" :key="subcategory[0]"/>
         </transition-group>
       </div>
     </div>

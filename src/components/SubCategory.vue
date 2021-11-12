@@ -1,5 +1,5 @@
 <template>
-  <div @click="$router.push(`/catalog/${(subcategory.name).toLowerCase()}`)" class="sub">{{subcategory.displayName}}</div>
+  <div @click="$router.push(`/catalog/${Object.keys(subcategory)[0]}`)" class="sub">{{Object.values(subcategory)[0]}}</div>
 </template>
 
 <script>

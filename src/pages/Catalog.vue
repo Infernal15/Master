@@ -31,7 +31,6 @@ export default {
         const response = await axios.get(`https://main.stepcommerce.pp.ua/commerce/products/${this.category}`);
         this.totalPages = Math.ceil(response.headers['x-total-count'] / this.limit);
         this.goods = response.data;
-        console.log(this.goods);
         this.goods.forEach(good =>{
           good.title = good.title.replace('&quot;', "\"");
         });
