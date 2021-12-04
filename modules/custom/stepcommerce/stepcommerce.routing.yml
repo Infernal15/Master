@@ -6,3 +6,30 @@ stepcommerce.categories:
   methods:  [GET]
   requirements:
     _access: 'TRUE'
+
+stepcommerce.characteristic:
+  path: '/stepcommerce/characteristic/{id}'
+  defaults:
+    _controller: 'Drupal\stepcommerce\Controller\StepCommerceController::characteristic'
+    _title: 'Characteristic'
+  methods: [ GET ]
+  requirements:
+    _access: 'TRUE'
+
+stepcommerce.cart:
+  path: '/stepcommerce/cart/{id}'
+  defaults:
+    _controller: 'Drupal\stepcommerce\Controller\StepCommerceController::cart'
+    _title: 'Cart'
+  methods:  [GET]
+  requirements:
+    _access: 'TRUE'
+
+stepcommerce.removeFromCart:
+  path: '/stepcommerce/cart/remove/{uid}/{order_id}'
+  defaults:
+    _controller: 'Drupal\stepcommerce\Controller\StepCommerceController::removeFromCart'
+    _title: 'Remove item from cart'
+  methods:  [GET]
+  requirements:
+    _access: 'TRUE'
