@@ -1,0 +1,19 @@
+uuid: 9586fd60-f61b-4dd7-adba-fd67fd356001
+langcode: en
+status: true
+dependencies:
+  module:
+    - serialization
+    - simple_oauth
+    - user
+id: entity.user
+plugin_id: 'entity:user'
+granularity: resource
+configuration:
+  methods:
+    - GET
+    - POST
+  formats:
+    - json
+  authentication:
+    - oauth2

@@ -4,7 +4,7 @@ refresh_token_expiration: 1209600
 remember_clients: true
 token_cron_batch_size: 0
 use_implicit: false
-disable_openid_connect: false
+disable_openid_connect: true
 _core:
   default_config_hash: KsPFWSp6mgXIQgjBJEShfKUGn6VLRlbpIJ2EysXvXWM
 public_key: certificates/public.key

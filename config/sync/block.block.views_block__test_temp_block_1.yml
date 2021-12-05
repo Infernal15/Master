@@ -1,0 +1,29 @@
+uuid: ce55742f-0a8b-4c5f-b0af-fab5ef6bec91
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.test_temp
+  module:
+    - system
+    - views
+  theme:
+    - gin
+id: views_block__test_temp_block_1
+theme: gin
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:test_temp-block_1'
+settings:
+  id: 'views_block:test_temp-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false

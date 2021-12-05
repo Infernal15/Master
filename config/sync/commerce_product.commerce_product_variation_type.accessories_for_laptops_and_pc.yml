@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 id: accessories_for_laptops_and_pc
-label: 'Accessories for laptops and pc'
+label: Accessories
 orderItemType: default
 generateTitle: true
 traits: {  }

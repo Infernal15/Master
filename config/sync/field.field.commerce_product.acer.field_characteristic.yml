@@ -5,6 +5,7 @@ dependencies:
   config:
     - commerce_product.commerce_product_type.acer
     - field.storage.commerce_product.field_characteristic
+    - paragraphs.paragraphs_type.characteristics
   module:
     - entity_reference_revisions
 id: commerce_product.acer.field_characteristic
@@ -19,5 +20,12 @@ default_value: {  }
 default_value_callback: ''
 settings:
   handler: 'default:paragraph'
-  handler_settings: {  }
+  handler_settings:
+    negate: 0
+    target_bundles:
+      characteristics: characteristics
+    target_bundles_drag_drop:
+      characteristics:
+        enabled: true
+        weight: 2
 field_type: entity_reference_revisions
