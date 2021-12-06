@@ -73,7 +73,7 @@ class StepCommerceController extends ControllerBase {
   }
 
   public function characteristic($id = NULL) {
-    $data = NULL;
+    $data = ['status' => 'fail'];
 
     if (is_numeric($id)) {
       $storage = Product::load($id);
@@ -93,6 +93,7 @@ class StepCommerceController extends ControllerBase {
             $data[] = ['name' => $name, 'value' => $val];
           }
         }
+        $data = ['status' => 'success'];
       }
     }
 
@@ -106,7 +107,7 @@ class StepCommerceController extends ControllerBase {
     }
     catch (\JsonException $e) { }
     $uid = $content['user_id'] ?? NULL;
-    $data = NULL;
+    $data = ['status' => 'fail'];
 
     if (is_numeric($uid)) {
       $storage = \Drupal::entityTypeManager()
@@ -143,7 +144,7 @@ class StepCommerceController extends ControllerBase {
     catch (\JsonException $e) { }
     $uid = $content['user_id'] ?? NULL;
     $item_id = $content['item_id'] ?? NULL;
-    $data = ['success' => FALSE];
+    $data = ['status' => 'fail'];
 
     $productObj = Product::load($item_id);
     $user_account = User::load($uid);
@@ -162,7 +163,6 @@ class StepCommerceController extends ControllerBase {
 
     if (!$cart) {
       $cart = $this->cartProvider->createCart('default', $store, $user_account);
-
     }
 
     $line_item_type_storage = \Drupal::entityTypeManager()
@@ -182,7 +182,7 @@ class StepCommerceController extends ControllerBase {
     catch (\JsonException $e) { }
     $uid = $content['user_id'] ?? NULL;
     $order_id = $content['order_id'] ?? NULL;
-    $data = ['success' => FALSE];
+    $data = ['status' => 'fail'];
 
     if (is_numeric($uid) && is_numeric($order_id)) {
       $storage = \Drupal::entityTypeManager()
@@ -198,7 +198,7 @@ class StepCommerceController extends ControllerBase {
           $cart_manager->removeOrderItem($storage, $order_item);
           $after_count = count($storage->get('order_items')->getValue());
 
-          $data = ['success' => $after_count === $order_count - 1];
+          $data = ['status' => $after_count === $order_count - 1];
         }
       }
     }
