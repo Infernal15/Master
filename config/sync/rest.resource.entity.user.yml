@@ -4,7 +4,6 @@ status: true
 dependencies:
   module:
     - serialization
-    - simple_oauth
     - user
 id: entity.user
 plugin_id: 'entity:user'
@@ -16,4 +15,4 @@ configuration:
   formats:
     - json
   authentication:
-    - oauth2
+    - cookie

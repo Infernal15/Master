@@ -17,19 +17,28 @@ stepcommerce.characteristic:
     _access: 'TRUE'
 
 stepcommerce.cart:
-  path: '/stepcommerce/cart/{id}'
+  path: '/stepcommerce/cart'
   defaults:
     _controller: 'Drupal\stepcommerce\Controller\StepCommerceController::cart'
     _title: 'Cart'
-  methods:  [GET]
+  methods:  [POST]
+  requirements:
+    _access: 'TRUE'
+
+stepcommerce.addToCart:
+  path: '/stepcommerce/cart/add'
+  defaults:
+    _controller: 'Drupal\stepcommerce\Controller\StepCommerceController::addToCart'
+    _title: 'Remove item from cart'
+  methods:  [POST]
   requirements:
     _access: 'TRUE'
 
 stepcommerce.removeFromCart:
-  path: '/stepcommerce/cart/remove/{uid}/{order_id}'
+  path: '/stepcommerce/cart/remove'
   defaults:
     _controller: 'Drupal\stepcommerce\Controller\StepCommerceController::removeFromCart'
     _title: 'Remove item from cart'
-  methods:  [GET]
+  methods:  [POST]
   requirements:
     _access: 'TRUE'
