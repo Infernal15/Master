@@ -42,3 +42,65 @@ stepcommerce.removeFromCart:
   methods:  [POST]
   requirements:
     _access: 'TRUE'
+
+#this one is the main logic
+stepcommerce.checkout_controller_checkout_check:
+  path: '/api/checkout'
+  defaults:
+    _controller: '\Drupal\stepcommerce\Controller\StepCommerceController::checkout'
+    _title: 'checkout'
+  methods:  [POST]
+  options:
+    _auth: [ 'basic_auth' ]
+  requirements:
+    #_user_is_logged_in: 'TRUE'
+    _permission: 'access content'
+
+#add or update billing (POST)
+stepcommerce.checkout_controller_add_billing:
+  path: '/api/checkout/billing-info'
+  defaults:
+    _controller: '\Drupal\stepcommerce\Controller\StepCommerceController::postBilling'
+    _title: 'checkout'
+  methods:  [POST]
+  options:
+    _auth: [ 'basic_auth' ]
+  requirements:
+    #_user_is_logged_in: 'TRUE'
+    _permission: 'access content'
+
+#add or update payment credit card (POST)
+stepcommerce.checkout_controller_payment_method_create:
+  path: '/api/checkout/{order_id}/payment-method-create'
+  defaults:
+    _controller: '\Drupal\stepcommerce\Controller\StepCommerceController::postCreditCardToCreatePaymentMethod'
+    _title: 'checkout'
+  options:
+    _auth: [ 'basic_auth' ]
+  requirements:
+    #_user_is_logged_in: 'TRUE'
+    _permission: 'access content'
+
+#last chance to review order (GET)
+stepcommerce.checkout_controller_review_order:
+  path: '/api/checkout/{order_id}/review-order'
+  defaults:
+    _controller: '\Drupal\stepcommerce\Controller\StepCommerceController::reviewOrderPrePayment'
+    _title: 'checkout'
+  options:
+    _auth: [ 'basic_auth' ]
+  requirements:
+    #_user_is_logged_in: 'TRUE'
+    _permission: 'access content'
+
+#Pay for your order (GET) must be in review state.
+stepcommerce.checkout_controller_pay_for_order:
+  path: '/api/checkout/{order_id}/pay'
+  defaults:
+    _controller: '\Drupal\stepcommerce\Controller\StepCommerceController::payForOrder'
+    _title: 'checkout'
+  options:
+    _auth: [ 'basic_auth' ]
+  requirements:
+    #_user_is_logged_in: 'TRUE'
+    _permission: 'access content'
