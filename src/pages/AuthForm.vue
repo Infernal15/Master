@@ -20,6 +20,15 @@ export default {
     changeSwitcher(){
       this.switcher = this.switcher !== true;
     }
+  },
+  mounted() {
+    if (localStorage.getItem('csrf_token')
+      && localStorage.getItem('logout_token')
+      && localStorage.getItem('name')
+      && localStorage.getItem('password')
+      && localStorage.getItem('user_id')) {
+      this.$router.push('/profile')
+    }
   }
 }
 </script>

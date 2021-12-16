@@ -1,25 +1,17 @@
 <template>
   <div class="cat">
     <h1 style="display: none">Categories</h1>
-    <transition-group name="categories1">
-      <div class="catcol">
-        <category v-for="category in categories1" :category="category" :key="category.key"/>
-      </div>
+    <transition-group name="categories1" tag="div" class="catcol">
+      <category v-for="category in categories1" :category="category" :key="`cat1+${category.key}`"/>
     </transition-group>
-    <transition-group name="categories2">
-      <div class="catcol">
-        <category v-for="category in categories2" :category="category" :key="category.key"/>
-      </div>
+    <transition-group name="categories2" tag="div" class="catcol">
+      <category v-for="category in categories2" :category="category" :key="`cat2+${category.key}`"/>
     </transition-group>
-    <transition-group name="categories3">
-      <div class="catcol">
-        <category v-for="category in categories3" :category="category" :key="category.key"/>
-      </div>
+    <transition-group name="categories3" tag="div" class="catcol">
+      <category v-for="category in categories3" :category="category" :key="`cat3+${category.key}`"/>
     </transition-group>
-    <transition-group name="categories4">
-      <div class="catcol">
-        <category v-for="category in categories4" :category="category" :key="category.key"/>
-      </div>
+    <transition-group name="categories4" tag="div" class="catcol">
+      <category v-for="category in categories4" :category="category" :key="`cat4+${category.key}`"/>
     </transition-group>
   </div>
 </template>

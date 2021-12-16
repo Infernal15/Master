@@ -1,7 +1,7 @@
 <template>
   <div class="main">
-    <div class="name">{{characteristic.field_characteristic[0].name}}</div>
-    <div class="value">{{characteristic.field_characteristic[0].value}}</div>
+    <div class="name">{{ characteristic.name }}</div>
+    <div class="value">{{ characteristic.value }}</div>
   </div>
 </template>
 
@@ -18,5 +18,10 @@ export default {
 </script>
 
 <style scoped>
-
+.main {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  margin: 10px 15px;
+}
 </style>

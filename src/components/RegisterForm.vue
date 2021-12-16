@@ -10,13 +10,15 @@
       <div class="field"><div class="imgback"><img :src="require('@/assets/img/passwordicon.png')" alt="passwordicon"></div><input @input="passwordCheck" v-model="pass2" placeholder="Confirm password..." type="password"></div>
     </div>
     <div class="changetext">Alredy have an account?<div class="changebutton" @click="$emit('changeSwitcher')">Sign In</div></div>
-    <input type="submit" class="submit" value="Sign Up">
+    <input type="button" @click="registerPOST()" class="submit" value="Sign Up">
   </form>
 </template>
 
 <script>
+import axios from 'axios';
 export default {
   name: "RegisterForm",
+  inject: ['basic_url'],
   data(){
     return{
       userEmail: "",
@@ -29,12 +31,50 @@ export default {
   },
   methods: {
     passwordCheck(){
-      if(this.pass1 !== "" && this.pass2 !== ""){
-        this.match = this.pass1 !== this.pass2;
+      if(this.userPassword !== "" && this.pass2 !== ""){
+        this.match = this.userPassword !== this.pass2;
       }
     },
     registerPOST(){
+      if (!this.match) {
+        let data = {
+            "name": [{"value": this.userName}],
+            "mail": [{"value": this.userEmail}],
+            "pass":[{"value": this.userPassword}],
+            "field_phone_number": [{"value": this.userPhone}]
+        }
 
+        this.postData(data)
+      }
+    },
+    postData: async function(data = {}) {
+      const token = this.getToken()
+
+      let config = {
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json',
+          'X-CSRF-Token': token,
+          'Access-Control-Allow-Origin': '*'
+        }
+      }
+
+      const response = await axios.post(`${this.basic_url}/user/register?_format=json`, data, config)
+      .then((json) => {
+        this.$emit('changeSwitcher')
+      })
+      .catch(function(error) {
+        console.log(error)
+      })
+    },
+    getToken: async function() {
+      const token = await axios.get(`${this.basic_url}/session/token`)
+      .then(function(json) {
+        return json.data
+      })
+      .catch(function(error) {
+        console.log(error)
+      })
     }
   },
   props: {

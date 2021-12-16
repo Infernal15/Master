@@ -17,7 +17,7 @@
           <div class="price">{{good.price__number_export}} </div>
           <div class="currency">₴</div>
         </div>
-        <button class="buybtn"><img height="24" width="24" :src="require(`@/assets/img/cartwhite.png`)" alt="cart"><span>Buy</span></button>
+        <button class="buybtn" @click="addToCart()"><img height="24" width="24" :src="require(`@/assets/img/cartwhite.png`)" alt="cart"><span>Buy</span></button>
       </div>
       <div class="delivery">
         <div class="details">
@@ -53,8 +53,10 @@
 </template>
 
 <script>
+import axios from 'axios'
 export default {
   name: "General",
+  inject: ['basic_url'],
   data(){
     return{
       path: 'https://main.stepcommerce.pp.ua'
@@ -67,7 +69,20 @@ export default {
     }
   },
   methods:{
+    addToCart: async function() {
+      let data = {
+        'user_id': localStorage.getItem('user_id'),
+        'item_id': this.$route.params.id
+      }
+      let config = {
+        headers: {
+          'Content-Type': 'application/json',
+          'Access-Control-Allow-Origin': '*'
+        }
+      }
 
+      const respons = await axios.post(`${this.basic_url}/stepcommerce/cart/add`, data, config)
+    }
   },
   beforeMount() {
 

@@ -8,7 +8,10 @@
 <script>
 import NavBar from "@/components/Navbar";
 export default {
-  components: {NavBar}
+  components: {NavBar},
+  provide:{
+    basic_url: 'https://main.stepcommerce.pp.ua'
+  }
 }
 </script>
 

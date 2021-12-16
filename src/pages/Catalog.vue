@@ -1,6 +1,6 @@
 <template>
   <div class="vect">
-    <good-list :category="this.goods[0].type" :goods="goods"></good-list>
+    <good-list :category="this.goods[0]?.type" :goods="goods"></good-list>
 <!--    <div class="paginator">-->
 <!--      <div @click="changePage(pageN)" v-for="pageN in totalPages" :key="pageN" class="page" :class="{'currentpage' :-->
 <!--       page === pageN}">{{ pageN }}</div>-->

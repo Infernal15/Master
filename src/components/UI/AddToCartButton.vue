@@ -1,13 +1,37 @@
 <template>
-  <div class="cart">
+  <div class="cart" @click="addToCart()">
     <div class="cartText"><slot></slot></div>
     <img height="20" width="20" :src="require('@/assets/img/cart.png')" alt="AddToCart">
   </div>
 </template>
 
 <script>
+import axios from 'axios'
 export default {
-  name: "AddToCartButton"
+  name: "AddToCartButton",
+  inject: ['basic_url'],
+  props: {
+    product_id: {
+      type: [Number, String],
+      require: true
+    }
+  },
+  methods: {
+    addToCart: async function() {
+      let data = {
+        'user_id': localStorage.getItem('user_id'),
+        'item_id': this.product_id
+      }
+      let config = {
+        headers: {
+          'Content-Type': 'application/json',
+          'Access-Control-Allow-Origin': '*'
+        }
+      }
+
+      const respons = await axios.post(`${this.basic_url}/stepcommerce/cart/add`, data, config)
+    }
+  }
 }
 </script>
 

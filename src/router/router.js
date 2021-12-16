@@ -9,6 +9,7 @@ import Rules from "@/pages/Rules";
 import UserProfile from "@/pages/UserProfile";
 import Categories from "../pages/Categories";
 import AuthForm from "../pages/AuthForm";
+import Checkout from "../pages/Checkout";
 const routes = [
     {
         path: '/about',
@@ -49,6 +50,10 @@ const routes = [
     {
         path: '/authentication',
         component: AuthForm
+    },
+    {
+        path: '/checkout',
+        component: Checkout
     }
 ]
 

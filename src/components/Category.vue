@@ -2,8 +2,8 @@
     <div class="category">
       <div class="name">{{category[0]}}</div>
       <div class="container">
-        <transition-group name="category">
-          <sub-category v-for="subcategory in category[1]" :subcategory="subcategory" :key="subcategory[0]"/>
+        <transition-group name="category" tag="sub-category">
+          <sub-category v-for="subcategory in category[1]" :subcategory="subcategory" :key="`cat${subcategory[0]}`"/>
         </transition-group>
       </div>
     </div>

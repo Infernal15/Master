@@ -1,7 +1,7 @@
 <template>
   <div class="characteristics">
     <transition-group name="characteristics">
-      <characteristic v-for="characteristic in char" :key="characteristic.id"></characteristic>
+      <characteristic v-for="characteristic in char" :key="characteristic.id" :characteristic="characteristic"></characteristic>
     </transition-group>
   </div>
 </template>
@@ -11,25 +11,23 @@ import Characteristic from "@/components/Characteristic";
 import axios from "axios";
 export default {
   name: "Characteristics",
-  components:{Characteristic },
+  components:{ Characteristic },
   data(){
     return{
-      characteristics: [],
       char: []
     }
   },
   methods:{
     async getCharacteristics(){
       try {
-        const response = await axios.get(`https://main.stepcommerce.pp.ua/commerce/characteristic/${this.$route.params.id}`);
-        this.characteristic = response.data[0].field_characteristic;
-        console.log(this.characteristic);
-        JSON.stringify(this.characteristic);
-        console.log(this.characteristic);
+        let data = []
+        const response = await axios.get(`https://main.stepcommerce.pp.ua/stepcommerce/characteristic/${this.$route.params.id}`)
+        .then(function(json) {
+          data = json.data
+        })
 
-        // this.characteristic.forEach(characteristic =>{
-        //   this.char.push(characteristic);
-        // });
+        this.char = data
+        console.log(this.char)
       } catch (e) {
         alert(e.message);
       }

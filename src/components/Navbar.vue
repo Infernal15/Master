@@ -15,10 +15,10 @@
   </div>
   <div class="links">
     <div class="link">
-      <img class="profile" width="28" height="28" :src="require('@/assets/img/profile.png')" alt="Profile" @click="this.$router.push('/authentication')">
+      <img class="profile" width="28" height="28" :src="require('@/assets/img/profile.png')" alt="Profile" @click="openProfile()">
     </div>
     <div class="link">
-      <img class="cart" width="28" height="28"  @click="" :src="require('@/assets/img/cart.png')" alt="Cart">
+      <img class="cart" width="28" height="28"  @click="this.$router.push('/cart')" :src="require('@/assets/img/cart.png')" alt="Cart">
     </div>
   </div>
 </nav>
@@ -30,7 +30,21 @@ export default {
   components: {
     NavBtn
   },
-  name: "Navbar"
+  name: "Navbar",
+  methods: {
+    openProfile() {
+      if (localStorage.getItem('csrf_token')
+        && localStorage.getItem('logout_token')
+        && localStorage.getItem('name')
+        && localStorage.getItem('password')
+        && localStorage.getItem('user_id')) {
+          this.$router.push('/profile')
+        }
+        else {
+          this.$router.push('/authentication')
+        }
+    }
+  }
 }
 </script>
 

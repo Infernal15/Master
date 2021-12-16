@@ -2,21 +2,63 @@
   <form action="" class="main" method="post">
     <div class="fields">
       <!--      ВИНЕСТИ КОМПОНЕНТ?????    -->
-      <div class="field"><div class="imgback"><img :src="require('@/assets/img/emailicon.png')" alt="emailicon"></div><input placeholder="Email..." type="text"></div>
-      <div class="field"><div class="imgback"><img :src="require('@/assets/img/passwordicon.png')" alt="passwordicon"></div><input placeholder="Password..." type="password"></div>
+      <div class="field"><div class="imgback"><img :src="require('@/assets/img/nameicon.png')" alt="nameicon"></div><input v-model="userName" placeholder="Name..." type="text"></div>
+      <div class="field"><div class="imgback"><img :src="require('@/assets/img/passwordicon.png')" alt="passwordicon"></div><input v-model="userPassword" placeholder="Password..." type="password"></div>
     </div>
     <div class="changetext">Not registered yet?<div class="changebutton" @click="$emit('changeSwitcher')">Sign Up</div></div>
-    <input type="submit" class="submit" value="Sign In">
+    <input type="button" @click="userPost()" class="submit" value="Sign In">
   </form>
 </template>
 
 <script>
+import axios from 'axios'
 export default {
   name: "LoginForm",
+  inject: ['basic_url'],
+  data(){
+    return{
+      userName: "",
+      userPassword: ""
+    }
+  },
   props: {
     switcher: {
       type: Boolean,
       require: true
+    }
+  },
+  methods: {
+    userPost() {
+      if (this.userName && this.userPassword) {
+        this.userLogin();
+      }
+    },
+    userLogin: async function() {
+      let data = {
+        "name": this.userName,
+        "pass": this.userPassword
+      }
+
+      let config = {
+        headers: {
+          'Content-Type': 'application/json',
+          'Access-Control-Allow-Origin': '*'
+        }
+      }
+
+      const response = await axios.post(`${this.basic_url}/user/login?_format=json`, data, config)
+      .then((json) => {
+        localStorage.setItem('csrf_token', json.data.csrf_token)
+        localStorage.setItem('logout_token', json.data.logout_token)
+        localStorage.setItem('name', json.data.current_user.name)
+        localStorage.setItem('password', data.pass)
+        localStorage.setItem('user_id', json.data.current_user.uid)
+
+        this.$router.push('/profile')
+      })
+      .catch(function(error) {
+        console.log(error)
+      })
     }
   }
 }

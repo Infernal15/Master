@@ -11,7 +11,7 @@
         <div class="goodPrice">
           <span>{{this.price}}</span><span class="currency"> ₴</span>
         </div>
-        <add-to-cart-button>Add to Cart</add-to-cart-button>
+        <add-to-cart-button :product_id="good.product_id_export">Add to Cart</add-to-cart-button>
       </div>
     </div>
   </div>
